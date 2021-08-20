@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'styles/loader';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #2e2d2e;
+}
