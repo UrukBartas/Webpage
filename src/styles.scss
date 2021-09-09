@@ -8,3 +8,17 @@
 body {
   background: #8d6f51;
 }
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff00 !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ae9d83 !important;
+}

@@ -1,0 +1,32 @@
+#in-game {
+  margin-top: 100px;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  .character,
+  .marketplace {
+    position: absolute;
+    .container {
+      position: relative;
+      .cartel-img {
+        width: 800px;
+        height: 500px;
+      }
+      .screenshot {
+        position: absolute;
+        left: 40px;
+        top: 47px;
+        width: 720px;
+      }
+    }
+  }
+
+  .character {
+    top: 0;
+  }
+
+  .marketplace {
+    bottom: 0;
+    right: 0;
+  }
+}
