@@ -3,5 +3,9 @@
   justify-content: center;
   .body {
     max-width: 1920px;
+    .cartel-play {
+      position: absolute;
+      z-index: 5;
+    }
   }
 }

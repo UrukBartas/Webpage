@@ -2,11 +2,10 @@
   margin-top: 100px;
   width: 100%;
   height: 100vh;
-  position: relative;
+
   .character,
   .marketplace {
-    position: absolute;
-    .container {
+    .image-container {
       position: relative;
       .cartel-img {
         width: 800px;
@@ -19,14 +18,5 @@
         width: 720px;
       }
     }
-  }
-
-  .character {
-    top: 0;
-  }
-
-  .marketplace {
-    bottom: 0;
-    right: 0;
   }
 }
