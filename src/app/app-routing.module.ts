@@ -1,19 +1,9 @@
-import { GameComponent } from './components/game/game.component'
-import { LandingComponent } from './components/landing/landing.component'
-import { NgModule } from '@angular/core'
-import { RouterModule, Routes } from '@angular/router'
+import { GameComponent } from './components/game/game.component';
+import { LandingComponent } from './components/landing/landing.component';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {
-    path: '',
-    redirectTo: '/home',
-    pathMatch: 'full',
-  },
-  {
-    path: '**',
-    redirectTo: '/home',
-    pathMatch: 'full',
-  },
   {
     path: 'home',
     component: LandingComponent,
@@ -22,7 +12,13 @@ const routes: Routes = [
     path: 'game',
     component: GameComponent,
   },
-]
+
+  {
+    path: '**',
+    redirectTo: '/home',
+    pathMatch: 'full',
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

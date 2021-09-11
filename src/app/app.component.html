@@ -1,5 +1,9 @@
 <div>
-  <div class="background" onscroll="console.log($event)">
+  <div
+    class="background"
+    onscroll="console.log($event)"
+    [ngClass]="{'isInGame': isGameRoute()}"
+  >
     <img src="assets/custom/clouds.png" alt="" />
   </div>
   <router-outlet></router-outlet>
