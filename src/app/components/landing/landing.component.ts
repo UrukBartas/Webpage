@@ -14,5 +14,14 @@ export class LandingComponent implements OnInit {
       offset: 200,
       delay: 100,
     })
+    const banner: any = document.querySelector('.cartel-play')
+    document.addEventListener('scroll', (event) => {
+      const position = window.scrollY
+      if (position > 1000) {
+        banner.style.visibility = 'visible'
+      } else {
+        banner.style.visibility = 'hidden'
+      }
+    })
   }
 }
