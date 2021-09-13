@@ -17,6 +17,11 @@ const routes: Routes = [
     path: 'game',
     component: GameComponent,
   },
+  {
+    path: '**',
+    redirectTo: '/home',
+    pathMatch: 'full',
+  },
 ]
 
 @NgModule({
