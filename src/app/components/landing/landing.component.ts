@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core'
 import * as Aos from 'aos'
+import * as $ from 'jquery'
 
 @Component({
   selector: 'app-landing',
@@ -7,6 +8,9 @@ import * as Aos from 'aos'
   styleUrls: ['./landing.component.scss'],
 })
 export class LandingComponent implements OnInit {
+  private previousPosition: number = 0
+  private showing = false
+
   constructor() {}
 
   ngOnInit(): void {
@@ -14,14 +18,31 @@ export class LandingComponent implements OnInit {
       offset: 200,
       delay: 100,
     })
+    this.controlPlayPosterAnimation()
+  }
+
+  private controlPlayPosterAnimation() {
     const banner: any = document.querySelector('.cartel-play')
     document.addEventListener('scroll', (event) => {
-      const position = window.scrollY
-      if (position > 1000) {
+      const currentPosition = window.scrollY
+      const limit = window.innerHeight
+      const show = currentPosition > limit && this.previousPosition < currentPosition
+      const hide = currentPosition < limit && this.previousPosition > currentPosition
+      if (show && !this.showing) {
+        this.showing = true
         banner.style.visibility = 'visible'
-      } else {
-        banner.style.visibility = 'hidden'
+        banner.classList.remove('hide-cartel-play')
+        banner.classList.add('display-cartel-play')
       }
+      if (hide && this.showing) {
+        this.showing = false
+        banner.classList.remove('display-cartel-play')
+        banner.classList.add('hide-cartel-play')
+        setTimeout(() => {
+          banner.style.visibility = 'hidden'
+        }, 900)
+      }
+      this.previousPosition = currentPosition
     })
   }
 }

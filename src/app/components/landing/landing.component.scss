@@ -1,3 +1,5 @@
+@import '../../../../node_modules/animate.css/animate.min.css';
+
 #landing {
   display: flex;
   justify-content: center;
@@ -6,9 +8,20 @@
     .cartel-play {
       position: fixed;
       z-index: 5;
-      top: -20px;
+      top: -40px;
       right: 20px;
       visibility: hidden;
+      cursor: pointer;
     }
   }
+}
+
+.display-cartel-play {
+  animation: bounceInDown;
+  animation-duration: 1s;
+}
+
+.hide-cartel-play {
+  animation: bounceOutUp;
+  animation-duration: 1s;
 }

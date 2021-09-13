@@ -5,6 +5,11 @@
 
   .character,
   .marketplace {
+    .text-container {
+      .marketplace {
+        margin-top: -20px;
+      }
+    }
     .image-container {
       position: relative;
       .cartel-img {
