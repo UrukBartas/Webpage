@@ -1,0 +1,30 @@
+#footer {
+  p {
+    font-family: wow;
+  }
+
+  height: 300px;
+  width: 100%;
+  margin-top: 150px;
+  .wrapper {
+    background-image: url('/assets/custom/footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 275px;
+    bottom: 0;
+    .grass {
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      left: 0;
+      bottom: 190px;
+    }
+
+    .palo {
+      position: absolute;
+    }
+  }
+}

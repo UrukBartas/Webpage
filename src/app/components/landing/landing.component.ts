@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core'
+import { Router } from '@angular/router'
 import * as Aos from 'aos'
 import * as $ from 'jquery'
 
@@ -11,7 +12,7 @@ export class LandingComponent implements OnInit {
   private previousPosition: number = 0
   private showing = false
 
-  constructor() {}
+  constructor(public router: Router) {}
 
   ngOnInit(): void {
     Aos.init({

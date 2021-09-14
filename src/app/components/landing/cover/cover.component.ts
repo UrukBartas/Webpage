@@ -10,8 +10,4 @@ export class CoverComponent implements OnInit {
   constructor(public router: Router) {}
 
   ngOnInit(): void {}
-
-  public go() {
-    this.router.navigateByUrl('/game')
-  }
 }

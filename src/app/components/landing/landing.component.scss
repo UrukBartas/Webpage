@@ -3,12 +3,14 @@
 #landing {
   display: flex;
   justify-content: center;
+  position: relative;
+  overflow-x: hidden;
   .body {
     max-width: 1920px;
     .cartel-play {
       position: fixed;
       z-index: 5;
-      top: -40px;
+      top: -20px;
       right: 20px;
       visibility: hidden;
       cursor: pointer;
@@ -17,11 +19,11 @@
 }
 
 .display-cartel-play {
-  animation: bounceInDown;
+  animation: slideInDown;
   animation-duration: 1s;
 }
 
 .hide-cartel-play {
-  animation: bounceOutUp;
+  animation: slideOutUp;
   animation-duration: 1s;
 }

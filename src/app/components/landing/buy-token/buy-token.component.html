@@ -1,0 +1,14 @@
+<div id="buy-token">
+  <img src="assets/custom/howtobuy.png" />
+  <swiper effect="fade" [config]="config" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+    <ng-template swiperSlide>
+      <img src="assets/metamask/metamask1.png" />
+    </ng-template>
+    <ng-template swiperSlide>
+      <img src="assets/metamask/metamask2.png" />
+    </ng-template>
+    <ng-template swiperSlide>
+      <img src="assets/metamask/metamask3.png" />
+    </ng-template>
+  </swiper>
+</div>
