@@ -1,14 +1,40 @@
 <div id="buy-token">
   <img src="assets/custom/howtobuy.png" />
-  <swiper effect="fade" [config]="config" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+  <swiper [config]="config" (swiper)="onSwiper($event)">
     <ng-template swiperSlide>
       <img src="assets/metamask/metamask1.png" />
+      <div class="text-container">
+        <p>
+          First go to this page and download the Metamask chrome extension, you
+          will need it to connect to major DEX's. Then click "Download now" and
+          the extension would be added to your browser.
+        </p>
+      </div>
     </ng-template>
     <ng-template swiperSlide>
       <img src="assets/metamask/metamask2.png" />
+      <div class="text-container">
+        <p>
+          Once installed and you click on the foxy icon over the extensions
+          panel of your browser the following window will appear This window
+          will take you through a wizard of setting up your metamask account, it
+          would give you two options "Import seed" or "Create seed", depending
+          on your choice, you may need to store the generated neumonic password
+          safe.
+        </p>
+      </div>
     </ng-template>
     <ng-template swiperSlide>
       <img src="assets/metamask/metamask3.png" />
+      <div class="text-container">
+        <p>
+          On this step you will have your metamask wallet ready to start messing
+          around on some Ethereum DEX'es, but as Tony Montana (COKE) operates on
+          Binance Smart Chain we would have to configure this custom network.
+          Click over "Ethereum Mainnet" and click "Custom RPC" at the bottom of
+          the networks list.
+        </p>
+      </div>
     </ng-template>
   </swiper>
 </div>

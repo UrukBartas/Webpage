@@ -2,7 +2,41 @@
   min-height: 100vh;
   width: 100%;
   swiper {
-    width: 900px;
-    height: 600px;
+    width: 60vw;
+    height: 700px;
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: 600px;
+      }
+      .text-container {
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        padding: 20px;
+        max-width: 95%;
+      }
+    }
+    .swiper-button-next {
+      color: black;
+    }
+
+    .swiper-button-prev {
+      &::after {
+        content: url("../../../../assets/characters/gnome.png") !important;
+        font-family: auto !important;
+      }
+    }
+
+    .swiper-button-next {
+      &::after {
+        content: url("../../../../assets/characters/gnome.png") !important;
+        font-family: auto !important;
+      }
+    }
   }
 }

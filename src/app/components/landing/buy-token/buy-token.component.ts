@@ -1,32 +1,47 @@
-import { Component, OnInit, ViewChild } from '@angular/core'
-import { SwiperOptions } from 'swiper'
-import SwiperCore, { EffectFade, Swiper } from 'swiper'
+import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
+import { EffectCoverflow, Navigation, Pagination, SwiperOptions } from 'swiper';
+import SwiperCore from 'swiper';
 
 // install Swiper modules
-SwiperCore.use([EffectFade])
-
+SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
 @Component({
   selector: 'app-buy-token',
   templateUrl: './buy-token.component.html',
   styleUrls: ['./buy-token.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class BuyTokenComponent {
   public config: SwiperOptions = {
-    slidesPerView: 1,
+    effect: 'coverflow',
+    slidesPerView: 'auto',
+    grabCursor: true,
     spaceBetween: 50,
+    centeredSlides: true,
     navigation: true,
-    pagination: { clickable: true },
-    scrollbar: { draggable: true },
-  }
+    pagination: true,
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: false,
+    },
+  };
 
-  @ViewChild('swiper', { static: false }) swiper: any
+  @ViewChild('swiper', { static: false }) swiper: any;
   constructor() {}
 
-  public onSwiper(swiper: any) {
-    console.log(swiper)
+  onSwiper(swiper: any) {
+    console.log(swiper);
   }
 
-  public onSlideChange() {
-    console.log('slide change')
+  slideNext() {
+    console.log('avant');
+
+    this.swiper.swiperRef.slideNext(100);
+  }
+  slidePrev() {
+    console.log('arrere');
+    this.swiper.swiperRef.slidePrev(100);
   }
 }
