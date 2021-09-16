@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'app-whitepaper',
   templateUrl: './whitepaper.component.html',
-  styleUrls: ['./whitepaper.component.scss']
+  styleUrls: ['./whitepaper.component.scss'],
 })
-export class WhitepaperComponent implements OnInit {
+export class WhitepaperComponent {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
+  public download() {
+    console.log('download')
   }
-
 }
