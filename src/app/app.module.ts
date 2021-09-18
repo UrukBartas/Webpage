@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { GameComponent } from './components/game/game.component';
 import { InGameComponent } from './components/landing/in-game/in-game.component';
+import { UnityWebappBridgeComponent } from './unity-webapp-bridge/unity-webapp-bridge.component';
 import { RoadmapComponent } from './components/landing/roadmap/roadmap.component';
 import { TeamComponent } from './components/landing/team/team.component';
 import { BuyTokenComponent } from './components/landing/buy-token/buy-token.component';
@@ -21,6 +22,7 @@ import { FeaturesComponent } from './components/landing/features/features.compon
     GameComponent,
     CoverComponent,
     InGameComponent,
+    UnityWebappBridgeComponent,
     RoadmapComponent,
     TeamComponent,
     BuyTokenComponent,
@@ -29,7 +31,6 @@ import { FeaturesComponent } from './components/landing/features/features.compon
     FeaturesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, SwiperModule],
-  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

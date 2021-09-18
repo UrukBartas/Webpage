@@ -1,7 +1,8 @@
-import { GameComponent } from './components/game/game.component'
-import { LandingComponent } from './components/landing/landing.component'
-import { NgModule } from '@angular/core'
-import { RouterModule, Routes } from '@angular/router'
+import { GameComponent } from './components/game/game.component';
+import { LandingComponent } from './components/landing/landing.component';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { RouteGuard } from './guards/route.guard';
 
 const routes: Routes = [
   {
@@ -16,6 +17,7 @@ const routes: Routes = [
   {
     path: 'game',
     component: GameComponent,
+    canActivate: [RouteGuard],
   },
   {
     path: '**',
