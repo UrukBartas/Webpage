@@ -14,7 +14,8 @@ import { FooterComponent } from './components/landing/footer/footer.component';
 import { SwiperModule } from 'swiper/angular';
 import { WhitepaperComponent } from './components/landing/whitepaper/whitepaper.component';
 import { FeaturesComponent } from './components/landing/features/features.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +31,7 @@ import { FeaturesComponent } from './components/landing/features/features.compon
     WhitepaperComponent,
     FeaturesComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, SwiperModule],
+  imports: [BrowserModule, AppRoutingModule, SwiperModule, BrowserAnimationsModule,MatButtonModule],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

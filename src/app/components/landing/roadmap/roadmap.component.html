@@ -1,1 +1,76 @@
-<p>roadmap works!</p>
+<section id="roadmap" class="roadmap section-padding" data-aos="fade-down" data-aos-duration="500">
+  <div class="container-fluid">
+    <img src="assets/custom/ingame-text.png" style="padding-bottom: 50px" />
+    (ROADMAP)
+    <div
+      class="row animated"
+      data-animation="fadeInUpShorter"
+      data-animation-delay="0.6s"
+    >
+      <div class="col-12">
+        <div class="roadmap-container">
+          <div class="swiper-container">
+            <div class="swiper-wrapper timeline">
+              <swiper
+                [config]="config"
+                (swiper)="onSwiper($event)"
+                (slideChange)="onSlideChange()"
+              >
+                <ng-template swiperSlide *ngFor="let slide of slides">
+                  <div
+                    class="swiper-slide"
+                    [ngClass]="{
+                      completed: slide.isCompleted,
+                      active: slide.isActive
+                    }"
+                    swiperSlide
+                  >
+                    <div class="roadmap-info">
+                      <div
+                        class="timestamp"
+                        [ngClass]="{
+                          completed: slide.isCompleted,
+                          active: slide.isActive
+                        }"
+                      >
+                        <span class="date">{{ slide.date }}</span>
+                      </div>
+                      <div
+                        class="status"
+                        [ngClass]="{
+                          completed: slide.isCompleted,
+                          active: slide.isActive
+                        }"
+                      >
+                        <span *ngFor="let listItem of slide.list">
+                          {{ listItem }} <br
+                        /></span>
+                        <span class="live" *ngIf="slide.isActive"
+                          >Live Now</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </ng-template>
+              </swiper>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <div class="col-3">
+        <a
+          mat-raised-button
+          color="primary"
+          class="w-100 big-button"
+          href="{{ urlEnvRoadmap }}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          🗺️ On depth
+      </a>
+      </div>
+    </div>
+  </div>
+</section>
