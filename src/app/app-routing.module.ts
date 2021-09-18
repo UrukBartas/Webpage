@@ -6,6 +6,11 @@ import { RouteGuard } from './guards/route.guard';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full',
+  },
+  {
     path: 'home',
     component: LandingComponent,
   },
@@ -14,13 +19,12 @@ const routes: Routes = [
     component: GameComponent,
     canActivate: [RouteGuard],
   },
-
   {
     path: '**',
     redirectTo: '/home',
     pathMatch: 'full',
   },
-];
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

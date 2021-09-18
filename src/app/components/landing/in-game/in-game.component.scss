@@ -1,21 +1,36 @@
 #in-game {
   margin-top: 100px;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 
   .character,
   .marketplace {
-    .image-container {
-      position: relative;
-      .cartel-img {
-        width: 800px;
-        height: 500px;
+    .text-container-marketplace {
+      display: flex;
+      justify-content: center;
+      img {
+        margin-top: -20px;
+        width: 450px;
       }
-      .screenshot {
-        position: absolute;
-        left: 40px;
-        top: 47px;
+    }
+    .text-container-character {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 450px;
+      }
+    }
+
+    img {
+      height: 450px;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      img {
         width: 720px;
+        max-width: 95vw;
       }
     }
   }

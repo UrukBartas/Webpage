@@ -1,9 +1,5 @@
 <div>
-  <div
-    class="background"
-    onscroll="console.log($event)"
-    [ngClass]="{ isInGame: isGameRoute() }"
-  >
+  <div class="background" [ngClass]="{ isInGame: isGameRoute() }">
     <img src="assets/custom/clouds.png" alt="" />
   </div>
   <app-unity-webapp-bridge *ngIf="enableGameEnv"></app-unity-webapp-bridge>
