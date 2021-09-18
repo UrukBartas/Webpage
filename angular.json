@@ -33,6 +33,7 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               "src/styles.scss",
+              "src/styles/flag-icon.min.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/aos/dist/aos.css",
               "node_modules/animate.css/animate.min.css",

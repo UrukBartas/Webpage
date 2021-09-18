@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core'
-import { Router } from '@angular/router'
-import * as Aos from 'aos'
-import * as $ from 'jquery'
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import * as Aos from 'aos';
+import * as $ from 'jquery';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-landing',
@@ -12,7 +13,8 @@ export class LandingComponent implements OnInit {
   private previousPosition: number = 0
   private showing = false
 
-  constructor(public router: Router) {}
+  constructor(public router: Router) {
+  }
 
   ngOnInit(): void {
     Aos.init({

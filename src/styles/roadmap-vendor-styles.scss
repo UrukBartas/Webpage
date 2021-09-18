@@ -1,0 +1,317 @@
+@import "../styles/variables.scss";
+
+.roadmap .roadmap-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.roadmap .swiper-container {
+  width: 90%;
+  height: 100%;
+}
+
+.roadmap .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  width: 200px;
+  border-top: 4px solid #24a8f2;
+}
+.roadmap .swiper-slide .roadmap-info {
+  margin-top: 47px;
+}
+.roadmap .swiper-slide.active .roadmap-info {
+  background: -webkit-linear-gradient(
+    45deg,
+    $ternary,
+    darken($ternary, 10%)
+  );
+  background: -moz-linear-gradient(45deg, $ternary, darken($ternary, 10%));
+  background: -o-linear-gradient(45deg, $ternary, darken($ternary, 10%));
+  background: linear-gradient(45deg, $ternary, darken($ternary, 10%));
+  margin-top: 32px;
+  padding: 15px 0 0;
+  color: white;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(62, 57, 107, 0.3);
+  box-shadow: 0 10px 30px 0 rgba(62, 57, 107, 0.3);
+}
+.roadmap .swiper-slide.active .roadmap-info:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 44%;
+  bottom: 100%;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid $ternary;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+.roadmap .swiper-slide.active .live {
+  display: block;
+  background: -webkit-linear-gradient(45deg, $primary, darken($primary, 10%));
+  background: -moz-linear-gradient(45deg, $primary, darken($primary, 10%));
+  background: -o-linear-gradient(45deg, $primary, darken($primary, 10%));
+  background: linear-gradient(45deg, $primary, darken($primary, 10%));
+  padding: 8px 0;
+  border-radius: 0 0 6px 6px;
+  margin-top: 10px;
+}
+
+.roadmap .swiper.control {
+  position: absolute;
+}
+
+.roadmap .next-slide,
+.roadmap .prev-slide {
+  position: absolute;
+  top: 0;
+  display: inline-block;
+  cursor: pointer;
+  background: -webkit-linear-gradient(45deg, #bf68e6, #9e48cd);
+  background: -moz-linear-gradient(45deg, #bf68e6, #9e48cd);
+  background: -o-linear-gradient(45deg, #bf68e6, #9e48cd);
+  background: linear-gradient(45deg, #bf68e6, #9e48cd);
+  color: #ffffff;
+  padding: 17px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 6px 0 rgba(255, 95, 43, 0.6);
+  box-shadow: 0 0 6px 0 rgba(255, 95, 43, 0.6);
+  z-index: 9;
+}
+.roadmap .next-slide:focus,
+.roadmap .prev-slide:focus {
+  outline: none;
+}
+
+.roadmap .next-slide {
+  right: 22px;
+}
+.roadmap .next-slide:before {
+  content: "\e649";
+  font-family: themify;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+
+.roadmap .prev-slide {
+  left: 22px;
+}
+.roadmap .prev-slide:before {
+  content: "\e64a";
+  font-family: themify;
+  position: absolute;
+  top: 5px;
+  left: 8px;
+}
+
+.roadmap .timeline {
+  margin: 1rem 0 2rem 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  text-align: center;
+}
+
+.roadmap .timestamp {
+  margin-bottom: 10px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 100;
+}
+.roadmap .timestamp span {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+.roadmap .timestamp span:before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 25px;
+  background: -webkit-linear-gradient(45deg, $secondary, $ternary);
+  background: -moz-linear-gradient(45deg, $secondary, $ternary);
+  background: -o-linear-gradient(45deg, $secondary, $ternary);
+  background: linear-gradient(45deg, $secondary, $ternary);
+  border: none;
+  position: absolute;
+  top: -14px;
+  left: 42%;
+  -webkit-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+.roadmap .timestamp span:after {
+  content: "";
+  width: 11px;
+  height: 11px;
+  background-color: white;
+  border-radius: 25px;
+  position: absolute;
+  top: -7px;
+  left: 45.4%;
+  -webkit-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+.roadmap .timestamp.completed span:before {
+  content: "\e64c";
+  font-family: themify;
+  color: white;
+  font-size: 0.75rem;
+  line-height: 25px;
+  background: -webkit-linear-gradient(45deg, $secondary, $ternary);
+  background: -moz-linear-gradient(45deg, $secondary, $ternary);
+  background: -o-linear-gradient(45deg, $secondary, $ternary);
+  background: linear-gradient(45deg, $secondary, $ternary);
+  border: none;
+  color: #ffffff;
+}
+.roadmap .timestamp.completed span:after {
+  content: "";
+  background-color: transparent;
+}
+.roadmap .timestamp.active span {
+  color: #ffffff;
+}
+.roadmap .timestamp.active span:before {
+  content: " ";
+  background: -webkit-linear-gradient(45deg, $primary, $ternary);
+  background: -moz-linear-gradient(45deg, $primary, $ternary);
+  background: -o-linear-gradient(45deg, $primary, $ternary);
+  background: linear-gradient(45deg, $primary, $ternary);
+  border: none;
+  -webkit-box-shadow: 0 0 10px 0 $primary;
+  box-shadow: 0 0 10px 0 $primary;
+}
+.roadmap .timestamp.active span:after {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 45.1%;
+  background: #ffffff;
+  border: 6px solid #ffffff;
+  border-radius: 50%;
+}
+
+.roadmap .status {
+  position: relative;
+  -webkit-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+.roadmap .status span {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #ffffff;
+}
+.roadmap .status.active span {
+  color: #ffffff;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .roadmap .timestamp.active span:after {
+    left: 44.6%;
+  }
+  .roadmap .timestamp span:after {
+    left: 44.6%;
+  }
+  .roadmap .next-slide {
+    right: -8px;
+  }
+  .roadmap .prev-slide {
+    left: -8px;
+  }
+  .contact .contact-info {
+    display: block;
+  }
+  .contact .contact-info li {
+    margin: 1rem 0;
+  }
+  .coin-img {
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .svg-img {
+    width: 450px !important;
+  }
+  .head-area .head-content .banner-content {
+    padding-top: 0.5rem !important;
+  }
+  .head-area .head-content h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .head-area .head-content h3 {
+    margin-top: 2rem !important;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .dark-bg-heading .sub-title,
+  .heading .sub-title {
+    font-size: 4.625rem !important;
+  }
+  .about .content-area .what-is-crypto-img img {
+    width: 450px;
+  }
+  .about .content-area .play-video {
+    left: 54%;
+  }
+  .token-img img {
+    width: 450px;
+  }
+  .mobile-app .mobile-app-imgs .mobile-app-img-1 {
+    width: 375px;
+  }
+  .mobile-app .mobile-app-imgs .mobile-app-img-2 {
+    width: 102px;
+    top: 55px;
+    left: 220px;
+  }
+  .mobile-app .mobile-app-imgs .mobile-app-img-3 {
+    width: 174px;
+    top: -13px;
+    left: 210px;
+  }
+  .mobile-app .mobile-app-imgs .mobile-app-img-4 {
+    width: 220px;
+    top: -114px;
+    left: 235px;
+  }
+  .roadmap .next-slide {
+    right: 14px;
+  }
+  .roadmap .prev-slide {
+    left: 14px;
+  }
+}
