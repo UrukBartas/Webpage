@@ -26,6 +26,14 @@
     position: absolute;
     width: 100%;
     left: 0;
-    bottom: 210px;
+    bottom: 200px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #footer {
+    .grass {
+      bottom: 300px;
+    }
   }
 }

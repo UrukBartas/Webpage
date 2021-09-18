@@ -1,5 +1,5 @@
-@import "styles/loader";
-@import "swiper/css/bundle";
+@import 'styles/loader';
+@import 'swiper/css/bundle';
 
 * {
   margin: 0;
@@ -27,4 +27,14 @@ body {
 @font-face {
   font-family: wow;
   src: url(assets/fonts/LifeCraft_Font.ttf);
+}
+
+.title-section {
+  padding-bottom: 50px;
+  font-family: 'wow';
+  font-size: 80px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 20%, rgba(0, 0, 0, 1) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 3px #000000;
 }

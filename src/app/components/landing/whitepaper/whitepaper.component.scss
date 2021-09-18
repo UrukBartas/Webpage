@@ -1,9 +1,13 @@
 #whitepaper {
-  height: 700px;
+  height: fit-content;
   width: 100%;
+  position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   .book-container {
+    width: 650px;
+    margin-right: 700px;
     position: relative;
     .pedestal {
       position: absolute;
@@ -21,12 +25,17 @@
   }
 
   .text-container {
+    width: 700px;
+    position: absolute;
+    margin-left: 700px;
+    top: 200px;
     p {
       font-size: 79px;
       font-family: wow;
       -webkit-text-stroke: 3px #1f1e055c;
       color: #d4c095;
       user-select: none;
+      text-align: center;
       .download {
         text-decoration: underline;
         text-decoration-color: #d4c095;
@@ -35,6 +44,28 @@
           color: white;
           text-decoration-color: white;
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #whitepaper {
+    .pedestal {
+      display: none;
+    }
+    .text-container {
+      width: 95vw;
+      position: unset;
+      margin: 0;
+    }
+    .book-container {
+      width: 95vw;
+      margin: 0;
+      order: 1;
+      position: unset;
+      .book {
+        width: 95vw;
       }
     }
   }

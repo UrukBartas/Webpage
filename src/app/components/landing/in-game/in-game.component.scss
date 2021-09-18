@@ -35,3 +35,21 @@
     }
   }
 }
+
+@media only screen and (max-width: 640px) {
+  #in-game {
+    .character,
+    .marketplace {
+      img {
+        width: 95vw !important;
+      }
+      .text-container-marketplace {
+        padding-bottom: 50px;
+      }
+
+      .text-container-character {
+        padding-top: 50px;
+      }
+    }
+  }
+}

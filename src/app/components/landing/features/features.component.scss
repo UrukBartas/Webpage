@@ -3,16 +3,19 @@
   position: relative;
   display: flex;
   justify-content: center;
-  .title {
+  min-width: 100%;
+  align-items: center;
+  .title-section {
     position: absolute;
     top: 0;
-    left: 0;
+    margin-right: 800px;
   }
   .chest {
     width: 300px;
     position: absolute;
-    bottom: 0;
-    margin-left: 800px;
+    margin-top: 500px;
+    z-index: 1;
+    margin-right: 200px;
   }
   .text {
     background: #0000003d;
@@ -24,13 +27,13 @@
     border-radius: 10px;
     font-family: monospace;
     font-size: 25px;
-    top: 100px;
     position: absolute;
+    margin-bottom: 500px;
   }
   .wizard {
     position: absolute;
     height: 600px;
-    padding-right: 700px;
-    bottom: 0;
+    margin-left: 200px;
+    margin-top: 300px;
   }
 }
