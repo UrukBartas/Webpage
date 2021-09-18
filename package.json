@@ -18,8 +18,11 @@
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "@metamask/detect-provider": "^1.2.0",
     "aos": "^2.3.4",
+    "assert": "^2.0.0",
     "bootstrap": "^5.1.1",
+    "ethers": "^5.4.6",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
