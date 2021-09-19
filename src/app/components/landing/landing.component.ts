@@ -1,22 +1,16 @@
-import {
-  Component,
-  ElementRef,
-  HostListener,
-  OnInit,
-  ViewChild,
-} from '@angular/core';
-import { Router } from '@angular/router';
-import * as Aos from 'aos';
-import * as $ from 'jquery';
-import { environment } from '../../../environments/environment';
-import {Location} from '@angular/common'; 
+import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core'
+import { Router } from '@angular/router'
+import * as Aos from 'aos'
+import * as $ from 'jquery'
+import { environment } from '../../../environments/environment'
+import { Location } from '@angular/common'
 @Component({
   selector: 'app-landing',
   templateUrl: './landing.component.html',
   styleUrls: ['./landing.component.scss'],
 })
 export class LandingComponent implements OnInit {
-  @HostListener('window:scroll', ['$event'])
+  /* @HostListener('window:scroll', ['$event'])
   onScroll(event: any) {
     [
       'cover',
@@ -35,34 +29,33 @@ export class LandingComponent implements OnInit {
        this.router.navigate(["#"+element.nativeElement.id])
       }
     });
-  }
-  private previousPosition: number = 0;
-  private showing = false;
-  @ViewChild('cover') cover!: ElementRef;
+  } */
+
+  /* @ViewChild('cover') cover!: ElementRef;
   @ViewChild('introduction') introduction!: ElementRef;
   @ViewChild('features') features!: ElementRef;
   @ViewChild('ingame') ingame!: ElementRef;
   @ViewChild('tokenomics') tokenomics!: ElementRef;
   @ViewChild('roadmap') roadmap!: ElementRef;
   @ViewChild('buyToken') buyToken!: ElementRef;
-  @ViewChild('whitepaper') whitepaper!: ElementRef;
-  constructor(public router: Router,private location: Location) {}
+  @ViewChild('whitepaper') whitepaper!: ElementRef; */
+  constructor(public router: Router, private location: Location) {}
 
   ngOnInit(): void {
     Aos.init({
       offset: 200,
       delay: 100,
-    });
-    let actualPath = this.router.url;
-    let splittenPath = actualPath.split('/');
-    let idPath = splittenPath.findIndex((entry) => entry[0] && entry[0] == '#');
+    })
+    /* let actualPath = this.router.url
+    let splittenPath = actualPath.split('/')
+    let idPath = splittenPath.findIndex((entry) => entry[0] && entry[0] == '#')
     if (idPath != -1) {
-      let el = document.querySelector(splittenPath[idPath]);
-      if (el) el.scrollIntoView();
-    }
+      let el = document.querySelector(splittenPath[idPath])
+      if (el) el.scrollIntoView()
+    } */
   }
 
-  public isActive(path: string): boolean {
+  /* public isActive(path: string): boolean {
     let actualPath = this.router.url;
     let splittenPath = actualPath.split('/');
     let idPath = splittenPath.findIndex((entry) => entry == path);
@@ -79,5 +72,5 @@ export class LandingComponent implements OnInit {
     // Partially visible elements return true:
     //isVisible = elemTop < window.innerHeight && elemBottom >= 0;
     return isVisible;
-  }
+  } */
 }
