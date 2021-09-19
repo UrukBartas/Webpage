@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   position: relative;
-  overflow-x: hidden;
   .body {
     max-width: 1920px;
     display: flex;
@@ -26,7 +25,7 @@
         &:first-of-type {
           padding-left: 60px;
         }
-        font-family: 'wow';
+        font-family: "wow";
         font-size: 24px;
         color: #fffffffc;
         width: fit-content;
@@ -56,4 +55,16 @@
 .hide-cartel-play {
   animation: slideOutUp;
   animation-duration: 1s;
+}
+
+#cover,
+#introduction,
+#features,
+#ingame,
+#roadmap,
+#buy-token,
+#whitepaper,
+#tokenomics,
+#footer {
+  width: 100%;
 }

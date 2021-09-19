@@ -1,24 +1,47 @@
-<div id="landing">
+<div id="landing" class="container">
   <div class="body">
     <div class="topbar">
       <img src="assets/custom/topbar.png" />
-      <div class="button">
+      <a class="button" href="#cover">
         <mat-icon class="pt-1">home</mat-icon>
-      </div>
-      <div class="button">Features</div>
-      <div class="button">In game</div>
-      <div class="button">Roadmap</div>
-      <div class="button">Tokenomics</div>
-      <div class="button">How to buy</div>
-      <div class="button">Whitepaper</div>
+      </a>
+      <a class="button" href="#introduction">Features</a>
+      <a class="button" href="#ingame">In game</a>
+      <a class="button" href="#roadmap">Roadmap</a>
+      <a class="button" href="#tokenomics">Tokenomics</a>
+      <a class="button" href="#buy-token">How to buy</a>
+      <a class="button" href="#whitepaper">Whitepaper</a>
     </div>
-    <app-cover></app-cover>
-    <app-introduction></app-introduction>
-    <app-features></app-features>
-    <app-in-game></app-in-game>
-    <app-roadmap></app-roadmap>
-    <app-buy-token></app-buy-token>
-    <app-whitepaper></app-whitepaper>
-    <app-footer></app-footer>
+    <div id="cover">
+      <app-cover></app-cover>
+    </div>
+    <div id="introduction" class="pb-5">
+      <app-introduction></app-introduction>
+    </div>
+    <div id="features" class="pb-5">
+      <app-features></app-features>
+    </div>
+    <div id="ingame" class="pb-5">
+      <app-in-game></app-in-game>
+    </div>
+
+    <div id="tokenomics" class="pb-5">
+      <app-tokenomics></app-tokenomics>
+    </div>
+
+    <div id="roadmap" class="pb-5">
+      <app-roadmap></app-roadmap>
+    </div>
+
+    <div id="buy-token" class="pb-5">
+      <app-buy-token></app-buy-token>
+    </div>
+    <div id="whitepaper" class="pb-5">
+      <app-whitepaper></app-whitepaper>
+    </div>
   </div>
+  
+</div>
+<div id="footer">
+  <app-footer></app-footer>
 </div>

@@ -7,11 +7,6 @@ import { RouteGuard } from './guards/route.guard';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/home',
-    pathMatch: 'full',
-  },
-  {
-    path: 'home',
     component: LandingComponent,
   },
   {
@@ -21,7 +16,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: '/home',
+    redirectTo: '',
     pathMatch: 'full',
   },
 ]

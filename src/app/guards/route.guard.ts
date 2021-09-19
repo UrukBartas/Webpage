@@ -22,7 +22,7 @@ export class RouteGuard implements CanActivate {
     | Promise<boolean | UrlTree>
     | boolean
     | UrlTree {
-    if (!environment.enableGame) this.router.navigate(['/home']);
+    if (!environment.enableGame) this.router.navigate(['']);
     return environment.enableGame;
   }
 }

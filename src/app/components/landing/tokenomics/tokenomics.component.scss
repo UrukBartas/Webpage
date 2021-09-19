@@ -1,0 +1,24 @@
+@import "../../../../styles/variables.scss";
+
+.mat-expansion-panel{
+    background-color: $ternary;
+}
+
+.tokenomics-chart-container {
+  height: 600px;
+}
+
+.mat-expansion-panel-header-description {
+  justify-content: end;
+}
+.mat-expansion-panel-header-title {
+  align-items: center;
+}
+.max-icon {
+  max-width: 32px;
+  margin-right: 10px;
+}
+
+.mat-content {
+  align-items: center;
+}

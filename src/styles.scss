@@ -58,6 +58,10 @@ $uruk-bartas-theme: mat.define-light-theme(
   src: url(assets/fonts/LifeCraft_Font.ttf);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 app-roadmap {
   width: 100vw;
   .swiper {
