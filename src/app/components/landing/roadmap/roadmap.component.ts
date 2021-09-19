@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import SwiperCore, { SwiperOptions } from 'swiper';
 import { environment } from '../../../../environments/environment';
+import { BSbreakpoints } from '../../../const/bootstrap-breakpoints-px.const';
 import { Slide } from '../../../models/slide.model';
 @Component({
   selector: 'app-roadmap',
@@ -13,6 +14,18 @@ export class RoadmapComponent implements OnInit {
     navigation: true,
     pagination: { clickable: true, bulletClass: 'd-none' },
     scrollbar: { draggable: true, hide: true },
+    breakpoints: {
+      [BSbreakpoints.XL]: {
+        slidesPerView: 5,
+      },
+      [BSbreakpoints.LG]: {
+        slidesPerView: 3,
+      },
+
+      [BSbreakpoints.SM]: {
+        slidesPerView: 3,
+      },
+    },
   };
   public slides: Array<Slide> = [
     {
