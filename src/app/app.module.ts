@@ -52,6 +52,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
       echarts: () => import('echarts'),
     }),
   ],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
