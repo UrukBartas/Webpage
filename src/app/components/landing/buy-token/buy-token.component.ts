@@ -22,8 +22,8 @@ export class BuyTokenComponent {
     spaceBetween: 50,
     centeredSlides: true,
     navigation: true,
-    pagination: true,
-    initialSlide: 1,
+    pagination: false,
+    initialSlide: 0,
     coverflowEffect: {
       rotate: 50,
       stretch: 0,
@@ -36,6 +36,5 @@ export class BuyTokenComponent {
   constructor() {}
 
   onSwiper(swiper: any) {
-    console.log(swiper)
   }
 }

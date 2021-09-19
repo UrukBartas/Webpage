@@ -86,9 +86,7 @@ export class RoadmapComponent implements OnInit {
   ngOnInit(): void {}
 
   onSwiper(swipe: any) {
-    console.log(swipe);
   }
   onSlideChange() {
-    console.log('slide change');
   }
 }

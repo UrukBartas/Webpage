@@ -62,6 +62,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.blurredImage {
+  filter: blur(10px) grayscale(1);
+}
+
 app-roadmap {
   width: 100vw;
   .swiper {

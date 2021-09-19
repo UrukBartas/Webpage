@@ -8,7 +8,5 @@ import { Component, OnInit } from '@angular/core'
 export class WhitepaperComponent {
   constructor() {}
 
-  public download() {
-    console.log('download')
-  }
+ 
 }

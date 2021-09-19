@@ -37,12 +37,15 @@
       user-select: none;
       text-align: center;
       .download {
-        text-decoration: underline;
-        text-decoration-color: #d4c095;
-        cursor: pointer;
-        &:hover {
-          color: white;
-          text-decoration-color: white;
+        a {
+          color: unset;
+          text-decoration: underline;
+          text-decoration-color: #d4c095;
+          cursor: pointer;
+          &:hover {
+            color: white;
+            text-decoration-color: white;
+          }
         }
       }
     }

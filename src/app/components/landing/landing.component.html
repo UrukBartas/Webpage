@@ -1,16 +1,50 @@
 <div id="landing" class="container">
   <div class="body">
-    <div class="topbar">
+    <div class="topbar justify-content-center">
       <img src="assets/custom/topbar.png" />
-      <a class="button" href="#cover">
+      <a
+        class="button"
+        href="#cover"
+        [ngClass]="{ active: isActive('#cover') }"
+      >
         <mat-icon class="pt-1">home</mat-icon>
       </a>
-      <a class="button" href="#introduction">Features</a>
-      <a class="button" href="#ingame">In game</a>
-      <a class="button" href="#roadmap">Roadmap</a>
-      <a class="button" href="#tokenomics">Tokenomics</a>
-      <a class="button" href="#buy-token">How to buy</a>
-      <a class="button" href="#whitepaper">Whitepaper</a>
+      <a
+        class="button"
+        href="#introduction"
+        [ngClass]="{ active: isActive('#introduction') }"
+        >Features</a
+      >
+      <a
+        class="button"
+        href="#ingame"
+        [ngClass]="{ active: isActive('#ingame') }"
+        >In game</a
+      >
+      <a
+        class="button"
+        href="#roadmap"
+        [ngClass]="{ active: isActive('#roadmap') }"
+        >Roadmap</a
+      >
+      <a
+        class="button"
+        href="#tokenomics"
+        [ngClass]="{ active: isActive('#tokenomics') }"
+        >Tokenomics</a
+      >
+      <a
+        class="button"
+        href="#buy-token"
+        [ngClass]="{ active: isActive('#buy-token') }"
+        >How to buy</a
+      >
+      <a
+        class="button"
+        href="#whitepaper"
+        [ngClass]="{ active: isActive('#whitepaper') }"
+        >Whitepaper</a
+      >
     </div>
     <div id="cover">
       <app-cover></app-cover>
@@ -40,7 +74,6 @@
       <app-whitepaper></app-whitepaper>
     </div>
   </div>
-  
 </div>
 <div id="footer">
   <app-footer></app-footer>

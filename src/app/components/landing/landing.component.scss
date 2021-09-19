@@ -34,11 +34,15 @@
         text-shadow: 0 2px 4px rgb(0 0 0 / 78%);
         user-select: none;
         cursor: pointer;
+
         &:hover {
           color: #e7ad46;
           animation: heartBeat;
           animation-duration: 4s;
         }
+      }
+      .button.active {
+        color: #e7ad46 !important;
       }
     }
 

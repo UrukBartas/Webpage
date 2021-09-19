@@ -28,4 +28,11 @@ export class LandingComponent implements OnInit {
       if (el) el.scrollIntoView();
     }
   }
+
+  public isActive(path: string): boolean {
+    let actualPath = this.router.url;
+    let splittenPath = actualPath.split('/');
+    let idPath = splittenPath.findIndex((entry) => entry == path);
+    return idPath != -1;
+  }
 }
