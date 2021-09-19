@@ -20,10 +20,12 @@
     z-index: -1;
     padding-bottom: 200px;
     &.axe-2 {
+      transform: skewX(20deg);
       padding-right: 150px;
       animation: move-axe-1 1s ease-in-out, shakeY 10s 1s infinite;
     }
     &.axe-1 {
+      transform: skewX(20deg);
       padding-left: 150px;
       animation: move-axe-2 1s ease-in-out, shakeY 10s 1s infinite;
     }
@@ -101,19 +103,25 @@
 
 @keyframes move-axe-1 {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(0deg) skewX(0deg);
+  }
+  50% {
+    transform: skewX(40deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: skewX(0deg) rotate(360deg);
   }
 }
 
 @keyframes move-axe-2 {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(0deg) skewX(0deg);
+  }
+  50% {
+    transform: skewX(-40deg);
   }
   100% {
-    transform: rotate(-360deg);
+    transform: skewX(0deg) rotate(-360deg);
   }
 }
 
