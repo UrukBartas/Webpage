@@ -1,0 +1,47 @@
+#features {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+  align-items: center;
+  .coin {
+    width: 200px;
+    position: absolute;
+    margin-top: 100px;
+    z-index: 1;
+    margin-right: 400px;
+    animation: flip 2s ease-out infinite;
+  }
+  .text {
+    background: #0000003d;
+    color: white;
+    max-width: 90vw;
+    width: 1000px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: 25px;
+    position: absolute;
+    margin-bottom: 500px;
+    &:before {
+      content: '';
+      width: 0px;
+      height: 0px;
+      position: absolute;
+      border-left: 15px solid #0000003d;
+      border-right: 15px solid transparent;
+      border-top: 20px solid #0000003d;
+      border-bottom: 20px solid transparent;
+      right: 300px;
+      bottom: -40px;
+    }
+  }
+  .wizard {
+    position: absolute;
+    height: 600px;
+    margin-left: 200px;
+    margin-top: 300px;
+  }
+}
