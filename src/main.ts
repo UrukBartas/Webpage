@@ -12,4 +12,4 @@ setTimeout(() => {
   platformBrowserDynamic()
     .bootstrapModule(AppModule)
     .catch((err) => console.error(err))
-}, 500)
+}, 2000)
