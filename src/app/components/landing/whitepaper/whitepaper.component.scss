@@ -1,37 +1,46 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints";
+
 #whitepaper {
   height: fit-content;
   width: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  min-height: 650px;
+  margin-bottom: 0;
+  @include media-breakpoint-up(xl) {
+    margin-bottom: -325px;
+  }
   .book-container {
-    width: 650px;
-    margin-right: 700px;
     position: relative;
     .pedestal {
-      position: absolute;
-      left: 0;
       top: 55px;
       max-width: 800px;
     }
     .book {
-      position: relative;
+      position: absolute;
+      right: -60px;
+
+      @include media-breakpoint-between(xl, xxl) {
+        right: -155px;
+      }
+      @include media-breakpoint-between(lg, xl) {
+        right: 220px;
+      }
+      @include media-breakpoint-between(md, lg) {
+        right: -20px;
+      }
+
+      top: -30px;
       animation: shakeY;
       animation-duration: 10s;
       animation-iteration-count: infinite;
       z-index: 1;
-      padding-left: 80px;
     }
   }
 
   .text-container {
-    width: 700px;
-    position: absolute;
-    margin-left: 700px;
-    top: 200px;
     p {
-      font-size: 79px;
+      font-size: 45px;
       font-family: wow;
       -webkit-text-stroke: 3px #1f1e055c;
       color: #d4c095;
