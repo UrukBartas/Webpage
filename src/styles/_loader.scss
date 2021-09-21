@@ -4,7 +4,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(circle, #00000082 8%, rgba(0, 125, 193, 0) 60%);
+  background-image: url('/assets/wallpaper/dungeon.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  z-index: -1000;
+
   .clouds {
     position: fixed;
     width: 100%;
@@ -22,7 +30,7 @@
       width: 350px;
       height: 350px;
       border-radius: 50%;
-      background: linear-gradient(#a7a7a7, #d1750c, #a7a7a7);
+      background: linear-gradient(#000000, #930cd1, #000000);
       animation: animate 0.4s linear infinite;
 
       span {
@@ -30,7 +38,7 @@
         width: 100%;
         height: 100%;
         border-radius: 50%;
-        background: linear-gradient(#a7a7a7, #d1750c, #a7a7a7);
+        background: linear-gradient(#000000, #930cd1, #cf7d1e);
 
         &:nth-child(1) {
           filter: blur(5px);

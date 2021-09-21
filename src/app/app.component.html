@@ -1,7 +1,4 @@
 <div>
-  <div class="background" [ngClass]="{ isInGame: isGameRoute() }">
-    <img src="assets/custom/clouds.png" alt="" />
-  </div>
   <app-unity-webapp-bridge *ngIf="enableGameEnv"></app-unity-webapp-bridge>
   <router-outlet></router-outlet>
 </div>

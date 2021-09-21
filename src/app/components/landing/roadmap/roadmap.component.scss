@@ -4,7 +4,11 @@
     color: white;
   }
   width: 100vw;
+  width: 100vw;
   .swiper {
+    width: 600px;
+    max-height: 1200px;
+    overflow: visible;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     padding: 45px 0px;
@@ -18,9 +22,8 @@
       color: crimson !important;
     }
     .swiper-slide {
-      border-top: 4px solid crimson;
-      .swiper-slide {
-        border-top: 1px solid transparent;
+      border-left: 4px solid crimson;
+      div.active {
       }
     }
   }
@@ -45,8 +48,8 @@
 
 .slideImage {
   max-height: 150px;
-    position: absolute;
-    right: -70%;
-    top: 60px;
-    padding: 10px;
+  position: absolute;
+  right: -70%;
+  top: 60px;
+  padding: 10px;
 }
