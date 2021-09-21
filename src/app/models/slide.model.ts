@@ -3,4 +3,5 @@ export interface Slide {
   isCompleted: boolean;
   isActive: boolean;
   list: Array<string>;
+  image:string;
 }

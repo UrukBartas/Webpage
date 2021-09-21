@@ -28,6 +28,7 @@
     "bootstrap": "^5.1.1",
     "echarts": "^5.2.0",
     "ethers": "^5.4.6",
+    "file-saver": "^2.0.5",
     "font-awesome": "^4.7.0",
     "jquery": "^3.6.0",
     "ngx-echarts": "^7.0.2",

@@ -14,34 +14,31 @@
 .roadmap .swiper-slide {
   text-align: center;
   font-size: 18px;
-  width: 200px;
-  border-top: 4px solid #24a8f2;
+  width: 280px;
+  padding-left: 40px;
 }
 .roadmap .swiper-slide .roadmap-info {
   margin-top: 47px;
 }
-.roadmap .swiper-slide.active .roadmap-info {
-  background: -webkit-linear-gradient(
-    45deg,
-    $ternary,
-    darken($ternary, 10%)
-  );
+.roadmap .active .roadmap-info {
+  background: -webkit-linear-gradient(45deg, $ternary, darken($ternary, 10%));
   background: -moz-linear-gradient(45deg, $ternary, darken($ternary, 10%));
   background: -o-linear-gradient(45deg, $ternary, darken($ternary, 10%));
   background: linear-gradient(45deg, $ternary, darken($ternary, 10%));
-  margin-top: 32px;
+  margin-top: -23px;
   padding: 15px 0 0;
   color: white;
   border-radius: 6px;
   -webkit-box-shadow: 0 10px 30px 0 rgba(62, 57, 107, 0.3);
   box-shadow: 0 10px 30px 0 rgba(62, 57, 107, 0.3);
 }
-.roadmap .swiper-slide.active .roadmap-info:after {
+.roadmap .active .roadmap-info:after {
   content: "";
   display: block;
   position: absolute;
-  top: 12px;
-  left: 44%;
+  top: 50%;
+  left: 8%;
+  transform: rotate(270deg);
   bottom: 100%;
   width: 0;
   height: 0;
@@ -50,7 +47,7 @@
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
 }
-.roadmap .swiper-slide.active .live {
+.roadmap .active .live {
   display: block;
   background: -webkit-linear-gradient(45deg, $primary, darken($primary, 10%));
   background: -moz-linear-gradient(45deg, $primary, darken($primary, 10%));
@@ -160,8 +157,8 @@
   background: linear-gradient(45deg, $secondary, $ternary);
   border: none;
   position: absolute;
-  top: -14px;
-  left: 42%;
+  top: 50%;
+  left: -6%;
   -webkit-transition: all 200ms ease-in;
   -o-transition: all 200ms ease-in;
   -moz-transition: all 200ms ease-in;
@@ -174,8 +171,9 @@
   background-color: white;
   border-radius: 25px;
   position: absolute;
-  top: -7px;
-  left: 45.4%;
+  top: 54%;
+  left: -3%;
+  z-index: 1;
   -webkit-transition: all 200ms ease-in;
   -o-transition: all 200ms ease-in;
   -moz-transition: all 200ms ease-in;
@@ -214,8 +212,8 @@
 .roadmap .timestamp.active span:after {
   content: "";
   position: absolute;
-  top: -8px;
-  left: 45.1%;
+  top: 54%;
+  left: -3.7%;
   background: #ffffff;
   border: 6px solid #ffffff;
   border-radius: 50%;

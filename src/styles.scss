@@ -1,6 +1,6 @@
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@use '~@angular/material' as mat;
+@use "~@angular/material" as mat;
 @import "../src/styles/palettes/primary.palette.scss";
 @import "../src/styles/palettes/secondary.palette.scss";
 @import "../src/styles/palettes/ternary.palette.scss";
@@ -69,6 +69,9 @@ html {
 app-roadmap {
   width: 100vw;
   .swiper {
+    width: 600px;
+    max-height: 1200px;
+    overflow: visible;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     padding: 45px 0px;
@@ -82,9 +85,8 @@ app-roadmap {
       color: $primary !important;
     }
     .swiper-slide {
-      border-top: 4px solid $primary;
-      .swiper-slide {
-        border-top: 1px solid transparent;
+      border-left: 4px solid $primary;
+      div.active {
       }
     }
   }
@@ -122,8 +124,14 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+.text-container {
+  position: relative;
+}
+
 .title-section {
   padding-bottom: 50px;
+  position: relative;
+  z-index: 5;
   font-family: "wow";
   font-size: 80px;
   background: linear-gradient(

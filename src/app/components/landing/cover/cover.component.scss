@@ -1,3 +1,5 @@
+@import "../../../../styles/variables.scss";
+
 #cover {
   width: 100%;
   min-height: 100vh;
@@ -9,6 +11,7 @@
   .orc {
     position: absolute;
     padding-bottom: 100px;
+    z-index: 1;
   }
   .text {
     position: absolute;
@@ -17,7 +20,7 @@
 
   .axe {
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     padding-bottom: 200px;
     &.axe-2 {
       transform: skewX(20deg);
@@ -50,7 +53,7 @@
       }
       &:before,
       &:after {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         height: 100%;
@@ -70,15 +73,15 @@
     }
     .chevron-1::after,
     .chevron-1::before {
-      background: rgba(30, 30, 30, 0.8);
+      background: $primary;
     }
     .chevron-2::after,
     .chevron-2::before {
-      background: rgba(40, 40, 40, 0.8);
+      background: $primary;
     }
     .chevron-3::after,
     .chevron-3::before {
-      background: rgba(50, 50, 50, 0.8);
+      background: $primary;
     }
   }
 }
