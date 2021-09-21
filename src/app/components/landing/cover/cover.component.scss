@@ -34,6 +34,7 @@
   .scroll-down {
     position: absolute;
     bottom: 150px;
+    padding-right: 60px;
 
     .chevron {
       position: absolute;
@@ -129,6 +130,12 @@
   #cover {
     .text {
       display: none;
+    }
+    .orc {
+      width: 70vw;
+    }
+    .axe {
+      width: 90vw;
     }
   }
 }

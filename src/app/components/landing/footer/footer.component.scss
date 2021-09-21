@@ -1,4 +1,4 @@
-@import "../../../../styles/variables.scss";
+@import '../../../../styles/variables.scss';
 
 #footer {
   p {
@@ -9,7 +9,7 @@
   width: 100%;
   margin-top: 150px;
   .wrapper {
-    background-image: url("/assets/custom/footer.png");
+    background-image: url('/assets/custom/footer.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -31,7 +31,7 @@
     position: absolute;
     width: 100%;
     top: 100px;
-    padding:5px ​50px;
+    padding: 5px ​50px;
     overflow: hidden;
   }
 
@@ -102,10 +102,31 @@
   }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 1000px) {
   #footer {
     .grass {
       bottom: 300px;
+    }
+
+    .logo {
+      position: absolute;
+      display: flex;
+      width: 100%;
+      img {
+        margin: auto;
+        opacity: 0.4;
+        z-index: -1;
+      }
+    }
+
+    .item.social {
+      display: flex;
+      padding-top: 0 !important;
+      margin-top: 0 !important;
+    }
+
+    .item.text {
+      //display: none;
     }
   }
 }

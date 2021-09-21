@@ -3,10 +3,42 @@
   .status {
     color: white;
   }
+  width: 100vw;
+  .swiper {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 45px 0px;
+    .swiper-wrapper {
+      padding: 0px 50px;
+    }
+    .swiper-button-prev {
+      color: crimson !important;
+    }
+    .swiper-button-next {
+      color: crimson !important;
+    }
+    .swiper-slide {
+      border-top: 4px solid crimson;
+      .swiper-slide {
+        border-top: 1px solid transparent;
+      }
+    }
+  }
+
+  .big-button {
+    padding: 15px 0px;
+    border-radius: 10px;
+    font-size: 30px;
+  }
 }
 
-.big-button {
-  padding: 15px 0px;
-  border-radius: 10px;
-  font-size: 30px;
+@media only screen and (max-width: 640px) {
+  #roadmap {
+    .swiper {
+      overflow-x: scroll;
+      .swiper-slide {
+        width: 200px !important;
+      }
+    }
+  }
 }

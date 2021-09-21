@@ -1,9 +1,9 @@
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @use '~@angular/material' as mat;
-@import "../src/styles/palettes/primary.palette.scss";
-@import "../src/styles/palettes/secondary.palette.scss";
-@import "../src/styles/palettes/ternary.palette.scss";
+@import '../src/styles/palettes/primary.palette.scss';
+@import '../src/styles/palettes/secondary.palette.scss';
+@import '../src/styles/palettes/ternary.palette.scss';
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -37,18 +37,16 @@ $uruk-bartas-theme: mat.define-light-theme(
 // that you are using.
 @include mat.all-component-themes($uruk-bartas-theme);
 
-@import "styles/loader";
-@import "swiper/css/bundle";
-@import "styles/roadmap-vendor-styles.scss";
-@import "styles/variables.scss";
+@import 'styles/loader';
+@import 'swiper/css/bundle';
+@import 'styles/roadmap-vendor-styles.scss';
+@import 'styles/variables.scss';
 @font-face {
   font-family: themify;
   src: url(assets/fonts/themify9f24.eot?-fvbane);
-  src: url(assets/fonts/themifyd41d.eot?#iefix-fvbane)
-      format("embedded-opentype"),
-    url(assets/fonts/themify9f24.woff?-fvbane) format("woff"),
-    url(assets/fonts/themify9f24.ttf?-fvbane) format("truetype"),
-    url(assets/fonts/themify9f24.svg?-fvbane#themify) format("svg");
+  src: url(assets/fonts/themifyd41d.eot?#iefix-fvbane) format('embedded-opentype'),
+    url(assets/fonts/themify9f24.woff?-fvbane) format('woff'), url(assets/fonts/themify9f24.ttf?-fvbane) format('truetype'),
+    url(assets/fonts/themify9f24.svg?-fvbane#themify) format('svg');
   font-weight: 400;
   font-style: normal;
 }
@@ -64,30 +62,6 @@ html {
 
 .blurredImage {
   filter: blur(10px) grayscale(1);
-}
-
-app-roadmap {
-  width: 100vw;
-  .swiper {
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    padding: 45px 0px;
-    .swiper-wrapper {
-      padding: 0px 50px;
-    }
-    .swiper-button-prev {
-      color: $primary !important;
-    }
-    .swiper-button-next {
-      color: $primary !important;
-    }
-    .swiper-slide {
-      border-top: 4px solid $primary;
-      .swiper-slide {
-        border-top: 1px solid transparent;
-      }
-    }
-  }
 }
 
 * {
@@ -119,18 +93,14 @@ body {
 }
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
 }
 
 .title-section {
   padding-bottom: 50px;
-  font-family: "wow";
+  font-family: 'wow';
   font-size: 80px;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 20%,
-    rgba(0, 0, 0, 1) 80%
-  );
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 20%, rgba(0, 0, 0, 1) 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 3px #000000;

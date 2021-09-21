@@ -42,9 +42,9 @@
               "node_modules/font-awesome/css/font-awesome.css"
             ],
             "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "node_modules/aos/dist/aos.js",
-              "node_modules/jquery/dist/jquery.min.js",
               "src/assets/uruk-game/Build/Build-Uruk.loader.js"
             ]
           },

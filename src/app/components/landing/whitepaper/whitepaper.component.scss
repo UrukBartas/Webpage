@@ -1,6 +1,6 @@
-@import "node_modules/bootstrap/scss/functions";
-@import "node_modules/bootstrap/scss/variables";
-@import "node_modules/bootstrap/scss/mixins/_breakpoints";
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints';
 
 #whitepaper {
   height: fit-content;
@@ -18,7 +18,8 @@
     }
     .book {
       position: absolute;
-      right: -60px;
+      right: 0;
+      width: 500px;
 
       @include media-breakpoint-between(xl, xxl) {
         right: -155px;
@@ -40,7 +41,7 @@
 
   .text-container {
     p {
-      font-size: 45px;
+      font-size: 60px;
       font-family: wow;
       -webkit-text-stroke: 3px #1f1e055c;
       color: #d4c095;
@@ -62,23 +63,28 @@
   }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 1250px) {
   #whitepaper {
-    .pedestal {
-      display: none;
-    }
     .text-container {
       width: 95vw;
       position: unset;
       margin: 0;
     }
     .book-container {
-      width: 95vw;
-      margin: 0;
+      position: relative;
       order: 1;
-      position: unset;
+      bottom: -100px;
       .book {
-        width: 95vw;
+        width: 400px;
+        position: initial;
+      }
+      .pedestal {
+        top: 55px;
+        max-width: 800px;
+        position: absolute;
+        z-index: -1;
+        width: 560px;
+        left: -65px;
       }
     }
   }

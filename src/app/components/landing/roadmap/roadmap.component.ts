@@ -1,12 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import SwiperCore, { SwiperOptions } from 'swiper';
-import { environment } from '../../../../environments/environment';
-import { BSbreakpoints } from '../../../const/bootstrap-breakpoints-px.const';
-import { Slide } from '../../../models/slide.model';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core'
+import SwiperCore, { SwiperOptions } from 'swiper'
+import { environment } from '../../../../environments/environment'
+import { BSbreakpoints } from '../../../const/bootstrap-breakpoints-px.const'
+import { Slide } from '../../../models/slide.model'
 @Component({
   selector: 'app-roadmap',
   templateUrl: './roadmap.component.html',
   styleUrls: ['./roadmap.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class RoadmapComponent implements OnInit {
   public config: SwiperOptions = {
@@ -26,7 +27,7 @@ export class RoadmapComponent implements OnInit {
         slidesPerView: 3,
       },
     },
-  };
+  }
   public slides: Array<Slide> = [
     {
       date: 'Q4-2021',
@@ -44,32 +45,19 @@ export class RoadmapComponent implements OnInit {
       date: 'Q1-2022',
       isCompleted: false,
       isActive: false,
-      list: [
-        'Work on improving the product',
-        'Contacting to designers & influencers',
-        'More in-game features',
-        "Bigger CEX's listings",
-      ],
+      list: ['Work on improving the product', 'Contacting to designers & influencers', 'More in-game features', "Bigger CEX's listings"],
     },
     {
       date: 'Q2-2022',
       isCompleted: false,
       isActive: false,
-      list: [
-        'Add more ingame items',
-        'Add mounts to travel faster on quests',
-        'Add dungeons',
-      ],
+      list: ['Add more ingame items', 'Add mounts to travel faster on quests', 'Add dungeons'],
     },
     {
       date: 'Q3-2022',
       isCompleted: false,
       isActive: false,
-      list: [
-        'Get doxxed',
-        'Add NPC vendors',
-        'Game stability & overall improving of UX/UI',
-      ],
+      list: ['Get doxxed', 'Add NPC vendors', 'Game stability & overall improving of UX/UI'],
     },
     {
       date: 'Q4-2022',
@@ -77,16 +65,14 @@ export class RoadmapComponent implements OnInit {
       isActive: false,
       list: ['Build Uruk Bartas MMORPG with its own universe.'],
     },
-  ];
-  public urlEnvRoadmap = '';
+  ]
+  public urlEnvRoadmap = ''
   constructor() {
-    this.urlEnvRoadmap = environment.urlRoadmap;
+    this.urlEnvRoadmap = environment.urlRoadmap
   }
 
   ngOnInit(): void {}
 
-  onSwiper(swipe: any) {
-  }
-  onSlideChange() {
-  }
+  onSwiper(swipe: any) {}
+  onSlideChange() {}
 }

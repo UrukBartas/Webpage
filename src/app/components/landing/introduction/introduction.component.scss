@@ -45,3 +45,20 @@
     margin-top: 300px;
   }
 }
+
+@media only screen and (max-width: 640px) {
+  #features {
+    .wizard {
+      height: 400px;
+      margin-left: 0;
+    }
+    .coin {
+      width: 100px;
+      margin-top: 300px;
+      margin-right: 300px;
+    }
+    .text::before {
+      right: 150px;
+    }
+  }
+}

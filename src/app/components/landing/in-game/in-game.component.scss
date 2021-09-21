@@ -2,6 +2,7 @@
   margin-top: 100px;
   width: 100%;
   min-height: 100vh;
+  overflow: hidden;
 
   .character,
   .marketplace {
@@ -11,6 +12,7 @@
       img {
         margin-top: -20px;
         width: 450px;
+        height: auto;
       }
     }
     .text-container-character {
@@ -18,6 +20,7 @@
       justify-content: center;
       img {
         width: 450px;
+        height: auto;
       }
     }
 
@@ -31,24 +34,37 @@
       img {
         width: 720px;
         max-width: 95vw;
+        height: auto;
       }
     }
   }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 1000px) {
   #in-game {
     .character,
     .marketplace {
-      img {
-        width: 95vw !important;
-      }
       .text-container-marketplace {
-        padding-bottom: 50px;
+        padding-top: 50px;
       }
 
       .text-container-character {
         padding-top: 50px;
+      }
+
+      .text {
+        width: 400px !important;
+      }
+    }
+
+    .marketplace {
+      display: flex;
+      flex-direction: column;
+      .text-container-marketplace {
+        order: 2;
+      }
+      .image-container {
+        order: 1;
       }
     }
   }

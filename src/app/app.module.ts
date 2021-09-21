@@ -22,6 +22,7 @@ import { PinchZoomModule } from 'ngx-pinch-zoom';
 import { TokenomicsComponent } from './components/landing/tokenomics/tokenomics.component';
 import { NgxEchartsModule } from 'ngx-echarts';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MobileMenuComponent } from './components/landing/mobile-menu/mobile-menu.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +39,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
     FeaturesComponent,
     IntroductionComponent,
     TokenomicsComponent,
+    MobileMenuComponent,
   ],
   imports: [
     BrowserModule,

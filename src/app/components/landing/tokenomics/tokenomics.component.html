@@ -1,36 +1,16 @@
-<div
-  class="tokenomics section-padding w-100"
-  data-aos="fade-down"
-  data-aos-duration="500"
->
+<div class="tokenomics section-padding w-100" data-aos="fade-down" data-aos-duration="500">
   <div class="w-100">
     <h1 class="title-section" style="padding-bottom: 50px">Tokenomics</h1>
-    <div
-      class="row animated"
-      data-animation="fadeInUpShorter"
-      data-animation-delay="0.6s"
-    >
-      <div class="col-6">
-        <div
-          class="tokenomics-chart-container"
-          echarts
-          [options]="chartOption"
-          (chartClick)="chartClick($event)"
-        ></div>
+    <div class="row animated" data-animation="fadeInUpShorter" data-animation-delay="0.6s">
+      <div class="col-12 col-xl-6">
+        <div class="tokenomics-chart-container" echarts [options]="chartOption" (chartClick)="chartClick($event)"></div>
       </div>
-      <div class="col-6">
+      <div class="col-12 col-xl-6">
         <mat-accordion>
-          <mat-expansion-panel
-            *ngFor="let expansionListItem of expansionListItems"
-            [expanded]="selectedPie == expansionListItem.id"
-          >
+          <mat-expansion-panel *ngFor="let expansionListItem of expansionListItems" [expanded]="selectedPie == expansionListItem.id">
             <mat-expansion-panel-header>
               <mat-panel-title>
-                <img
-                  class="max-icon mr-3"
-                  src="assets/ingame/{{ expansionListItem.icon }}.png"
-                  alt="{{ expansionListItem.icon }}"
-                />
+                <img class="max-icon mr-3" src="assets/ingame/{{ expansionListItem.icon }}.png" alt="{{ expansionListItem.icon }}" />
                 {{ expansionListItem.mainLabel }}
               </mat-panel-title>
               <mat-panel-description>
