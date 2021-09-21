@@ -70,7 +70,7 @@ html {
 }
 
 body {
-  background: #8d6f51 !important;
+  background: black !important;
 }
 
 ::-webkit-scrollbar {
@@ -79,12 +79,12 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #ffffff00 !important;
+  background: #9191914f !important;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ae9d83 !important;
+  background: #5e5e5e !important;
 }
 
 html,
@@ -94,6 +94,10 @@ body {
 body {
   margin: 0;
   font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+.text-container {
+  position: relative;
 }
 
 .title-section {

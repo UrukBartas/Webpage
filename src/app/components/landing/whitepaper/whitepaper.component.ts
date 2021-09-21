@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, OnInit } from '@angular/core';
+import { UtilsService } from '../../../services/utils.service';
 
 @Component({
   selector: 'app-whitepaper',
@@ -6,7 +7,11 @@ import { Component, OnInit } from '@angular/core'
   styleUrls: ['./whitepaper.component.scss'],
 })
 export class WhitepaperComponent {
-  constructor() {}
+  constructor(private utils: UtilsService) {}
 
- 
+  ngOnInit(): void {}
+
+  public downloadWhitepaper(): void {
+    this.utils.downloadWhitepaper();
+  }
 }

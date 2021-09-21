@@ -12,27 +12,17 @@ import { Slide } from '../../../models/slide.model'
 export class RoadmapComponent implements OnInit {
   public config: SwiperOptions = {
     slidesPerView: 5,
+    direction: 'vertical',
     navigation: true,
     pagination: { clickable: true, bulletClass: 'd-none' },
     scrollbar: { draggable: true, hide: true },
-    breakpoints: {
-      [BSbreakpoints.XL]: {
-        slidesPerView: 5,
-      },
-      [BSbreakpoints.LG]: {
-        slidesPerView: 3,
-      },
-
-      [BSbreakpoints.SM]: {
-        slidesPerView: 3,
-      },
-    },
   }
   public slides: Array<Slide> = [
     {
       date: 'Q4-2021',
       isCompleted: false,
       isActive: true,
+      image: 'ActionLoot_12',
       list: [
         'Foundation of the team',
         'Blueprint of the idea & project',
@@ -45,24 +35,28 @@ export class RoadmapComponent implements OnInit {
       date: 'Q1-2022',
       isCompleted: false,
       isActive: false,
+      image: 'ActionLoot_32',
       list: ['Work on improving the product', 'Contacting to designers & influencers', 'More in-game features', "Bigger CEX's listings"],
     },
     {
       date: 'Q2-2022',
       isCompleted: false,
       isActive: false,
+      image: 'ActionLoot_106',
       list: ['Add more ingame items', 'Add mounts to travel faster on quests', 'Add dungeons'],
     },
     {
       date: 'Q3-2022',
       isCompleted: false,
       isActive: false,
+      image: 'ActionLoot_03',
       list: ['Get doxxed', 'Add NPC vendors', 'Game stability & overall improving of UX/UI'],
     },
     {
       date: 'Q4-2022',
       isCompleted: false,
       isActive: false,
+      image: 'ActionLoot_96',
       list: ['Build Uruk Bartas MMORPG with its own universe.'],
     },
   ]
