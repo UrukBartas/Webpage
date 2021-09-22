@@ -16,26 +16,35 @@
   }
   .navbar-collapse {
     text-align: center;
+    background: #0000006b;
     .nav-item {
-      background: #0000006b;
-      border-bottom: 1px solid #00000014;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      .nav-icon {
+        font-size: 30px;
+        position: absolute;
+        padding-right: 200px;
+      }
+      .nav-link {
+        cursor: pointer;
+        font-family: "monospace";
+        font-size: 18px;
+        color: white !important;
+        z-index: 1;
+        width: 100%;
+        &:hover {
+          background: #a7a7a750;
+        }
+      }
       &:last-child {
         border-bottom: 0px;
-      }
-    }
-    .nav-link {
-      cursor: pointer;
-      font-family: 'wow';
-      font-size: 26px;
-      color: white !important;
-      &:hover {
-        background: #a7a7a794;
       }
     }
   }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 900px) {
   #mobile-menu {
     display: block !important;
   }

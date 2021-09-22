@@ -142,3 +142,11 @@
     }
   }
 }
+
+@media only screen and (max-width: 1000px) {
+  #cover {
+    .text {
+      width: 85vw;
+    }
+  }
+}

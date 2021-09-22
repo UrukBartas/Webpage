@@ -1,4 +1,4 @@
-@import '../../../../styles/variables.scss';
+@import "../../../../styles/variables.scss";
 
 #footer {
   p {
@@ -9,15 +9,12 @@
   width: 100%;
   margin-top: 150px;
   .wrapper {
-    background-image: url('/assets/custom/footer.png');
+    background-image: url("/assets/custom/footer.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     position: relative;
-    //left: 0;
     height: 100%;
-    //bottom: 0;
-    z-index: 1;
   }
 
   .grass {
@@ -25,6 +22,7 @@
     width: 100%;
     left: 0;
     bottom: 250px;
+    z-index: -1;
   }
 
   .content-container {
@@ -113,6 +111,7 @@
       position: absolute;
       display: flex;
       width: 100%;
+      z-index: 1;
       img {
         margin: auto;
         opacity: 0.4;

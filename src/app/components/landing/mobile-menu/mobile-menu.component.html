@@ -1,28 +1,41 @@
-<nav id="mobile-menu" class="navbar shadow-sm navbar-expand-lg navbar-light bg-light">
+<nav
+  id="mobile-menu"
+  class="navbar shadow-sm navbar-expand-lg navbar-light bg-light"
+>
   <img class="logo" src="assets/custom/cover-text.png" />
 
-  <button class="navbar-toggler" type="button" (click)="menu.style.display = !show ? 'block' : 'none'; show = !show">
+  <button
+    class="navbar-toggler"
+    type="button"
+    (click)="menu.style.display = !show ? 'block' : 'none'; show = !show"
+  >
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div #menu class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item">
+        <span class="nav-icon">🏡</span>
         <a class="nav-link" href="#cover">HOME</a>
       </li>
       <li class="nav-item">
+        <span class="nav-icon">🎮</span>
         <a class="nav-link" href="#ingame">IN GAME</a>
       </li>
       <li class="nav-item">
+        <span class="nav-icon">🪙</span>
         <a class="nav-link" href="#tokenomics">TOKENOMICS</a>
       </li>
       <li class="nav-item">
+        <span class="nav-icon">🗺️</span>
         <a class="nav-link" href="#roadmap">ROADMAP</a>
       </li>
       <li class="nav-item">
+        <span class="nav-icon">💰</span>
         <a class="nav-link" href="#buy-token">HOW TO BUY</a>
       </li>
       <li class="nav-item">
+        <span class="nav-icon">📖</span>
         <a class="nav-link" href="#whitepaper">WHITEPAPER</a>
       </li>
     </ul>
