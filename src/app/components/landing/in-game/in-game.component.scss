@@ -4,23 +4,22 @@
   min-height: 100vh;
   overflow: hidden;
 
+  pinch-zoom {
+    border-radius: 10px !important;
+  }
+
   .character,
   .marketplace {
-    .text-container-marketplace {
-      display: flex;
-      justify-content: center;
-      img {
-        margin-top: -20px;
-        width: 450px;
-        height: auto;
-      }
-    }
-    .text-container-character {
-      display: flex;
-      justify-content: center;
-      img {
-        width: 450px;
-        height: auto;
+    .text {
+      background: #00000096;
+      border-radius: 5px;
+      color: #eeeeee;
+      padding: 20px;
+      font-size: 18px;
+      font-family: monospace;
+      span {
+        display: block;
+        font-size: 30px;
       }
     }
 

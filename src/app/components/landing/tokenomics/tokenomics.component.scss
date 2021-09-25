@@ -1,24 +1,39 @@
-@import "../../../../styles/variables.scss";
+@import '../../../../styles/variables.scss';
 
-.mat-expansion-panel{
-    background-color: $ternary;
-}
+#tokenomics {
+  .mat-expansion-panel {
+    background-color: #00000096;
+    mat-panel-title,
+    mat-panel-description {
+      font-family: monospace;
+      font-size: 18px;
+      color: rgb(241, 241, 241) !important;
+    }
+  }
 
-.tokenomics-chart-container {
-  height: 600px;
-}
+  p {
+    color: white !important;
+    font-size: 16px;
+    font-family: monospace;
+    padding-top: 10px;
+  }
 
-.mat-expansion-panel-header-description {
-  justify-content: end;
-}
-.mat-expansion-panel-header-title {
-  align-items: center;
-}
-.max-icon {
-  max-width: 32px;
-  margin-right: 10px;
-}
+  .tokenomics-chart-container {
+    height: 600px;
+  }
 
-.mat-content {
-  align-items: center;
+  .mat-expansion-panel-header-description {
+    justify-content: end;
+  }
+  .mat-expansion-panel-header-title {
+    align-items: center;
+  }
+  .max-icon {
+    max-width: 32px;
+    margin-right: 10px;
+  }
+
+  .mat-content {
+    align-items: center;
+  }
 }

@@ -1,24 +1,23 @@
-import { Component, OnInit } from '@angular/core';
-import { EChartsOption } from 'echarts';
-import { ExpansionPanelItem } from '../../../models/expansion-panel-item.model';
+import { Component, OnInit } from '@angular/core'
+import { EChartsOption } from 'echarts'
+import { ExpansionPanelItem } from '../../../models/expansion-panel-item.model'
 @Component({
   selector: 'app-tokenomics',
   templateUrl: './tokenomics.component.html',
   styleUrls: ['./tokenomics.component.scss'],
 })
 export class TokenomicsComponent implements OnInit {
-  public relations = ['GR', 'LQ', 'IDO', 'PRE', 'MARK', 'GM', 'DT'];
-  public selectedPie = '';
+  public relations = ['GR', 'LQ', 'IDO', 'PRE', 'MARK', 'GM', 'DT']
+  public selectedPie = ''
   public chartOption: EChartsOption = {
-    backgroundColor: '#2f2314',
-
+    backgroundColor: '#00000096',
     title: {
       text: '100.000.000 $URUK tokens',
       left: 'center',
       top: 20,
       textStyle: {
-          color: '#ccc'
-      }
+        color: '#ccc',
+      },
     },
 
     tooltip: {
@@ -49,7 +48,7 @@ export class TokenomicsComponent implements OnInit {
           { value: 8, name: 'Game development', id: this.relations[5] },
           { value: 5, name: 'Dev team', id: this.relations[6] },
         ].sort(function (a, b) {
-          return a.value - b.value;
+          return a.value - b.value
         }),
         roseType: 'radius',
         label: {
@@ -64,7 +63,7 @@ export class TokenomicsComponent implements OnInit {
           length2: 20,
         },
         itemStyle: {
-          color: '#801423',
+          color: '#952468',
           shadowBlur: 200,
           shadowColor: 'rgba(0, 0, 0, 0.5)',
         },
@@ -72,11 +71,11 @@ export class TokenomicsComponent implements OnInit {
         animationType: 'scale',
         animationEasing: 'elasticOut',
         animationDelay: function (idx) {
-          return Math.random() * 200;
+          return Math.random() * 200
         },
       },
     ],
-  };
+  }
 
   public expansionListItems: Array<ExpansionPanelItem> = [
     {
@@ -84,8 +83,7 @@ export class TokenomicsComponent implements OnInit {
       icon: 'ActionLoot_53',
       mainLabel: 'Game rewards',
       briefDescription: '30% of total supply',
-      mainDescription:
-        'Allocated for questing, farming & working on the stable',
+      mainDescription: 'Allocated for questing, farming & working on the stable',
     },
     {
       id: this.relations[1],
@@ -106,8 +104,7 @@ export class TokenomicsComponent implements OnInit {
       icon: 'ActionLoot_19',
       mainLabel: 'Marketing',
       briefDescription: '12% of total supply',
-      mainDescription:
-        'Allocated for improving bussines development and public relations.',
+      mainDescription: 'Allocated for improving bussines development and public relations.',
     },
     {
       id: this.relations[4],
@@ -121,8 +118,7 @@ export class TokenomicsComponent implements OnInit {
       icon: 'ActionLoot_109',
       mainLabel: 'Game development',
       briefDescription: '8% of total supply',
-      mainDescription:
-        'Paid assets used in-game, freelancing & related activities',
+      mainDescription: 'Paid assets used in-game, freelancing & related activities',
     },
     {
       id: this.relations[6],
@@ -131,13 +127,13 @@ export class TokenomicsComponent implements OnInit {
       briefDescription: '5% of total supply',
       mainDescription: 'Used to pay team salary and internal grow',
     },
-  ];
+  ]
 
   constructor() {}
 
   ngOnInit(): void {}
 
   public chartClick(ev: any) {
-    this.selectedPie = ev.data.id;
+    this.selectedPie = ev.data.id
   }
 }

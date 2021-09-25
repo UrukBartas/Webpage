@@ -1,0 +1,95 @@
+#mythics {
+  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .trigger-adventurer {
+    min-height: 1px;
+    width: 100%;
+    position: absolute;
+  }
+
+  .adventurer {
+    width: 100%;
+    position: fixed;
+    top: 300px;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    z-index: -1;
+    .text {
+      background: #000000bf;
+      color: white;
+      top: -100px;
+      max-width: 90vw;
+      width: 600px;
+      padding: 20px;
+      border-radius: 10px;
+      font-family: monospace;
+      font-size: 20px;
+      z-index: 2;
+      height: fit-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      &:before {
+        content: '';
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border-left: 10px solid #000000bf;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #000000bf;
+        border-bottom: 10px solid transparent;
+        right: 6px !important;
+        bottom: -20px !important;
+      }
+    }
+    img {
+      position: absolute;
+      height: 400px;
+      top: 100px;
+      padding-left: 400px;
+      opacity: 0.8;
+      z-index: -1;
+    }
+  }
+
+  swiper {
+    width: 90vw;
+    height: 700px;
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        animation: shakeY 10s 1s infinite;
+        height: 600px;
+      }
+    }
+    .swiper-button-next {
+      color: black;
+    }
+
+    .swiper-button-prev {
+      left: 35px !important;
+      &::after {
+        content: url('../../../../assets/custom/flecha-2.png') !important;
+        font-family: auto !important;
+      }
+    }
+
+    .swiper-button-next {
+      right: 35px !important;
+      &::after {
+        content: url('../../../../assets/custom/flecha.png') !important;
+        font-family: auto !important;
+      }
+    }
+  }
+}

@@ -28,6 +28,8 @@ export class RoadmapComponent implements OnInit {
         'Blueprint of the idea & project',
         'MVP of game & website',
         'All documentation release',
+        'In-Game marketplace',
+        'NFT sale',
         'Public presale',
       ],
     },
@@ -57,7 +59,7 @@ export class RoadmapComponent implements OnInit {
       isCompleted: false,
       isActive: false,
       image: 'ActionLoot_96',
-      list: ['Build Uruk Bartas MMORPG with its own universe.'],
+      list: ['Start developing Uruk Bartas MMORPG with its own universe.'],
     },
   ]
   public urlEnvRoadmap = ''

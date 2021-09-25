@@ -1,5 +1,3 @@
-@import "../../../../styles/variables.scss";
-
 #footer {
   p {
     font-family: wow;
@@ -9,20 +7,24 @@
   width: 100%;
   margin-top: 150px;
   .wrapper {
-    background-image: url("/assets/custom/footer.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('/assets/wallpaper/dungeonwall.jpg');
+    background-size: 500px;
     width: 100%;
     position: relative;
     height: 100%;
+    box-shadow: 30px -10px 1rem rgba(0, 0, 0, 0.75) !important;
   }
 
   .grass {
+    background-image: url(/assets/custom/grass.png);
+    background-size: contain;
     position: absolute;
     width: 100%;
+    height: 79px;
     left: 0;
-    bottom: 250px;
+    bottom: 300px;
     z-index: -1;
+    filter: brightness(0.9);
   }
 
   .content-container {
@@ -32,39 +34,50 @@
     padding: 5px ​50px;
     overflow: hidden;
     bottom: 0;
+    top: 70px;
   }
 
   .logo {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    z-index: 0;
     img {
       max-height: 200px;
+      margin: auto;
+      opacity: 0.4;
+      z-index: 0;
     }
   }
 
   .inner-content {
     padding: 20px 0;
-    color: $ternary;
-  }
-
-  .inner-content h3 {
-    margin-top: 0;
-    margin-bottom: 12px;
-    font-weight: bold;
-    font-size: 16px;
-  }
-
-  .inner-content ul {
-    padding: 0;
-    list-style: none;
-    line-height: 1.6;
-    font-size: 14px;
-    margin-bottom: 0;
-  }
-
-  .inner-content ul a {
-    color: inherit;
-    text-decoration: none;
-    opacity: 0.6;
-    color: $ternary;
+    color: white;
+    z-index: 2;
+    h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    ul {
+      padding: 0;
+      list-style: none;
+      line-height: 1.6;
+      font-size: 14px;
+      margin-bottom: 0;
+      a {
+        color: inherit;
+        text-decoration: none;
+        opacity: 0.8;
+        color: white;
+        cursor: pointer !important;
+        &:hover {
+          opacity: 1 !important;
+          text-decoration: underline !important;
+        }
+      }
+    }
   }
 
   .footer-dark .item.social {
@@ -87,46 +100,21 @@
     text-align: center;
     border-radius: 50%;
     box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
-    margin: 0 8px;
+    margin: 5px;
     color: #fff;
     opacity: 0.75;
-  }
-
-  .inner-content .item.social > a:hover {
-    opacity: 0.9;
-  }
-
-  .inner-content ul a:hover {
-    opacity: 0.8;
+    &:hover {
+      background: #ffffff85;
+    }
   }
 }
 
 @media only screen and (max-width: 1000px) {
   #footer {
-    .grass {
-      bottom: 300px;
-    }
-
-    .logo {
-      position: absolute;
-      display: flex;
-      width: 100%;
-      z-index: 1;
-      img {
-        margin: auto;
-        opacity: 0.4;
-        z-index: -1;
-      }
-    }
-
     .item.social {
       display: flex;
       padding-top: 0 !important;
       margin-top: 0 !important;
-    }
-
-    .item.text {
-      //display: none;
     }
   }
 }

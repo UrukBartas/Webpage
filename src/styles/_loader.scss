@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   background-image: url('/assets/wallpaper/dungeon.jpg');
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -23,15 +24,18 @@
     img {
       position: absolute;
       z-index: 2;
+      max-width: 70vw;
     }
 
     .spinner {
       position: relative;
       width: 350px;
       height: 350px;
+      max-width: 70vw;
+      max-height: 70vw;
       border-radius: 50%;
       background: linear-gradient(#000000, #930cd1, #000000);
-      animation: animate 0.4s linear infinite;
+      animation: animate 0.6s linear infinite;
 
       span {
         position: absolute;

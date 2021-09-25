@@ -23,6 +23,7 @@ import { TokenomicsComponent } from './components/landing/tokenomics/tokenomics.
 import { NgxEchartsModule } from 'ngx-echarts';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MobileMenuComponent } from './components/landing/mobile-menu/mobile-menu.component';
+import { MythicsComponent } from './components/landing/mythics/mythics.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,6 +41,7 @@ import { MobileMenuComponent } from './components/landing/mobile-menu/mobile-men
     IntroductionComponent,
     TokenomicsComponent,
     MobileMenuComponent,
+    MythicsComponent,
   ],
   imports: [
     BrowserModule,

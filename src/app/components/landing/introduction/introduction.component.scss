@@ -14,7 +14,7 @@
     animation: flip 2s ease-out infinite;
   }
   .text {
-    background: #0000003d;
+    background: #00000096;
     color: white;
     max-width: 90vw;
     width: 1000px;
@@ -22,7 +22,7 @@
     margin: auto;
     border-radius: 10px;
     font-family: monospace;
-    font-size: 25px;
+    font-size: 23px;
     position: absolute;
     margin-bottom: 500px;
     &:before {
@@ -30,12 +30,19 @@
       width: 0px;
       height: 0px;
       position: absolute;
-      border-left: 15px solid #0000003d;
+      border-left: 15px solid #00000096;
       border-right: 15px solid transparent;
-      border-top: 20px solid #0000003d;
+      border-top: 20px solid #00000096;
       border-bottom: 20px solid transparent;
       right: 300px;
       bottom: -40px;
+    }
+
+    .emphasis {
+      display: inline;
+      color: #ffbb00;
+      text-shadow: 0 2px 4px rgb(0 0 0 / 78%);
+      font-weight: bold;
     }
   }
   .wizard {
@@ -43,6 +50,7 @@
     height: 600px;
     margin-left: 200px;
     margin-top: 300px;
+    max-height: 68vw;
   }
 }
 
@@ -57,6 +65,9 @@
       width: 100px;
       margin-top: 400px;
       margin-right: 300px;
+    }
+    .text {
+      margin-bottom: 300px;
     }
     .text::before {
       right: 150px;
