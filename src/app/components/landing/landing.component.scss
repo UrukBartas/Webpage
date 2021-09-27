@@ -31,15 +31,20 @@
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
-        font-family: 'wow';
-        font-size: 25px;
+        font-family: monospace;
+        font-size: 18px;
         color: #fffffffc;
         width: fit-content;
         padding: 5px 20px;
-        -webkit-text-stroke: 1px black;
+        font-weight: bold;
+        text-decoration: none;
         text-shadow: 0 2px 4px rgb(0 0 0 / 78%);
         user-select: none;
         cursor: pointer;
+
+        &:not(:first-of-type) {
+          padding-top: 8px;
+        }
 
         &:hover {
           color: #e7ad46;
@@ -66,7 +71,7 @@
 
 #cover {
   .background-image-cover {
-    background-image: url('/assets/wallpaper/dungeon.jpg');
+    background-image: url('/assets/wallpaper/forest4.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

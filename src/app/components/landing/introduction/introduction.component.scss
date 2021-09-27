@@ -1,76 +1,101 @@
-#features {
+#introduction {
   min-height: 100vh;
   position: relative;
   display: flex;
   justify-content: center;
   min-width: 100%;
   align-items: center;
-  .coin {
-    width: 200px;
-    position: absolute;
-    margin-top: 100px;
-    z-index: 1;
-    margin-right: 400px;
-    animation: flip 2s ease-out infinite;
-  }
-  .text {
-    background: #00000096;
-    color: white;
-    max-width: 90vw;
-    width: 1000px;
-    padding: 20px;
-    margin: auto;
-    border-radius: 10px;
-    font-family: monospace;
-    font-size: 23px;
-    position: absolute;
-    margin-bottom: 500px;
-    &:before {
-      content: '';
-      width: 0px;
-      height: 0px;
-      position: absolute;
-      border-left: 15px solid #00000096;
-      border-right: 15px solid transparent;
-      border-top: 20px solid #00000096;
-      border-bottom: 20px solid transparent;
-      right: 300px;
-      bottom: -40px;
-    }
+  flex-direction: column;
 
-    .emphasis {
-      display: inline;
-      color: #ffbb00;
-      text-shadow: 0 2px 4px rgb(0 0 0 / 78%);
-      font-weight: bold;
+  .trigger {
+    height: 33vh;
+    width: 100%;
+  }
+
+  .trigger-gates {
+    height: 100vh !important;
+  }
+
+  .gates {
+    position: fixed;
+    bottom: 100px;
+    z-index: 100;
+    .gates1 {
+      opacity: 0;
+      width: 30vw;
     }
   }
-  .wizard {
-    position: absolute;
-    height: 600px;
-    margin-left: 200px;
-    margin-top: 300px;
-    max-height: 68vw;
+
+  .display-wizard {
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    position: fixed;
+    top: 500px;
+
+    .wizard-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .coin {
+        opacity: 0;
+        width: 150px;
+        position: absolute;
+        margin-top: 100px;
+        z-index: 1;
+        margin-right: 300px;
+        animation: flip 2s ease-out infinite;
+      }
+
+      .item {
+        opacity: 0;
+        width: 450px;
+        position: absolute;
+        margin-top: 150px;
+        z-index: 1;
+        margin-right: 300px;
+        animation: shakeY 8s 1s infinite;
+      }
+
+      .wizard {
+        position: absolute;
+        height: 500px;
+        margin-left: 200px;
+        margin-top: 300px;
+      }
+
+      .character-dialog {
+        max-width: 90vw;
+        width: 1000px;
+        margin: auto;
+        position: absolute;
+        margin-bottom: 400px;
+      }
+    }
   }
 }
 
 @media only screen and (max-width: 640px) {
-  #features {
+  #introduction {
     .wizard {
       height: 400px;
       margin-left: 0;
-      margin-top: 600px !important;
+      margin-top: 500px !important;
     }
     .coin {
-      width: 100px;
-      margin-top: 400px;
-      margin-right: 300px;
+      width: 100px !important;
+      margin-top: 300px !important;
+      margin-right: 200px !important;
     }
-    .text {
+    .item {
+      margin-right: 100px !important;
+    }
+    .character-dialog {
       margin-bottom: 300px;
-    }
-    .text::before {
-      right: 150px;
+      &::before {
+        right: 50px !important;
+      }
     }
   }
 }

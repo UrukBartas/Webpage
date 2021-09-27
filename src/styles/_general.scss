@@ -1,0 +1,44 @@
+.title-section {
+  padding-bottom: 50px;
+  font-family: 'wow';
+  font-size: 80px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 20%, rgba(0, 0, 0, 1) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 3px #000000;
+}
+
+.character-dialog {
+  background: #00000096;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: monospace;
+  font-size: 23px;
+  &:before {
+    content: '';
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 15px solid #00000096;
+    border-right: 15px solid transparent;
+    border-top: 20px solid #00000096;
+    border-bottom: 20px solid transparent;
+    right: 300px;
+    bottom: -40px;
+  }
+
+  .emphasis {
+    display: inline;
+    color: #ffbb00;
+    text-shadow: 0 2px 4px rgb(0 0 0 / 78%);
+    font-weight: bold;
+  }
+
+  .character-name {
+    display: inline;
+    color: #31a314;
+    text-shadow: 0 2px 4px rgb(0 0 0 / 78%);
+    font-weight: bold;
+  }
+}

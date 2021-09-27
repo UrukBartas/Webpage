@@ -1,6 +1,5 @@
-import { AfterViewInit, Component, HostListener, OnInit, ViewEncapsulation } from '@angular/core'
+import { Component, ViewEncapsulation } from '@angular/core'
 import { SwiperOptions } from 'swiper'
-import { Utils } from '../../../utils/utils'
 
 @Component({
   selector: 'app-mythics',
@@ -8,24 +7,8 @@ import { Utils } from '../../../utils/utils'
   styleUrls: ['./mythics.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
-export class MythicsComponent implements AfterViewInit {
-  @HostListener('window:scroll', ['$event'])
-  onScroll(event: any) {
-    const adventurer: any = document.querySelector('#mythics .adventurer')
-    const trigger: any = document.querySelector('#mythics .trigger-adventurer')
-    const visible = Utils.isElementInView(trigger, true)
-    if (adventurer) {
-      adventurer.style.opacity = visible ? '1' : '0'
-    }
-  }
-
+export class MythicsComponent {
   constructor() {}
-
-  ngAfterViewInit() {
-    this.controlAdventurerVisibility()
-  }
-
-  private controlAdventurerVisibility() {}
 
   get isMobile() {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)

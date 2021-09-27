@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('/assets/wallpaper/dungeon.jpg');
+  background-image: url('/assets/wallpaper/forest4.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,7 +42,7 @@
         width: 100%;
         height: 100%;
         border-radius: 50%;
-        background: linear-gradient(#000000, #930cd1, #cf7d1e);
+        background: linear-gradient(#5f3708, #4fc720, #5f3708);
 
         &:nth-child(1) {
           filter: blur(5px);
