@@ -17,7 +17,7 @@ export class LandingComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
   onScroll(event: any) {
     this.controlIntroductionHistory()
-    this.controlIntroductionGates()
+    //this.controlIntroductionGates()
     this.controlMythicsScroll()
   }
 
@@ -99,7 +99,7 @@ export class LandingComponent implements OnInit {
 
     const visible = Utils.isElementInTarget(trigger)
 
-    if (this.adventurerVisibility && !visible) {
+    /* if (this.adventurerVisibility && !visible) {
       this.postAdventurer = !this.postAdventurer
     }
 
@@ -107,7 +107,7 @@ export class LandingComponent implements OnInit {
       background.style.backgroundImage = 'url(/assets/wallpaper/dungeon.jpg)'
     } else if (!visible && this.adventurerVisibility && this.postAdventurer) {
       background.style.backgroundImage = 'url(/assets/wallpaper/forest4.jpg)'
-    }
+    } */
 
     this.adventurerVisibility = visible
     adventurer.style.opacity = visible ? '1' : '0'
