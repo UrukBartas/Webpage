@@ -1,5 +1,5 @@
-@import '../../../../styles/variables.scss';
-
+@import "../../../../styles/variables.scss";
+//test
 #cover {
   width: 100%;
   min-height: 100vh;
@@ -54,7 +54,7 @@
       }
       &:before,
       &:after {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         height: 100%;
