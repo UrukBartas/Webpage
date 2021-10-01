@@ -38,10 +38,9 @@
         padding: 5px 20px;
         font-weight: bold;
         text-decoration: none;
-        text-shadow: 0 2px 4px rgb(0 0 0 / 78%);
         user-select: none;
         cursor: pointer;
-
+        text-shadow: 0 0 10px white;
         &:not(:first-of-type) {
           padding-top: 8px;
         }
@@ -71,7 +70,7 @@
 
 #cover {
   .background-image-cover {
-    background-image: url('/assets/wallpaper/dungeon.jpg');
+    background-image: url('/assets/wallpaper/forest.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -80,6 +79,8 @@
     position: fixed;
     left: 0;
     z-index: -1000;
+    transition: 0.5s ease-in-out;
+    filter: blur(0.9);
   }
 }
 

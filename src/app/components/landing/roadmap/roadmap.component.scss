@@ -22,8 +22,13 @@
       color: #830c24 !important;
     }
     .swiper-slide {
+      height: fit-content !important;
       border-left: 4px solid #830c24;
-      div.active {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        top: inherit;
       }
     }
   }

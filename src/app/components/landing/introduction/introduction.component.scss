@@ -6,24 +6,12 @@
   min-width: 100%;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 50vh;
+  padding-top: 30vh;
 
   .trigger {
-    height: 33vh;
+    height: 40vh;
     width: 100%;
-  }
-
-  .trigger-gates {
-    height: 100vh !important;
-  }
-
-  .gates {
-    position: fixed;
-    bottom: 100px;
-    z-index: 100;
-    .gates1 {
-      opacity: 0;
-      width: 100vw;
-    }
   }
 
   .display-wizard {
