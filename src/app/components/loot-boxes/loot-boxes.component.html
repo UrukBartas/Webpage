@@ -1,0 +1,53 @@
+<div class="wrapper-loot-boxes">
+  <div class="title"></div>
+  <div class="content">
+    <div class="animated-space d-flex justify-content-center w-100 h-100">
+      <img
+        *ngIf="!boxHaveOpened"
+        src="assets/custom/closed-chest.png"
+        alt=""
+        srcset=""
+        class="chest"
+        (click)="startedAnimation = true"
+      />
+      <div *ngIf="boxHaveOpened">
+        <h2 *ngIf="claimedRewards" class="rewards-claimed-txt-title">{{ "Congratulations!" }}</h2>
+        <h2 *ngIf="claimedRewards" class="rewards-claimed-txt">{{ nftsObtained.length + " items have been claimed!" }}</h2>
+        <img src="assets/custom/opened-chest.png" class="chest-opened" />
+      </div>
+
+      <img
+        [@fade]="startedAnimation ? 'fadeIn' : 'fadeOut'"
+        (@fade.done)="fadeDone($event)"
+        src="assets/custom/sunlight.png"
+        alt=""
+        class="light"
+      />
+      <div *ngIf="displayRewards" class="claimrewards-container">
+        <swiper
+          [config]="config"
+          ata-aos="fade-in"
+          data-aos-duration="1000"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <ng-template swiperSlide>
+            <div class="nft-card" *ngFor="let nft of nftsObtained">
+              <app-nft-card [inputItem]="nft"></app-nft-card>
+            </div>
+          </ng-template>
+        </swiper>
+        <div class="w-100 d-flex justify-content-center">
+          <button
+            mat-raised-button
+            color="primary"
+            class="big-button laim-rewards-btn"
+            (click)="claimRewards()"
+          >
+            ✨ Claim rewards
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer"></div>
+</div>

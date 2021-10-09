@@ -1,0 +1,35 @@
+<div
+  class="card 
+{{ 'border-' + inputItem.rarity }}"
+>
+  <div
+    class="card-image"
+    [ngStyle]="{
+      background: 'url(/assets/ingame/' + inputItem.imageName + ')'
+    }"
+  ></div>
+  <div class="card-text">
+    <span class="date">{{ inputItem.subTitle }}</span>
+    <h2>{{ inputItem.title }}</h2>
+    <div>
+      <mat-chip-list>
+        <mat-chip
+          *ngFor="let stat of inputItem.stats"
+          [ngStyle]="{
+            background: getChipStatColor(stat),
+            color: lightenDarkenColor(getChipStatColor(stat), 20)
+          }"
+          >{{ stat }}</mat-chip
+        >
+      </mat-chip-list>
+    </div>
+  </div>
+
+  <div
+    class="card-stats item-rarity-{{ inputItem.rarity }} {{
+      inputItem.rarity == 'common' ? 'border-top-gray' : ''
+    }}"
+  >
+    {{ inputItem.rarity }}
+  </div>
+</div>

@@ -17,6 +17,7 @@ import { FeaturesComponent } from './components/landing/features/features.compon
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import {MatChipsModule} from '@angular/material/chips';
 import { IntroductionComponent } from './components/landing/introduction/introduction.component';
 import { PinchZoomModule } from 'ngx-pinch-zoom';
 import { TokenomicsComponent } from './components/landing/tokenomics/tokenomics.component';
@@ -24,6 +25,8 @@ import { NgxEchartsModule } from 'ngx-echarts';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MobileMenuComponent } from './components/landing/mobile-menu/mobile-menu.component';
 import { MythicsComponent } from './components/landing/mythics/mythics.component';
+import { LootBoxesComponent } from './components/loot-boxes/loot-boxes.component';
+import { NftCardComponent } from './components/nft-card/nft-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,6 +45,9 @@ import { MythicsComponent } from './components/landing/mythics/mythics.component
     TokenomicsComponent,
     MobileMenuComponent,
     MythicsComponent,
+    LootBoxesComponent,
+    NftCardComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -51,6 +57,7 @@ import { MythicsComponent } from './components/landing/mythics/mythics.component
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
+    MatChipsModule,
     MatExpansionModule,
     NgxEchartsModule.forRoot({
       echarts: () => import('echarts'),

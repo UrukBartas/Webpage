@@ -1,0 +1,58 @@
+.wrapper-loot-boxes {
+  height: 100vh;
+  overflow: hidden;
+  .claimrewards-container {
+    position: absolute;
+    swiper {
+      width: 90vw;
+      height: 700px;
+
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .claim-rewards-btn {
+    }
+  }
+  .rewards-claimed-txt-title {
+    font-family: wow;
+    font-size: 35px;
+    color: white;
+  }
+  .rewards-claimed-txt {
+    font-family: wow;
+    color: lightgray;
+  }
+
+  .nft-card {
+    animation: fadeInUp 1s;
+  }
+  .content {
+    height: 100%;
+    overflow: hidden;
+
+    .animated-space {
+      align-items: center;
+      justify-items: center;
+      animation: shakeY 8s infinite;
+      .chest {
+        cursor: pointer;
+        &:hover {
+          animation: pulse 1s 0s infinite;
+        }
+      }
+      .chest-opened {
+        cursor: pointer;
+        animation: fadeIn 2s;
+      }
+      .light {
+        position: absolute;
+        opacity: 0;
+        height: 0%;
+        width: 0%;
+      }
+    }
+  }
+}
