@@ -1,5 +1,5 @@
-import { ethers, Signer, Wallet } from 'ethers';
-import { JsonFragment } from '@ethersproject/abi';
+import { ethers, Signer, Wallet } from 'ethers'
+import { JsonFragment } from '@ethersproject/abi'
 
 const ABI: Array<JsonFragment> = [
   {
@@ -46,6 +46,25 @@ const ABI: Array<JsonFragment> = [
       },
     ],
     name: 'Approval',
+    type: 'event',
+  },
+  {
+    anonymous: false,
+    inputs: [
+      {
+        indexed: true,
+        internalType: 'address',
+        name: 'previousOwner',
+        type: 'address',
+      },
+      {
+        indexed: true,
+        internalType: 'address',
+        name: 'newOwner',
+        type: 'address',
+      },
+    ],
+    name: 'OwnershipTransferred',
     type: 'event',
   },
   {
@@ -252,6 +271,26 @@ const ABI: Array<JsonFragment> = [
     type: 'function',
   },
   {
+    inputs: [],
+    name: 'owner',
+    outputs: [
+      {
+        internalType: 'address',
+        name: '',
+        type: 'address',
+      },
+    ],
+    stateMutability: 'view',
+    type: 'function',
+  },
+  {
+    inputs: [],
+    name: 'renounceOwnership',
+    outputs: [],
+    stateMutability: 'nonpayable',
+    type: 'function',
+  },
+  {
     inputs: [
       {
         internalType: 'address',
@@ -366,10 +405,23 @@ const ABI: Array<JsonFragment> = [
     stateMutability: 'nonpayable',
     type: 'function',
   },
-];
+  {
+    inputs: [
+      {
+        internalType: 'address',
+        name: 'newOwner',
+        type: 'address',
+      },
+    ],
+    name: 'transferOwnership',
+    outputs: [],
+    stateMutability: 'nonpayable',
+    type: 'function',
+  },
+]
 
 let newERC20ContractInstance = (adress: string, signer: Signer) => {
-  return new ethers.Contract(adress, ABI, signer);
-};
+  return new ethers.Contract(adress, ABI, signer)
+}
 
-export default newERC20ContractInstance;
+export default newERC20ContractInstance

@@ -1,9 +1,10 @@
 <div id="landing" class="container">
   <div class="body">
+    <div class="background-image-cover"></div>
     <app-mobile-menu></app-mobile-menu>
     <div class="topbar justify-content-center">
       <img src="assets/custom/topbar.png" />
-      <a class="link" href="#cover">
+      <a class="link" href="#cover" (click)="location = locations.MAIN">
         <mat-icon class="pt-1">home</mat-icon>
       </a>
       <a class="link" href="#introduction">Features</a>
@@ -12,39 +13,11 @@
       <a class="link" href="#tokenomics">Tokenomics</a>
       <a class="link" href="#buy-token">How to buy</a>
       <a class="link" href="#whitepaper">Whitepaper</a>
+      <a class="link" (click)="location = locations.PRESALE">Presale</a>
     </div>
-    <div id="cover" #cover>
-      <div class="background-image-cover"></div>
-      <app-cover></app-cover>
-    </div>
-    <div id="introduction" #introduction>
-      <app-introduction></app-introduction>
-    </div>
-
-    <div id="mythics">
-      <app-mythics></app-mythics>
-    </div>
-
-    <div id="features" class="pb-5" #features>
-      <app-features></app-features>
-    </div>
-    <div id="ingame" class="pb-5" #ingame>
-      <app-in-game></app-in-game>
-    </div>
-
-    <div id="tokenomics" class="pb-5" #tokenomics>
-      <app-tokenomics></app-tokenomics>
-    </div>
-
-    <div id="roadmap" class="pb-5" #roadmap>
-      <app-roadmap></app-roadmap>
-    </div>
-
-    <div id="buy-token" class="pb-5" #buyToken>
-      <app-buy-token></app-buy-token>
-    </div>
-    <div id="whitepaper" class="pb-5" #whitepaper>
-      <app-whitepaper></app-whitepaper>
+    <div [ngSwitch]="location" class="w-100">
+      <app-main *ngSwitchCase="locations.MAIN"></app-main>
+      <app-presale *ngSwitchCase="locations.PRESALE"></app-presale>
     </div>
   </div>
 </div>

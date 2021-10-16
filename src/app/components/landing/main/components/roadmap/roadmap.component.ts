@@ -1,8 +1,7 @@
+import { Slide } from './../../../../../models/slide.model'
 import { Component, OnInit, ViewEncapsulation } from '@angular/core'
 import SwiperCore, { SwiperOptions } from 'swiper'
-import { environment } from '../../../../environments/environment'
-import { BSbreakpoints } from '../../../const/bootstrap-breakpoints-px.const'
-import { Slide } from '../../../models/slide.model'
+import { environment } from '../../../../../../environments/environment'
 @Component({
   selector: 'app-roadmap',
   templateUrl: './roadmap.component.html',

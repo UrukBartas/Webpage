@@ -10,6 +10,20 @@
     flex-direction: column;
     align-items: center;
 
+    .background-image-cover {
+      background-image: url('/assets/wallpaper/forest.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100vw;
+      height: 100%;
+      position: fixed;
+      left: 0;
+      z-index: -1000;
+      transition: 0.5s ease-in-out;
+      filter: blur(0.9);
+    }
+
     .topbar {
       position: fixed;
       z-index: 100;
@@ -56,44 +70,6 @@
       }
     }
   }
-}
-
-.display-cartel-play {
-  animation: slideInDown;
-  animation-duration: 1s;
-}
-
-.hide-cartel-play {
-  animation: slideOutUp;
-  animation-duration: 1s;
-}
-
-#cover {
-  .background-image-cover {
-    background-image: url('/assets/wallpaper/forest.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 100%;
-    position: fixed;
-    left: 0;
-    z-index: -1000;
-    transition: 0.5s ease-in-out;
-    filter: blur(0.9);
-  }
-}
-
-#cover,
-#introduction,
-#features,
-#ingame,
-#roadmap,
-#buy-token,
-#whitepaper,
-#tokenomics,
-#footer {
-  width: 100%;
 }
 
 @media only screen and (max-width: 900px) {

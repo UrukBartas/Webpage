@@ -1,4 +1,4 @@
-@import "../../../../styles/variables.scss";
+@import '../../../../../../styles/variables.scss';
 
 #cover {
   width: 100%;
@@ -54,7 +54,7 @@
       }
       &:before,
       &:after {
-        content: "";
+        content: '';
         position: absolute;
         top: 0;
         height: 100%;

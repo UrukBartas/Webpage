@@ -1,6 +1,6 @@
+import { ExpansionPanelItem } from './../../../../../models/expansion-panel-item.model'
 import { Component, OnInit } from '@angular/core'
 import { EChartsOption } from 'echarts'
-import { ExpansionPanelItem } from '../../../models/expansion-panel-item.model'
 @Component({
   selector: 'app-tokenomics',
   templateUrl: './tokenomics.component.html',

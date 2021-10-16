@@ -4,20 +4,26 @@ import { Router } from '@angular/router'
 import * as Aos from 'aos'
 import * as $ from 'jquery'
 
-import { Location } from '@angular/common'
+export enum LANDPAGE_LOCATIONS {
+  MAIN = 'main',
+  PRESALE = 'presale',
+}
+
 @Component({
   selector: 'app-landing',
   templateUrl: './landing.component.html',
   styleUrls: ['./landing.component.scss'],
 })
 export class LandingComponent implements OnInit {
+  public location = LANDPAGE_LOCATIONS.PRESALE
+  public locations = LANDPAGE_LOCATIONS
   @HostListener('window:scroll', ['$event'])
   onScroll(event: any) {
     this.controlIntroductionHistory()
     this.controlMythicsScroll()
   }
 
-  constructor(public router: Router, private location: Location) {}
+  constructor(public router: Router) {}
 
   ngOnInit(): void {
     Aos.init({

@@ -1,0 +1,18 @@
+<div id="presale">
+  <div class="presale-container">
+    <h1 class="presale-title">Golden Uruk's presale 🎉</h1>
+    <div id="presale-countdown"></div>
+    <h2 class="presale-title float-right">Min/Max allocation: 0.5-4 BNB</h2>
+    <div class="presale-input">
+      <input #presaleInput (keyup)="checkInputValue($event)" type="number" />
+      <span class="tag">(BNB)</span>
+      <button class="btn btn-success" (click)="buy()">Enter</button>
+    </div>
+    <h1 class="presale-title">Your tokens: {{ tokensAmount }} <span class="uruk">$URUK</span></h1>
+    <h1 class="presale-title">Tokens left:</h1>
+    <div class="meter" [ngClass]="{ orange: percentage >= 50, red: percentage >= 75 }">
+      <div class="number">{{ percentage }}%</div>
+      <span [style.width]="percentage + '%'"></span>
+    </div>
+  </div>
+</div>

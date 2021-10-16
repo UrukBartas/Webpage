@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { UtilsService } from '../../../services/utils.service';
+import { UtilsService } from './../../../../../services/utils.service'
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'app-whitepaper',
@@ -12,6 +12,6 @@ export class WhitepaperComponent {
   ngOnInit(): void {}
 
   public downloadWhitepaper(): void {
-    this.utils.downloadWhitepaper();
+    this.utils.downloadWhitepaper()
   }
 }
