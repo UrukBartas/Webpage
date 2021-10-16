@@ -15,7 +15,7 @@ export enum LANDPAGE_LOCATIONS {
   styleUrls: ['./landing.component.scss'],
 })
 export class LandingComponent implements OnInit {
-  public location = LANDPAGE_LOCATIONS.PRESALE
+  public location = LANDPAGE_LOCATIONS.MAIN;
   public locations = LANDPAGE_LOCATIONS
   @HostListener('window:scroll', ['$event'])
   onScroll(event: any) {

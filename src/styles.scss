@@ -9,6 +9,7 @@
 @import 'swiper/css/bundle';
 @import 'styles/roadmap-vendor-styles.scss';
 @import 'styles/variables.scss';
+@import '~ngx-toastr/toastr';
 
 $uruk-bartas-primary: mat.define-palette($md-mcgpalette0);
 $uruk-bartas-accent: mat.define-palette($md-mcgpalette1);

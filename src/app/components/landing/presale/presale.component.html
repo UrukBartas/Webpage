@@ -6,13 +6,22 @@
     <div class="presale-input">
       <input #presaleInput (keyup)="checkInputValue($event)" type="number" />
       <span class="tag">(BNB)</span>
-      <button class="btn btn-success" (click)="buy()">Enter</button>
+      <button class="btn btn-success" (click)="buy()">Buy</button>
     </div>
-    <h1 class="presale-title">Your tokens: {{ tokensAmount }} <span class="uruk">$URUK</span></h1>
-    <h1 class="presale-title">Tokens left:</h1>
-    <div class="meter" [ngClass]="{ orange: percentage >= 50, red: percentage >= 75 }">
-      <div class="number">{{ percentage }}%</div>
-      <span [style.width]="percentage + '%'"></span>
+    <h1 class="presale-title">
+      Your tokens: {{ connectedUserAmountOfTokens | number }}
+      <span class="uruk">$URUK</span>
+    </h1>
+    <h1 class="presale-title">
+      Tokens left: {{ amountOfTokensLeftToSell | number }}
+      <span class="uruk">$URUK</span>
+    </h1>
+    <div
+      class="meter"
+      [ngClass]="{ orange: percentageValue >= 50, red: percentageValue >= 75 }"
+    >
+      <div class="number">{{ percentageValue | number: '1.0-2'}}%</div>
+      <span [style.width]="percentageValue + '%'"></span>
     </div>
   </div>
 </div>

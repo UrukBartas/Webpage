@@ -6,7 +6,6 @@ import { AppComponent } from './app.component'
 import { LandingComponent } from './components/landing/landing.component'
 import { GameComponent } from './components/game/game.component'
 import { InGameComponent } from './components/landing/main/components/in-game/in-game.component'
-import { UnityWebappBridgeComponent } from './unity-webapp-bridge/unity-webapp-bridge.component'
 import { RoadmapComponent } from './components/landing/main/components/roadmap/roadmap.component'
 import { TeamComponent } from './components/landing/main/components/team/team.component'
 import { BuyTokenComponent } from './components/landing/main/components/buy-token/buy-token.component'
@@ -29,6 +28,7 @@ import { LootBoxesComponent } from './components/loot-boxes/loot-boxes.component
 import { NftCardComponent } from './components/nft-card/nft-card.component'
 import { PresaleComponent } from './components/landing/presale/presale.component'
 import { MainComponent } from './components/landing/main/main.component'
+import { ToastrModule } from 'ngx-toastr'
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +36,6 @@ import { MainComponent } from './components/landing/main/main.component'
     GameComponent,
     CoverComponent,
     InGameComponent,
-    UnityWebappBridgeComponent,
     RoadmapComponent,
     TeamComponent,
     BuyTokenComponent,
@@ -62,6 +61,7 @@ import { MainComponent } from './components/landing/main/main.component'
     MatIconModule,
     MatChipsModule,
     MatExpansionModule,
+    ToastrModule.forRoot(),
     NgxEchartsModule.forRoot({
       echarts: () => import('echarts'),
     }),

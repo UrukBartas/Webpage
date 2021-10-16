@@ -1,10 +1,13 @@
-import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core'
-import { ethers } from 'ethers'
-import { UserStatusService } from '../../../services/user-status.service'
-import PresaleContract from '../../../../contracts/UrukPresale'
-const { ethereum }: any = window
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { ethers } from 'ethers';
+import { EthersService } from '../../../services/ethers.service';
+import abiPresale from '../../../contracts/presale/abi.json';
+import abiERC20 from '../../../contracts/erc20/abi.json';
+import moment from 'moment';
+import { environment } from '../../../../environments/environment';
+import { ToastrService } from 'ngx-toastr';
 
-require('jquery-countdown')
+require('jquery-countdown');
 
 @Component({
   selector: 'app-presale',
@@ -12,79 +15,151 @@ require('jquery-countdown')
   styleUrls: ['./presale.component.scss'],
 })
 export class PresaleComponent implements AfterViewInit {
-  private provider: ethers.providers.Web3Provider = null
-  public percentage = 0
-  public tokensAmount = 0
+  private provider: ethers.providers.Web3Provider = null;
+  public percentageValue = 0;
+  // const contract = new ethers.Contract(greeterAddress, Greeter.abi, signer)
+  private presaleContract;
+  private erc20ContracT;
 
-  @ViewChild('presaleInput') private input
+  public finishingTime: Date;
+  public amountOfTokensLeftToSell: number = 0;
+  public connectedUserAmountOfTokens: number = 0;
+  public raisedAmountOfBnb: number;
 
-  constructor(private userStatus: UserStatusService) {
-    this.connect()
+  @ViewChild('presaleInput') private input;
+
+  constructor(
+    private ethersService: EthersService,
+    private toast: ToastrService
+  ) {
     setInterval(() => {
-      this.percentage = this.percentage >= 100 ? 0 : this.percentage + 1
-    }, 500)
-  }
-
-  ngAfterViewInit() {
-    ;(<any>$('#presale-countdown')).countdown('2021/10/17', function (event) {
-      $('#presale-countdown').text(event.strftime('Time left: %H:%M:%S'))
-    })
-  }
-
-  public async connect() {
-    try {
-      this.provider = new ethers.providers.Web3Provider(ethereum)
-      const signer = this.provider.getSigner()
-      let activeAccountArray = await this.provider.listAccounts()
-      if (activeAccountArray.length > 0) {
-        this.userStatus.isConnected = true
-        this.userStatus.connectedAddress = activeAccountArray[0]
-        await this.detectAnSetNetwork(this.provider)
-        console.log(this.userStatus)
-        console.log(PresaleContract)
+      if (this.amountOfTokensLeftToSell == 0) {
+        this.percentageValue = 0;
       } else {
-        this.userStatus.isConnected = false
-        this.userStatus.connectedAddress = ''
-        await this.provider.send('eth_requestAccounts', [])
-        await this.connect()
+        this.percentageValue =
+          100 -
+          this.percentage(
+            this.amountOfTokensLeftToSell,
+            environment.maxTokensToBeSold
+          );
       }
-
-      console.log(await signer.getAddress())
-      console.log((await signer.getBalance()).toString())
-      console.log(this.provider.network.name)
-    } catch (error) {
-      console.error('Error => ', error)
-    }
+    }, 500);
+    setInterval(() => {
+      this.suckItLikeTheMoleSister();
+    }, 5000);
+    this.ethersService.connect();
   }
 
-  private async detectAnSetNetwork(provider: ethers.providers.Web3Provider) {
-    let network = await provider.detectNetwork()
-    this.userStatus.setNetworkName(network.name)
+  ngOnInit(): void {
+    this.ethersService.haveConnected.subscribe((data) => {
+      if (data != null) {
+        this.presaleContract = new ethers.Contract(
+          environment.deployedPresaleAddressTestnet,
+          abiPresale as any,
+          this.ethersService.signer
+        );
+        this.erc20ContracT = new ethers.Contract(
+          environment.deployedErc20AddressTestnet,
+          abiERC20,
+          this.ethersService.signer
+        );
+        this.suckItLikeTheMoleSister();
+      }
+    });
+  }
+
+  private suckItLikeTheMoleSister(): void {
+    this.getClosingTime();
+    this.getUrukTokensOfPresale();
+    this.getAmountOfBnbRaisedSoFar();
+  }
+
+  private async getClosingTime() {
+    let res = await this.presaleContract.closingTime();
+    res = res.toString();
+    this.finishingTime = moment(Number(res) * 1000).toDate();
+    this.initPresaleCountdown();
+  }
+
+  private async getUrukTokensOfPresale() {
+    let balance = await this.erc20ContracT.balanceOf(
+      environment.deployedPresaleAddressTestnet
+    );
+    this.amountOfTokensLeftToSell = Number(
+      ethers.utils.formatEther(balance).toString()
+    );
+
+    let balanceUser = await this.erc20ContracT.balanceOf(
+      this.ethersService.signer.getAddress()
+    );
+    this.connectedUserAmountOfTokens = Number(
+      ethers.utils.formatEther(balanceUser).toString()
+    );
+  }
+
+  private async getAmountOfBnbRaisedSoFar() {
+    let balanceBNB = await this.presaleContract.weiRaised();
+    this.raisedAmountOfBnb = Number(
+      ethers.utils.formatEther(balanceBNB.toString())
+    );
+  }
+
+  ngAfterViewInit() {}
+
+  private initPresaleCountdown() {
+    (<any>$('#presale-countdown')).countdown(
+      this.finishingTime,
+      function (event) {
+        $('#presale-countdown').text(event.strftime('Time left: %H:%M:%S'));
+      }
+    );
   }
 
   public checkInputValue(event) {
     if (event.key === 'Enter') {
-      this.buy()
-    } else {
-      const value = this.input.nativeElement.value
-      if (Number.parseFloat(value)) {
-        if (value > 4) {
-          this.input.nativeElement.value = 4
+      this.buy();
+    }
+  }
+
+  public async buy() {
+    const value = this.input.nativeElement.value;
+    const parsedValue = Number.parseFloat(value);
+    if (parsedValue) {
+      try {
+        let tx = await this.presaleContract.buyTokens(
+          this.ethersService.signer.getAddress(),
+          {
+            value: ethers.utils.parseEther(parsedValue.toString()),
+          }
+        );
+        this.toast.info('hash: ' + tx.hash, 'Sent transaction');
+        let endTx = await tx.wait();
+        let tokenPurchasedEvent = endTx?.events?.find(
+          (event) => event.event == 'TokensPurchased'
+        );
+        if (tokenPurchasedEvent) {
+          let tokenAmountBought = tokenPurchasedEvent.args[3].toString();
+          let parsedAmountOfTokens = Number(
+            ethers.utils.formatEther(tokenAmountBought)
+          );
+          this.toast.success(
+            'You just bought ' + parsedAmountOfTokens + ' $URUK tokens',
+            'Congratulations'
+          );
+        } else {
+          this.toast.info(
+            'But you did not receive any token',
+            'Tx went trough'
+          );
         }
-        if (value < 0.5) {
-          this.input.nativeElement.value = 0.5
-        }
+        this.suckItLikeTheMoleSister();
+      } catch (error) {
+        this.toast.error(error.message, 'Ups, something is not working');
       }
     }
   }
 
-  public buy() {
-    const value = this.input.nativeElement.value
-    const parsedValue = Number.parseFloat(value)
-    if (parsedValue) {
-      if (parsedValue <= 4 && parsedValue >= 0.5) {
-        console.log('Okay')
-      }
-    }
+  private percentage(partialValue, totalValue) {
+    return (100 * partialValue) / totalValue;
   }
 }
