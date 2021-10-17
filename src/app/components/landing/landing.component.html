@@ -4,20 +4,20 @@
     <app-mobile-menu></app-mobile-menu>
     <div class="topbar justify-content-center">
       <img src="assets/custom/topbar.png" />
-      <a class="link" href="#cover" (click)="location = locations.MAIN">
+      <a class="link" href="#cover">
         <mat-icon class="pt-1">home</mat-icon>
       </a>
-      <a class="link" href="#introduction" (click)="location = locations.MAIN">Features</a>
-      <a class="link" href="#ingame" (click)="location = locations.MAIN">In game</a>
-      <a class="link" href="#roadmap" (click)="location = locations.MAIN">Roadmap</a>
-      <a class="link" href="#tokenomics" (click)="location = locations.MAIN">Tokenomics</a>
-      <a class="link" href="#buy-token" (click)="location = locations.MAIN">How to buy</a>
-      <a class="link" href="#whitepaper" (click)="location = locations.MAIN">Whitepaper</a>
-      <a class="link" (click)="location = locations.PRESALE">Presale</a>
+      <a class="link" href="#introduction">Features</a>
+      <a class="link" href="#ingame">In game</a>
+      <a class="link" href="#roadmap">Roadmap</a>
+      <a class="link" href="#tokenomics">Tokenomics</a>
+      <a class="link" href="#buy-token">How to buy</a>
+      <a class="link" href="#whitepaper">Whitepaper</a>
+      <a class="link" href="/presale">Presale</a>
     </div>
-    <div [ngSwitch]="location" class="w-100">
-      <app-main *ngSwitchCase="locations.MAIN"></app-main>
-      <app-presale *ngSwitchCase="locations.PRESALE"></app-presale>
+
+    <div class="w-100">
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>
