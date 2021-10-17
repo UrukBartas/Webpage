@@ -57,6 +57,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.pointer{
+  cursor: pointer;
+}
+
 .blurredImage {
   filter: blur(10px) grayscale(1);
 }

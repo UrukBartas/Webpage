@@ -1,12 +1,16 @@
 <div id="presale">
   <div class="presale-container">
-    <h1 *ngIf="!userStatus.isConnected" class="presale-title allow-metamask">⚠️ Please allow us on Metamask</h1>
-    <h1 class="presale-title">Golden Uruk's presale 🎉</h1>
+    <h1 *ngIf="!userStatus.isConnected" class="presale-title allow-metamask">
+      ⚠️ Please allow us on Metamask
+    </h1>
+    <h1 class="presale-title text-center w-100">Golden Uruk's presale 🎉</h1>
     <div id="presale-countdown"></div>
-    <h2 class="presale-title">Min/Max allocation: 0.5-4 BNB</h2>
+    <h2 class="presale-title">Min/Max buy per TX: 0.5-4 BNB</h2>
     <h2 *ngIf="whitelisted !== undefined" class="presale-title">
       Status:
-      <span [ngClass]="whitelisted ? 'whitelisted' : 'not-whitelisted'">{{ whitelisted ? 'Whitelisted' : 'Not whitelisted' }}</span>
+      <span [ngClass]="whitelisted ? 'whitelisted' : 'not-whitelisted'">{{
+        whitelisted ? "Whitelisted" : "Not whitelisted"
+      }}</span>
     </h2>
     <div class="presale-input">
       <input #presaleInput (keyup)="checkInputValue($event)" type="number" />
@@ -21,9 +25,63 @@
       Tokens left: {{ amountOfTokensLeftToSell | number }}
       <span class="uruk">$URUK</span>
     </h1>
-    <div class="meter" [ngClass]="{ orange: percentageValue >= 50, red: percentageValue >= 75 }">
-      <div class="number">{{ percentageValue | number: '1.0-2' }}%</div>
+    <div
+      class="meter"
+      [ngClass]="{ orange: percentageValue >= 50, red: percentageValue >= 75 }"
+    >
+      <div class="number">{{ percentageValue | number: "1.0-2" }}%</div>
       <span [style.width]="percentageValue + '%'"></span>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <div class="address-copier">
+          <span>Token address</span>
+          <div>
+            {{ tokenAddress }}
+            <mat-icon
+              class="pointer"
+              ngxClipboard
+              [cbContent]="tokenAddress"
+              (click)="copiedAlert('token')"
+              >content_copy</mat-icon
+            >
+            <mat-icon class="pointer" (click)="goToLink(tokenAddress)"
+              >travel_explore</mat-icon
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="address-copier">
+          <span>Presale address</span>
+          <div>
+            {{ presaleAddress }}
+            <mat-icon
+              class="pointer"
+              ngxClipboard
+              [cbContent]="presaleAddress"
+              (click)="copiedAlert('presale')"
+              >content_copy</mat-icon
+            >
+            <mat-icon class="pointer" (click)="goToLink(tokenAddress)"
+              >travel_explore</mat-icon
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row list-disclaimer mt-3">
+      <ul>
+        <li>You have to be whitelisted to participate.</li>
+        <li>
+          You can buy between 0.5 and 4BNB worth of $URUK tokens per TX only.
+        </li>
+        <li>Hardcap is 100 BNB, softcap is 50.</li>
+        <li>
+          When few minutes left of the countdown, we will remove all limitations
+          and non-whitelisted people would be able to buy with any amount.
+        </li>
+      </ul>
     </div>
   </div>
 </div>

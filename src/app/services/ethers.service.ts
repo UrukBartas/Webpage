@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ethers } from 'ethers';
+import { ToastrService } from 'ngx-toastr';
 import { BehaviorSubject } from 'rxjs';
 import { UserStatusService } from './user-status.service';
 const { ethereum }: any = window;
@@ -13,7 +14,10 @@ export class EthersService {
   public haveConnected: BehaviorSubject<{ provider; signer }> =
     new BehaviorSubject(null);
 
-  constructor(private userStatus: UserStatusService) {}
+  constructor(
+    private userStatus: UserStatusService,
+    private toast: ToastrService
+  ) {}
 
   public async connect() {
     await this.initListeners();
@@ -27,12 +31,12 @@ export class EthersService {
     });
     //@ts-ignore
     ethereum.on('connect', function (connectInfo) {
-      console.log(connectInfo);
+     // console.log(connectInfo);
     });
 
     //@ts-ignore
     ethereum.on('disconnect', function (disconnectInfo) {
-      console.log(disconnectInfo);
+      //console.log(disconnectInfo);
     });
     //@ts-ignore
     ethereum.on('chainChanged', async (chainId) => {
@@ -56,9 +60,9 @@ export class EthersService {
         await this.connect();
       }
 
-      console.log(await this.signer.getAddress());
-      console.log((await this.signer.getBalance()).toString());
-      console.log(this.provider.network.name);
+     // console.log(await this.signer.getAddress());
+      //console.log((await this.signer.getBalance()).toString());
+      //console.log(this.provider.network.name);
       if (this.provider && this.signer) {
         this.haveConnected.next({
           provider: this.provider,
@@ -66,7 +70,7 @@ export class EthersService {
         });
       }
     } catch (error) {
-      console.error('Error => ', error);
+      //console.error('Error => ', error);
       this.haveConnected.error(error);
     }
   }
@@ -74,5 +78,11 @@ export class EthersService {
   private async detectAnSetNetwork(provider: ethers.providers.Web3Provider) {
     let network = await provider.detectNetwork();
     this.userStatus.setNetworkName(network.name);
+    if (network.name != 'bnb') {
+      this.toast.warning(
+        'In order to interact with the presale you must connecto the BSC.',
+        'Wrong network'
+      );
+    }
   }
 }
