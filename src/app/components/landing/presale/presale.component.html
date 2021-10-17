@@ -1,8 +1,13 @@
 <div id="presale">
   <div class="presale-container">
+    <h1 *ngIf="!userStatus.isConnected" class="presale-title allow-metamask">⚠️ Please allow us on Metamask</h1>
     <h1 class="presale-title">Golden Uruk's presale 🎉</h1>
     <div id="presale-countdown"></div>
-    <h2 class="presale-title float-right">Min/Max allocation: 0.5-4 BNB</h2>
+    <h2 class="presale-title">Min/Max allocation: 0.5-4 BNB</h2>
+    <h2 *ngIf="whitelisted !== undefined" class="presale-title">
+      Status:
+      <span [ngClass]="whitelisted ? 'whitelisted' : 'not-whitelisted'">{{ whitelisted ? 'Whitelisted' : 'Not whitelisted' }}</span>
+    </h2>
     <div class="presale-input">
       <input #presaleInput (keyup)="checkInputValue($event)" type="number" />
       <span class="tag">(BNB)</span>
@@ -16,11 +21,8 @@
       Tokens left: {{ amountOfTokensLeftToSell | number }}
       <span class="uruk">$URUK</span>
     </h1>
-    <div
-      class="meter"
-      [ngClass]="{ orange: percentageValue >= 50, red: percentageValue >= 75 }"
-    >
-      <div class="number">{{ percentageValue | number: '1.0-2'}}%</div>
+    <div class="meter" [ngClass]="{ orange: percentageValue >= 50, red: percentageValue >= 75 }">
+      <div class="number">{{ percentageValue | number: '1.0-2' }}%</div>
       <span [style.width]="percentageValue + '%'"></span>
     </div>
   </div>

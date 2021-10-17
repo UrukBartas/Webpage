@@ -1,6 +1,5 @@
 #presale {
   width: 100%;
-  height: 100vh;
   margin-top: 100px;
 
   .presale-container {
@@ -35,6 +34,20 @@
         color: #ffc90b !important;
         text-shadow: none !important;
       }
+
+      .whitelisted {
+        color: #0bff0b !important;
+        text-shadow: none !important;
+      }
+      .not-whitelisted {
+        color: #ff440b !important;
+        text-shadow: none !important;
+      }
+    }
+
+    .allow-metamask {
+      text-shadow: none !important;
+      color: #ffc90b !important;
     }
 
     .presale-input {

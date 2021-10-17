@@ -1,3 +1,4 @@
+import $ from 'jquery'
 export class Utils {
   static isElementInView(element, fullyInView) {
     const pageTop = $(window).scrollTop()
