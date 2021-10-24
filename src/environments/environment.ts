@@ -10,7 +10,8 @@ export const environment = {
   deployedErc20AddressTestnet:'0x7A6719853B0b9Bc2E9Cf4A3CaF01861449A6FfdE',
   deployedPresaleAddressMainnet:'0x4ef5aC0d0e40e8D3E62Ae1507cD72670072A1ee2',
   deployedErc20AddressMainnet:'0x3e57b55c625b7c1517a09df990e8f57576ff8f41',
-  maxTokensToBeSold:2000000
+  maxTokensToBeSold:2000000,
+  presaleEnded:true
 };
 
 /*

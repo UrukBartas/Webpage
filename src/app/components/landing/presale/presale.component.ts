@@ -8,7 +8,6 @@ import { environment } from '../../../../environments/environment';
 import { ToastrService } from 'ngx-toastr';
 import detectEthereumProvider from '@metamask/detect-provider';
 import { UserStatusService } from '../../../services/user-status.service';
-
 require('jquery-countdown');
 
 @Component({
@@ -27,13 +26,14 @@ export class PresaleComponent implements AfterViewInit {
   public whitelisted: boolean;
   public tokenAddress = environment.deployedErc20AddressMainnet;
   public presaleAddress = environment.deployedPresaleAddressMainnet;
+  public presaleHasEnded = environment.presaleEnded;
 
   @ViewChild('presaleInput') private input;
 
   constructor(
     public userStatus: UserStatusService,
     private ethersService: EthersService,
-    private toast: ToastrService
+    private toast: ToastrService,
   ) {}
 
   async ngOnInit() {
@@ -95,6 +95,10 @@ export class PresaleComponent implements AfterViewInit {
   }
 
   private calculateSalePercentageLeft() {
+    if(this.presaleHasEnded){
+      this.percentageValue = 100;
+      return
+    };
     setInterval(() => {
       if (this.amountOfTokensLeftToSell == 0) {
         this.percentageValue = 0;

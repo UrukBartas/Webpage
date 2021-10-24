@@ -3,7 +3,17 @@
     <h1 *ngIf="!userStatus.isConnected" class="presale-title allow-metamask">
       ⚠️ Please allow us on Metamask
     </h1>
-    <h1 class="presale-title text-center w-100">Golden Uruk's presale 🎉</h1>
+    <h1 class="presale-title text-center w-100">
+      {{
+        presaleHasEnded
+          ? "Presale have ended, congratulations to the early birds!"
+          : "Golden Uruk's presale"
+      }}
+      🎉
+    </h1>
+    <p class="text-center w-100 text-white" *ngIf="presaleHasEnded"
+      >Stay tunned on our social media for more!</p
+    >
     <div id="presale-countdown"></div>
     <h2 class="presale-title">Min/Max buy per TX: 0.5-4 BNB</h2>
     <h2 *ngIf="whitelisted !== undefined" class="presale-title">
