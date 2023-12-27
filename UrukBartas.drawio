@@ -1,9 +1,48 @@
-<mxfile host="app.diagrams.net" modified="2023-12-27T11:59:40.766Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" version="21.7.1" etag="tYJiFwjBv1Q6s7UTKX4D" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-27T12:46:47.946Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="kE6yQAOy-V2ZWeUba6Ol" version="21.7.1" type="github">
   <diagram name="Página-1" id="G3qss4rFU0XSDuvpTMuO">
-    <mxGraphModel>
+    <mxGraphModel dx="2901" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="pyqpKjKKV07klXftnFIs-1" value="&lt;div&gt;- Ver estado actual del proyecto&lt;/div&gt;&lt;div&gt;- Revisar el build&lt;/div&gt;&lt;div&gt;- Deprecar SC y WEBGL&lt;/div&gt;&lt;div&gt;-Tener un subdominio con el juego.&lt;/div&gt;&lt;div&gt;Este juego o proyecto, se podrá acceder desde la web y&amp;nbsp;&lt;/div&gt;&lt;div&gt;tambien se compilará como APK y subirá a la play store (MISMO PROYECTO)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Tecnologías a utilizar&lt;/div&gt;&lt;div&gt;- Investigar como conectar con alguna cartera con capacitor desde android&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- División de faena&lt;/div&gt;&lt;div&gt;Tiho: Punto 1,2,3&lt;/div&gt;&lt;div&gt;Cris:&amp;nbsp; Punto 4 + Punto 1 TA&lt;/div&gt;&lt;div&gt;Luego conectarnos y mirar como juntar el repo nuevo en el subdominio&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Balance&lt;/div&gt;&lt;div&gt;Hace falta investigar un balance de levelo&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Roadmap&lt;/div&gt;&lt;div&gt;Next session&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Miscelanea&lt;/div&gt;&lt;div&gt;Darle una voltereta a un nombre mejor y más comercial&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="35" width="440" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="pyqpKjKKV07klXftnFIs-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pyqpKjKKV07klXftnFIs-2" target="pyqpKjKKV07klXftnFIs-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pyqpKjKKV07klXftnFIs-2" value="Jugador Nivel 1&lt;br&gt;ATAQUE: 5&lt;br&gt;VIDA: 10" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pyqpKjKKV07klXftnFIs-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pyqpKjKKV07klXftnFIs-3" target="pyqpKjKKV07klXftnFIs-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pyqpKjKKV07klXftnFIs-3" value="Bicho Nivel 1&lt;br&gt;ATAQUE: 3&lt;br&gt;VIDA: 14" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="690" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pyqpKjKKV07klXftnFIs-4" value="Jugador Nivel 2&lt;br&gt;ATAQUE: 5,5&lt;br&gt;VIDA: 10,1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pyqpKjKKV07klXftnFIs-5" value="Bicho Nivel 2&lt;br&gt;ATAQUE: 3,3&lt;br&gt;VIDA: 14,14" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="690" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pyqpKjKKV07klXftnFIs-10" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="80" as="sourcePoint" />
+            <mxPoint x="510" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pyqpKjKKV07klXftnFIs-11" value="10%" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="450" y="100" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pyqpKjKKV07klXftnFIs-12" value="ITEM COMÚN&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pyqpKjKKV07klXftnFIs-13" value="ITEM RARO" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="620" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pyqpKjKKV07klXftnFIs-14" value="ITEM LEGENDARIO" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="750" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
