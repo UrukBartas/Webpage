@@ -14,9 +14,7 @@ import { SwiperModule } from 'swiper/angular';
 import { WhitepaperComponent } from './components/landing/main/components/whitepaper/whitepaper.component';
 import { FeaturesComponent } from './components/landing/main/components/features/features.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatLegacyButtonModule as MatButtonModule } from '@angular/material/legacy-button';
 import { MatIconModule } from '@angular/material/icon';
-import { MatLegacyChipsModule as MatChipsModule } from '@angular/material/legacy-chips';
 import { IntroductionComponent } from './components/landing/main/components/introduction/introduction.component';
 import { PinchZoomModule } from 'ngx-pinch-zoom';
 import { TokenomicsComponent } from './components/landing/main/components/tokenomics/tokenomics.component';
@@ -31,6 +29,8 @@ import { MainComponent } from './components/landing/main/main.component';
 import { ToastrModule } from 'ngx-toastr';
 import { ClipboardModule } from 'ngx-clipboard';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatButtonModule } from '@angular/material/button';
+import { MatChipsModule } from '@angular/material/chips';
 @NgModule({
   declarations: [
     AppComponent,
