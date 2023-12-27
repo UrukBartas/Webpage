@@ -33,7 +33,7 @@
     "jquery": "^3.6.0",
     "jquery-countdown": "^2.2.0",
     "moment": "^2.29.1",
-    "ngx-clipboard": "^14.0.1",
+    "ngx-clipboard": "^16.0.0",
     "ngx-echarts": "^7.0.2",
     "ngx-pinch-zoom": "^2.6.2",
     "ngx-toastr": "^14.1.3",
