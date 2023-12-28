@@ -192,7 +192,7 @@ export class PresaleComponent implements AfterViewInit {
           );
         }
         this.suckItLikeTheMoleSister();
-      } catch (error) {
+      } catch (error:any) {
         this.toast.error(
           error.data?.message || error.message,
           'Ups, something is not working.'

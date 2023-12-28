@@ -1,41 +1,36 @@
 @use '@angular/material' as mat;
+@include mat.core();
+
+
 @import '../src/styles/palettes/primary.palette.scss';
 @import '../src/styles/palettes/secondary.palette.scss';
 @import '../src/styles/palettes/ternary.palette.scss';
-// TODO(v15): As of v15 mat.legacy-core no longer includes default typography styles.
-//  The following line adds:
-//    1. Default typography styles for all components
-//    2. Styles for typography hierarchy classes (e.g. .mat-headline-1)
-//  If you specify typography styles for the components you use elsewhere, you should delete this line.
-//  If you don't need the default component typographies but still want the hierarchy styles,
-//  you can delete this line and instead use:
-//    `@include mat.legacy-typography-hierarchy(mat.define-legacy-typography-config());`
-@include mat.all-legacy-component-typographies();
-@include mat.legacy-core();
+
 
 @import 'styles/general';
 @import 'styles/loader';
 @import 'swiper/css/bundle';
 @import 'styles/roadmap-vendor-styles.scss';
 @import 'styles/variables.scss';
-@import '~ngx-toastr/toastr';
+@import 'ngx-toastr/toastr';
 
 $uruk-bartas-primary: mat.define-palette($md-mcgpalette0);
 $uruk-bartas-accent: mat.define-palette($md-mcgpalette1);
 
 $uruk-bartas-warn: mat.define-palette($md-mcgpalette2);
 
-$uruk-bartas-theme: mat.define-light-theme(
-  (
-    color: (
-      primary: $uruk-bartas-primary,
-      accent: $uruk-bartas-accent,
-      warn: $uruk-bartas-warn,
-    ),
+$uruk-bartas-theme: mat.define-light-theme((
+  color: (
+    primary: $uruk-bartas-primary,
+    accent: $uruk-bartas-accent,
+    warn: $uruk-bartas-warn,
   )
-);
+));
 
-@include mat.all-legacy-component-themes($uruk-bartas-theme);
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($uruk-bartas-theme);
 
 @font-face {
   font-family: themify;
@@ -111,3 +106,6 @@ body {
 .text-container {
   position: relative;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
