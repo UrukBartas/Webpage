@@ -16,7 +16,6 @@ import { FeaturesComponent } from './components/landing/main/components/features
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { IntroductionComponent } from './components/landing/main/components/introduction/introduction.component';
-import { PinchZoomModule } from 'ngx-pinch-zoom';
 import { TokenomicsComponent } from './components/landing/main/components/tokenomics/tokenomics.component';
 import { NgxEchartsModule } from 'ngx-echarts';
 import { MatExpansionModule } from '@angular/material/expansion';
@@ -31,6 +30,7 @@ import { ClipboardModule } from 'ngx-clipboard';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
 import { MatChipsModule } from '@angular/material/chips';
+import { PinchZoomModule } from '@meddv/ngx-pinch-zoom';
 @NgModule({
   declarations: [
     AppComponent,

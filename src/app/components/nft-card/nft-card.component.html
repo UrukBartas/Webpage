@@ -1,5 +1,5 @@
 <div
-  class="card 
+  class="card
 {{ 'border-' + inputItem.rarity }}"
 >
   <div
@@ -12,7 +12,6 @@
     <span class="date">{{ inputItem.subTitle }}</span>
     <h2>{{ inputItem.title }}</h2>
     <div>
-      <mat-chip-list>
         <mat-chip
           *ngFor="let stat of inputItem.stats"
           [ngStyle]="{
@@ -21,7 +20,6 @@
           }"
           >{{ stat }}</mat-chip
         >
-      </mat-chip-list>
     </div>
   </div>
 
