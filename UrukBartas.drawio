@@ -1,47 +1,91 @@
-<mxfile host="app.diagrams.net" modified="2023-12-27T12:46:47.946Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="kE6yQAOy-V2ZWeUba6Ol" version="21.7.1" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-30T11:47:07.619Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="B7CrSaFTCcDO0nXSXgYN" version="22.1.15" type="github" pages="2">
   <diagram name="Página-1" id="G3qss4rFU0XSDuvpTMuO">
-    <mxGraphModel dx="2901" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2555" dy="640" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="pyqpKjKKV07klXftnFIs-1" value="&lt;div&gt;- Ver estado actual del proyecto&lt;/div&gt;&lt;div&gt;- Revisar el build&lt;/div&gt;&lt;div&gt;- Deprecar SC y WEBGL&lt;/div&gt;&lt;div&gt;-Tener un subdominio con el juego.&lt;/div&gt;&lt;div&gt;Este juego o proyecto, se podrá acceder desde la web y&amp;nbsp;&lt;/div&gt;&lt;div&gt;tambien se compilará como APK y subirá a la play store (MISMO PROYECTO)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Tecnologías a utilizar&lt;/div&gt;&lt;div&gt;- Investigar como conectar con alguna cartera con capacitor desde android&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- División de faena&lt;/div&gt;&lt;div&gt;Tiho: Punto 1,2,3&lt;/div&gt;&lt;div&gt;Cris:&amp;nbsp; Punto 4 + Punto 1 TA&lt;/div&gt;&lt;div&gt;Luego conectarnos y mirar como juntar el repo nuevo en el subdominio&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Balance&lt;/div&gt;&lt;div&gt;Hace falta investigar un balance de levelo&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Roadmap&lt;/div&gt;&lt;div&gt;Next session&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Miscelanea&lt;/div&gt;&lt;div&gt;Darle una voltereta a un nombre mejor y más comercial&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="pyqpKjKKV07klXftnFIs-1" value="&lt;div&gt;- Ver estado actual del proyecto&lt;/div&gt;&lt;div&gt;- Revisar el build&lt;/div&gt;&lt;div&gt;- Deprecar SC y WEBGL&lt;/div&gt;&lt;div&gt;-Tener un subdominio con el juego.&lt;/div&gt;&lt;div&gt;Este juego o proyecto, se podrá acceder desde la web y&amp;nbsp;&lt;/div&gt;&lt;div&gt;tambien se compilará como APK y subirá a la play store (MISMO PROYECTO)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Tecnologías a utilizar&lt;/div&gt;&lt;div&gt;- Investigar como conectar con alguna cartera con capacitor desde android&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- División de faena&lt;/div&gt;&lt;div&gt;Tiho: Punto 1,2,3&lt;/div&gt;&lt;div&gt;Cris:&amp;nbsp; Punto 4 + Punto 1 TA&lt;/div&gt;&lt;div&gt;Luego conectarnos y mirar como juntar el repo nuevo en el subdominio&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Balance&lt;/div&gt;&lt;div&gt;Hace falta investigar un balance de levelo&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Roadmap&lt;/div&gt;&lt;div&gt;Next session&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Miscelanea&lt;/div&gt;&lt;div&gt;Darle una voltereta a un nombre mejor y más comercial&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="-50" y="35" width="440" height="340" as="geometry" />
         </mxCell>
-        <mxCell id="pyqpKjKKV07klXftnFIs-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pyqpKjKKV07klXftnFIs-2" target="pyqpKjKKV07klXftnFIs-4">
+        <mxCell id="pyqpKjKKV07klXftnFIs-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="pyqpKjKKV07klXftnFIs-2" target="pyqpKjKKV07klXftnFIs-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="pyqpKjKKV07klXftnFIs-2" value="Jugador Nivel 1&lt;br&gt;ATAQUE: 5&lt;br&gt;VIDA: 10" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="pyqpKjKKV07klXftnFIs-2" value="Jugador Nivel 1&lt;br&gt;ATAQUE: 5&lt;br&gt;VIDA: 10" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="530" y="40" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="pyqpKjKKV07klXftnFIs-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pyqpKjKKV07klXftnFIs-3" target="pyqpKjKKV07klXftnFIs-5">
+        <mxCell id="pyqpKjKKV07klXftnFIs-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="pyqpKjKKV07klXftnFIs-3" target="pyqpKjKKV07klXftnFIs-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="pyqpKjKKV07klXftnFIs-3" value="Bicho Nivel 1&lt;br&gt;ATAQUE: 3&lt;br&gt;VIDA: 14" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="pyqpKjKKV07klXftnFIs-3" value="Bicho Nivel 1&lt;br&gt;ATAQUE: 3&lt;br&gt;VIDA: 14" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="690" y="40" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="pyqpKjKKV07klXftnFIs-4" value="Jugador Nivel 2&lt;br&gt;ATAQUE: 5,5&lt;br&gt;VIDA: 10,1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="pyqpKjKKV07klXftnFIs-4" value="Jugador Nivel 2&lt;br&gt;ATAQUE: 5,5&lt;br&gt;VIDA: 10,1" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="530" y="140" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="pyqpKjKKV07klXftnFIs-5" value="Bicho Nivel 2&lt;br&gt;ATAQUE: 3,3&lt;br&gt;VIDA: 14,14" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="pyqpKjKKV07klXftnFIs-5" value="Bicho Nivel 2&lt;br&gt;ATAQUE: 3,3&lt;br&gt;VIDA: 14,14" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="690" y="140" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="pyqpKjKKV07klXftnFIs-10" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="pyqpKjKKV07klXftnFIs-10" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="510" y="80" as="sourcePoint" />
             <mxPoint x="510" y="150" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pyqpKjKKV07klXftnFIs-11" value="10%" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="pyqpKjKKV07klXftnFIs-11" value="10%" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="450" y="100" width="50" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="pyqpKjKKV07klXftnFIs-12" value="ITEM COMÚN&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="pyqpKjKKV07klXftnFIs-12" value="ITEM COMÚN&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="490" y="270" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="pyqpKjKKV07klXftnFIs-13" value="ITEM RARO" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="pyqpKjKKV07klXftnFIs-13" value="ITEM RARO" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="620" y="270" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="pyqpKjKKV07klXftnFIs-14" value="ITEM LEGENDARIO" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+        <mxCell id="pyqpKjKKV07klXftnFIs-14" value="ITEM LEGENDARIO" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
           <mxGeometry x="750" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="mqwpFSCgK2DnccOAVuOG" name="Página-2">
+    <mxGraphModel dx="1487" dy="632" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Cj6aZrRY7dUbf_1ntiMv-1" value="&lt;div&gt;- Balanceo&lt;/div&gt;&lt;div&gt;- Blockchain a utilizar&lt;/div&gt;&lt;div&gt;- Shimmer para desarrollo + IOTA para despliegue&lt;/div&gt;&lt;div&gt;- Desarrollo Sección del jugador / inventario&lt;/div&gt;&lt;div&gt;- Implementar frame responsive (front)&lt;/div&gt;&lt;div&gt;&amp;nbsp; - Implementar entidad jugador/bicho (Clase comun) (arrancar backend)&lt;/div&gt;&lt;div&gt;- Guardar en esta clase, tanto para jugadores como bichos:&lt;/div&gt;&lt;div&gt;&lt;b&gt;* vida&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;* mana / energia&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;* experencia&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;* nivel&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;*nombre =&amp;gt; jugador&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;*email =&amp;gt; jugador&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; - Implementar vista de inventario (frontend)&lt;/div&gt;&lt;div&gt;&amp;nbsp; - Requerir un sign in / loggeo con cartera (web3)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-790" y="140" width="410" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="CnbawDNhO0HjKL2ADojb-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="CnbawDNhO0HjKL2ADojb-12" target="CnbawDNhO0HjKL2ADojb-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CnbawDNhO0HjKL2ADojb-12" value="Sign/auth in with web3" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-280" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CnbawDNhO0HjKL2ADojb-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="CnbawDNhO0HjKL2ADojb-13" target="CnbawDNhO0HjKL2ADojb-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CnbawDNhO0HjKL2ADojb-13" value="Click connect" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-280" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CnbawDNhO0HjKL2ADojb-15" value="Obtener entidad bicho/jugador" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-280" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CnbawDNhO0HjKL2ADojb-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="CnbawDNhO0HjKL2ADojb-16" target="CnbawDNhO0HjKL2ADojb-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CnbawDNhO0HjKL2ADojb-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="CnbawDNhO0HjKL2ADojb-16" target="CnbawDNhO0HjKL2ADojb-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CnbawDNhO0HjKL2ADojb-16" value="Generar token de sesión" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-280" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CnbawDNhO0HjKL2ADojb-19" value="Exitoso" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-280" y="390" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CnbawDNhO0HjKL2ADojb-20" value="Crear entidad bicho/jugador" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-110" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CnbawDNhO0HjKL2ADojb-22" value="No exitoso" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-110" y="360" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
