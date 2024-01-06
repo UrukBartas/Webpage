@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-03T08:40:01.522Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="QPgQ7VsvL5dcMYI2R3kF" version="22.1.16" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2024-01-06T13:29:21.029Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="e_ULg_vGdGsqqErQlpNV" version="22.1.16" type="github" pages="4">
   <diagram name="Página-1" id="G3qss4rFU0XSDuvpTMuO">
     <mxGraphModel dx="2901" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -91,178 +91,327 @@
     </mxGraphModel>
   </diagram>
   <diagram id="g_CfNbhjF9KbYOa1o9b8" name="Jugador + items">
-    <mxGraphModel dx="3267" dy="904" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4975" dy="1536" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-2" value="BichoJugador" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-14" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;opacity=60;" vertex="1" parent="1">
+          <mxGeometry x="1710" y="340" width="1130" height="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-2" value="BichoJugador" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="50" y="100" width="140" height="240" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-3" value="Vida" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="My7AKB9AWR-sH_b6GuV3-2">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-3" value="Vida" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="My7AKB9AWR-sH_b6GuV3-2" vertex="1">
           <mxGeometry y="30" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-4" value="Experencia / Nivel" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="My7AKB9AWR-sH_b6GuV3-2">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-4" value="Experencia / Nivel" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="My7AKB9AWR-sH_b6GuV3-2" vertex="1">
           <mxGeometry y="60" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-5" value="Fuerza" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="My7AKB9AWR-sH_b6GuV3-2">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-5" value="Fuerza" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="My7AKB9AWR-sH_b6GuV3-2" vertex="1">
           <mxGeometry y="90" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-9" value="&lt;b&gt;Otros stats ...&lt;/b&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="My7AKB9AWR-sH_b6GuV3-2">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-9" value="&lt;b&gt;Otros stats ...&lt;/b&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="My7AKB9AWR-sH_b6GuV3-2" vertex="1">
           <mxGeometry y="120" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-6" value="Slots maximos" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="My7AKB9AWR-sH_b6GuV3-2">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-6" value="Slots maximos" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="My7AKB9AWR-sH_b6GuV3-2" vertex="1">
           <mxGeometry y="150" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-7" value="Nombre" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="My7AKB9AWR-sH_b6GuV3-2">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-7" value="Nombre" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="My7AKB9AWR-sH_b6GuV3-2" vertex="1">
           <mxGeometry y="180" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-8" value="Correo electronico" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="My7AKB9AWR-sH_b6GuV3-2">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-8" value="Correo electronico" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="My7AKB9AWR-sH_b6GuV3-2" vertex="1">
           <mxGeometry y="210" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-10" value="Item" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-10" value="Item" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="400" y="85" width="140" height="270" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-11" value="Nivel" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="My7AKB9AWR-sH_b6GuV3-10">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-11" value="Nivel" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="My7AKB9AWR-sH_b6GuV3-10" vertex="1">
           <mxGeometry y="30" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-12" value="Rareza" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="My7AKB9AWR-sH_b6GuV3-10">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-12" value="Rareza" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="My7AKB9AWR-sH_b6GuV3-10" vertex="1">
           <mxGeometry y="60" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-14" value="Nombre&lt;br&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="My7AKB9AWR-sH_b6GuV3-10">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-14" value="Nombre&lt;br&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="My7AKB9AWR-sH_b6GuV3-10" vertex="1">
           <mxGeometry y="90" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-15" value="Slot en el que se equipa : EquipSlotEnum" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="My7AKB9AWR-sH_b6GuV3-10">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-15" value="Slot en el que se equipa : EquipSlotEnum" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="My7AKB9AWR-sH_b6GuV3-10" vertex="1">
           <mxGeometry y="120" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-13" value="Descripción" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="My7AKB9AWR-sH_b6GuV3-10">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-13" value="Descripción" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="My7AKB9AWR-sH_b6GuV3-10" vertex="1">
           <mxGeometry y="150" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-16" value="Consumible : boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="My7AKB9AWR-sH_b6GuV3-10">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-16" value="Consumible : boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="My7AKB9AWR-sH_b6GuV3-10" vertex="1">
           <mxGeometry y="180" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-17" value="Equipado en: EquipSlotEnum" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="My7AKB9AWR-sH_b6GuV3-10">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-17" value="Equipado en: EquipSlotEnum" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="My7AKB9AWR-sH_b6GuV3-10" vertex="1">
           <mxGeometry y="210" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-18" value="&lt;b&gt;Stats que mejora de la entidad Bichojugador&lt;/b&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="My7AKB9AWR-sH_b6GuV3-10">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-18" value="&lt;b&gt;Stats que mejora de la entidad Bichojugador&lt;/b&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="My7AKB9AWR-sH_b6GuV3-10" vertex="1">
           <mxGeometry y="240" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.014;entryY=0.067;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="My7AKB9AWR-sH_b6GuV3-9" target="My7AKB9AWR-sH_b6GuV3-13">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.014;entryY=0.067;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="My7AKB9AWR-sH_b6GuV3-9" target="My7AKB9AWR-sH_b6GuV3-13" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-20" value="1:n" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-20" value="1:n" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="270" y="190" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-21" value="Un bicho o jugador puede tener muchos items equipados" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-21" value="Un bicho o jugador puede tener muchos items equipados" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="230" y="250" width="140" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-22" value="Pero obviamente, dependiendo de su tipo (Slot en el que se equipa) solo se podrá equipar uno en un sitio. Por ejemplo un casco en EquipSlotEnum.Helmet" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-22" value="Pero obviamente, dependiendo de su tipo (Slot en el que se equipa) solo se podrá equipar uno en un sitio. Por ejemplo un casco en EquipSlotEnum.Helmet" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="220" y="340" width="160" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="My7AKB9AWR-sH_b6GuV3-23" target="My7AKB9AWR-sH_b6GuV3-36">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="My7AKB9AWR-sH_b6GuV3-23" target="My7AKB9AWR-sH_b6GuV3-36" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-23" value="1488 HP&lt;br&gt;Level 10&lt;br&gt;Exp 8814&lt;br&gt;Max Exp 14880&lt;br&gt;Fuerza 42&lt;br&gt;Daño de ataque 10-42&lt;br&gt;Mana 100&lt;br&gt;Slots maximos 80&lt;br&gt;The Pasive Aggresive Badger&lt;br&gt;badger@badgermail.com" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-23" value="1488 HP&lt;br&gt;Level 10&lt;br&gt;Exp 8814&lt;br&gt;Max Exp 14880&lt;br&gt;Fuerza 42&lt;br&gt;Daño de ataque 10-42&lt;br&gt;Mana 100&lt;br&gt;Slots maximos 80&lt;br&gt;The Pasive Aggresive Badger&lt;br&gt;badger@badgermail.com" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-110" y="620" width="180" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-24" value="" style="shape=mxgraph.signs.animals.bear_1;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-24" value="" style="shape=mxgraph.signs.animals.bear_1;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" parent="1" vertex="1">
           <mxGeometry x="-140" y="600" width="98" height="62" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="My7AKB9AWR-sH_b6GuV3-25" target="My7AKB9AWR-sH_b6GuV3-29">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="My7AKB9AWR-sH_b6GuV3-25" target="My7AKB9AWR-sH_b6GuV3-29" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-25" value="Espada magica&lt;br&gt;Level 9&lt;br&gt;Raro&lt;br&gt;&lt;b&gt;EquipSlotEnum.RightHand&lt;/b&gt;&lt;br&gt;Una espada del bosque badgero&lt;br&gt;Consumible: false&lt;br&gt;&lt;b&gt;Equipado en: EquipSlotEnum.RightHand&lt;/b&gt;&lt;br&gt;Fuerza + 10&lt;br&gt;Daño de ataque 10-42" style="rounded=0;whiteSpace=wrap;html=1;spacingTop=1;spacing=3;" vertex="1" parent="1">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-25" value="Espada magica&lt;br&gt;Level 9&lt;br&gt;Raro&lt;br&gt;&lt;b&gt;EquipSlotEnum.RightHand&lt;/b&gt;&lt;br&gt;Una espada del bosque badgero&lt;br&gt;Consumible: false&lt;br&gt;&lt;b&gt;Equipado en: EquipSlotEnum.RightHand&lt;/b&gt;&lt;br&gt;Fuerza + 10&lt;br&gt;Daño de ataque 10-42" style="rounded=0;whiteSpace=wrap;html=1;spacingTop=1;spacing=3;" parent="1" vertex="1">
           <mxGeometry x="390" y="520" width="180" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="My7AKB9AWR-sH_b6GuV3-26" target="My7AKB9AWR-sH_b6GuV3-31">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="My7AKB9AWR-sH_b6GuV3-26" target="My7AKB9AWR-sH_b6GuV3-31" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-26" value="Espada de madera&lt;br&gt;Level 5&lt;br&gt;Comun&lt;br&gt;&lt;b&gt;EquipSlotEnum.RightHand&lt;/b&gt;&lt;br&gt;Una espada de madera de m____&lt;br&gt;Consumible: false&lt;br&gt;&lt;b&gt;Equipado en: null&lt;/b&gt;&lt;br&gt;Fuerza + 5&lt;br&gt;Daño de ataque 3 - 12" style="rounded=0;whiteSpace=wrap;html=1;spacingTop=1;spacing=3;" vertex="1" parent="1">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-26" value="Espada de madera&lt;br&gt;Level 5&lt;br&gt;Comun&lt;br&gt;&lt;b&gt;EquipSlotEnum.RightHand&lt;/b&gt;&lt;br&gt;Una espada de madera de m____&lt;br&gt;Consumible: false&lt;br&gt;&lt;b&gt;Equipado en: null&lt;/b&gt;&lt;br&gt;Fuerza + 5&lt;br&gt;Daño de ataque 3 - 12" style="rounded=0;whiteSpace=wrap;html=1;spacingTop=1;spacing=3;" parent="1" vertex="1">
           <mxGeometry x="390" y="760" width="180" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="My7AKB9AWR-sH_b6GuV3-27" target="My7AKB9AWR-sH_b6GuV3-31">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="My7AKB9AWR-sH_b6GuV3-27" target="My7AKB9AWR-sH_b6GuV3-31" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-27" value="Poción de vida&lt;br&gt;Level 10&lt;br&gt;Comun&lt;br&gt;&lt;b&gt;EquipSlotEnum.Consumable&lt;/b&gt;&lt;br&gt;Restaura 200 pts de vida&lt;br&gt;&lt;b&gt;Consumible: true&lt;/b&gt;&lt;br&gt;&lt;b&gt;Equipado en: null&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;spacingTop=1;spacing=3;" vertex="1" parent="1">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-27" value="Poción de vida&lt;br&gt;Level 10&lt;br&gt;Comun&lt;br&gt;&lt;b&gt;EquipSlotEnum.Consumable&lt;/b&gt;&lt;br&gt;Restaura 200 pts de vida&lt;br&gt;&lt;b&gt;Consumible: true&lt;/b&gt;&lt;br&gt;&lt;b&gt;Equipado en: null&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;spacingTop=1;spacing=3;" parent="1" vertex="1">
           <mxGeometry x="390" y="1000" width="180" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="My7AKB9AWR-sH_b6GuV3-28" target="My7AKB9AWR-sH_b6GuV3-31">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="My7AKB9AWR-sH_b6GuV3-28" target="My7AKB9AWR-sH_b6GuV3-31" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-28" value="Casco autista&lt;br&gt;Level 7&lt;br&gt;Epico&lt;br&gt;&lt;b&gt;EquipSlotEnum.Helmet&lt;/b&gt;&lt;br&gt;Un casco creado por el druida Andreu&lt;br&gt;Consumible: false&lt;br&gt;&lt;b&gt;Equipado en: null&lt;/b&gt;&lt;br&gt;Fuerza + 10&lt;br&gt;Armadura + 30" style="rounded=0;whiteSpace=wrap;html=1;spacingTop=1;spacing=3;" vertex="1" parent="1">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-28" value="Casco autista&lt;br&gt;Level 7&lt;br&gt;Epico&lt;br&gt;&lt;b&gt;EquipSlotEnum.Helmet&lt;/b&gt;&lt;br&gt;Un casco creado por el druida Andreu&lt;br&gt;Consumible: false&lt;br&gt;&lt;b&gt;Equipado en: null&lt;/b&gt;&lt;br&gt;Fuerza + 10&lt;br&gt;Armadura + 30" style="rounded=0;whiteSpace=wrap;html=1;spacingTop=1;spacing=3;" parent="1" vertex="1">
           <mxGeometry x="390" y="1180" width="180" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-29" value="Se mostrará equipado en la vista del personaje" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-29" value="Se mostrará equipado en la vista del personaje" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="680" y="595" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-31" value="Se mostrará en el inventario sin equipar" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-31" value="Se mostrará en el inventario sin equipar" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="680" y="1000" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-35" value="Posible respuesta backend" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-35" value="Posible respuesta backend" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1090" y="480" width="130" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-36" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontColor=#333333;strokeColor=#000000;strokeWidth=3;" vertex="1" parent="1">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-36" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;fontColor=#333333;strokeColor=#000000;strokeWidth=3;" parent="1" vertex="1">
           <mxGeometry x="300" y="490" width="360" height="960" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-37" value="array de items" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-37" value="array de items" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="415" y="460" width="130" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-39" value="{&lt;br&gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;character: {&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;HP: 1488,&lt;br&gt;LEVEL: 10,&lt;br&gt;EXP: 8814,&lt;br&gt;MAX_EXP: 14880,&lt;br&gt;FUERZA: 42,&lt;br&gt;DANYO_ATAQUE: 10-42,&lt;br&gt;MANA: 100,&lt;br&gt;SLOTS_MAXIMOS: 80,&lt;br&gt;NOMBRE: THE PASSIVE AGRESSIVE BADGER,&lt;br&gt;EMAIL: BADGER@BADGERMAIL.COM,&lt;br&gt;items: [&lt;br&gt;&lt;b&gt;{&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;nombre: Espada magica,&lt;br&gt;level: 9,&lt;br&gt;rareza: Raro,&lt;br&gt;type: RightHand,&lt;br&gt;descripcion: Una espada del bosqueda badgero&lt;br&gt;consumable: false,&lt;br&gt;equipped: Righthand,&lt;br&gt;Strenght: 10,&lt;br&gt;Danyo ataque: 10-42&lt;br&gt;&lt;br&gt;},&lt;br&gt;&lt;/b&gt;... other items&lt;br&gt;&lt;br&gt;&lt;br&gt;]&lt;br&gt;&lt;br&gt;&lt;br&gt;}&lt;br&gt;}" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-39" value="{&lt;br&gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;character: {&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;HP: 1488,&lt;br&gt;LEVEL: 10,&lt;br&gt;EXP: 8814,&lt;br&gt;MAX_EXP: 14880,&lt;br&gt;FUERZA: 42,&lt;br&gt;DANYO_ATAQUE: 10-42,&lt;br&gt;MANA: 100,&lt;br&gt;SLOTS_MAXIMOS: 80,&lt;br&gt;NOMBRE: THE PASSIVE AGRESSIVE BADGER,&lt;br&gt;EMAIL: BADGER@BADGERMAIL.COM,&lt;br&gt;items: [&lt;br&gt;&lt;b&gt;{&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;nombre: Espada magica,&lt;br&gt;level: 9,&lt;br&gt;rareza: Raro,&lt;br&gt;type: RightHand,&lt;br&gt;descripcion: Una espada del bosqueda badgero&lt;br&gt;consumable: false,&lt;br&gt;equipped: Righthand,&lt;br&gt;Strenght: 10,&lt;br&gt;Danyo ataque: 10-42&lt;br&gt;&lt;br&gt;},&lt;br&gt;&lt;/b&gt;... other items&lt;br&gt;&lt;br&gt;&lt;br&gt;]&lt;br&gt;&lt;br&gt;&lt;br&gt;}&lt;br&gt;}" style="rounded=0;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="900" y="550" width="570" height="590" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="My7AKB9AWR-sH_b6GuV3-40" target="My7AKB9AWR-sH_b6GuV3-42">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="My7AKB9AWR-sH_b6GuV3-40" target="My7AKB9AWR-sH_b6GuV3-42" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-40" value="1488 HP&lt;br&gt;Level 10&lt;br&gt;Exp 8814&lt;br&gt;Max Exp 14880&lt;br&gt;Fuerza 42&lt;br&gt;Daño de ataque 10-42&lt;br&gt;Mana 100&lt;br&gt;Slots maximos 80&lt;br&gt;The Pasive Aggresive Badger&lt;br&gt;badger@badgermail.com" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-40" value="1488 HP&lt;br&gt;Level 10&lt;br&gt;Exp 8814&lt;br&gt;Max Exp 14880&lt;br&gt;Fuerza 42&lt;br&gt;Daño de ataque 10-42&lt;br&gt;Mana 100&lt;br&gt;Slots maximos 80&lt;br&gt;The Pasive Aggresive Badger&lt;br&gt;badger@badgermail.com" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-90" y="1590" width="180" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-41" value="" style="shape=mxgraph.signs.animals.bear_1;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-41" value="" style="shape=mxgraph.signs.animals.bear_1;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" parent="1" vertex="1">
           <mxGeometry x="-120" y="1570" width="98" height="62" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-42" value="Espada magica&lt;br&gt;Level 9&lt;br&gt;Raro&lt;br&gt;&lt;b&gt;EquipSlotEnum.RightHand&lt;/b&gt;&lt;br&gt;Una espada del bosque badgero&lt;br&gt;Consumible: false&lt;br&gt;&lt;b&gt;Equipado en: EquipSlotEnum.RightHand&lt;/b&gt;&lt;br&gt;Fuerza + 10&lt;br&gt;Daño de ataque 10-42" style="rounded=0;whiteSpace=wrap;html=1;spacingTop=1;spacing=3;" vertex="1" parent="1">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-42" value="Espada magica&lt;br&gt;Level 9&lt;br&gt;Raro&lt;br&gt;&lt;b&gt;EquipSlotEnum.RightHand&lt;/b&gt;&lt;br&gt;Una espada del bosque badgero&lt;br&gt;Consumible: false&lt;br&gt;&lt;b&gt;Equipado en: EquipSlotEnum.RightHand&lt;/b&gt;&lt;br&gt;Fuerza + 10&lt;br&gt;Daño de ataque 10-42" style="rounded=0;whiteSpace=wrap;html=1;spacingTop=1;spacing=3;" parent="1" vertex="1">
           <mxGeometry x="360" y="1590" width="180" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-44" value="La tiene equipada" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-44" value="La tiene equipada" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="190" y="1640" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="My7AKB9AWR-sH_b6GuV3-50" target="My7AKB9AWR-sH_b6GuV3-47">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="My7AKB9AWR-sH_b6GuV3-50" target="My7AKB9AWR-sH_b6GuV3-47" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-46" value="1488 HP&lt;br&gt;Level 10&lt;br&gt;Exp 8814&lt;br&gt;Max Exp 14880&lt;br&gt;Fuerza 42&lt;br&gt;Daño de ataque 10-42&lt;br&gt;Mana 100&lt;br&gt;Slots maximos 80&lt;br&gt;The Pasive Aggresive Badger&lt;br&gt;badger@badgermail.com" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-46" value="1488 HP&lt;br&gt;Level 10&lt;br&gt;Exp 8814&lt;br&gt;Max Exp 14880&lt;br&gt;Fuerza 42&lt;br&gt;Daño de ataque 10-42&lt;br&gt;Mana 100&lt;br&gt;Slots maximos 80&lt;br&gt;The Pasive Aggresive Badger&lt;br&gt;badger@badgermail.com" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-90" y="1880" width="180" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-47" value="Espada magica&lt;br&gt;Level 9&lt;br&gt;Raro&lt;br&gt;&lt;b&gt;EquipSlotEnum.RightHand&lt;/b&gt;&lt;br&gt;Una espada del bosque badgero&lt;br&gt;Consumible: false&lt;br&gt;&lt;b&gt;Equipado en: null&lt;/b&gt;&lt;br&gt;Fuerza + 10&lt;br&gt;Daño de ataque 10-42" style="rounded=0;whiteSpace=wrap;html=1;spacingTop=1;spacing=3;" vertex="1" parent="1">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-47" value="Espada magica&lt;br&gt;Level 9&lt;br&gt;Raro&lt;br&gt;&lt;b&gt;EquipSlotEnum.RightHand&lt;/b&gt;&lt;br&gt;Una espada del bosque badgero&lt;br&gt;Consumible: false&lt;br&gt;&lt;b&gt;Equipado en: null&lt;/b&gt;&lt;br&gt;Fuerza + 10&lt;br&gt;Daño de ataque 10-42" style="rounded=0;whiteSpace=wrap;html=1;spacingTop=1;spacing=3;" parent="1" vertex="1">
           <mxGeometry x="360" y="1880" width="180" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-48" value="" style="shape=mxgraph.signs.animals.bear_1;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-48" value="" style="shape=mxgraph.signs.animals.bear_1;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" parent="1" vertex="1">
           <mxGeometry x="-130" y="1840" width="98" height="62" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-49" value="Al desequiparla" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-49" value="Al desequiparla" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="170" y="1930" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="My7AKB9AWR-sH_b6GuV3-46" target="My7AKB9AWR-sH_b6GuV3-50">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="My7AKB9AWR-sH_b6GuV3-46" target="My7AKB9AWR-sH_b6GuV3-50" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="90" y="1985" as="sourcePoint" />
             <mxPoint x="360" y="1985" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="My7AKB9AWR-sH_b6GuV3-50" target="My7AKB9AWR-sH_b6GuV3-52">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="My7AKB9AWR-sH_b6GuV3-50" target="My7AKB9AWR-sH_b6GuV3-52" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-50" value="" style="shape=mxgraph.mockup.markup.redX;fillColor=#ff0000;html=1;shadow=0;whiteSpace=wrap;strokeColor=none;" vertex="1" parent="1">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-50" value="" style="shape=mxgraph.mockup.markup.redX;fillColor=#ff0000;html=1;shadow=0;whiteSpace=wrap;strokeColor=none;" parent="1" vertex="1">
           <mxGeometry x="200" y="1970" width="50" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="My7AKB9AWR-sH_b6GuV3-52" target="My7AKB9AWR-sH_b6GuV3-55">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="My7AKB9AWR-sH_b6GuV3-52" target="My7AKB9AWR-sH_b6GuV3-55" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-52" value="Llamar funcion/petición onUnEquip que le pasará el item a desequipar y se recalcularán los stats entonces, actualizando la entidad bicho/jugador" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-52" value="Llamar funcion/petición onUnEquip que le pasará el item a desequipar y se recalcularán los stats entonces, actualizando la entidad bicho/jugador" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="92.5" y="2150" width="275" height="102" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-55" value="1488 HP&lt;br&gt;Level 10&lt;br&gt;Exp 8814&lt;br&gt;Max Exp 14880&lt;br&gt;Fuerza 32&lt;br&gt;Daño de ataque 0&lt;br&gt;Mana 100&lt;br&gt;Slots maximos 80&lt;br&gt;The Pasive Aggresive Badger&lt;br&gt;badger@badgermail.com" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-55" value="1488 HP&lt;br&gt;Level 10&lt;br&gt;Exp 8814&lt;br&gt;Max Exp 14880&lt;br&gt;Fuerza 32&lt;br&gt;Daño de ataque 0&lt;br&gt;Mana 100&lt;br&gt;Slots maximos 80&lt;br&gt;The Pasive Aggresive Badger&lt;br&gt;badger@badgermail.com" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="660" y="2096" width="180" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="My7AKB9AWR-sH_b6GuV3-56" value="" style="shape=mxgraph.signs.animals.bear_1;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+        <mxCell id="My7AKB9AWR-sH_b6GuV3-56" value="" style="shape=mxgraph.signs.animals.bear_1;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" parent="1" vertex="1">
           <mxGeometry x="620" y="2060" width="98" height="62" as="geometry" />
         </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-2" value="SC NFTS" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1740" y="360" width="152" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="dnU0xLpG_Vz56fmRaGmu-4" target="dnU0xLpG_Vz56fmRaGmu-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-4" value="mapping (address =&amp;gt; NftItem[] (struct) )" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1880" y="505.5" width="320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-5" value="NftItem{&lt;br&gt;idBackend:String,&lt;br&gt;blocked: Boolean,&lt;br&gt;nftId:String,&lt;br&gt;nftAddress:String,&lt;br&gt;initialFees: uint&lt;br&gt;}" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2330" y="480" width="120" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dnU0xLpG_Vz56fmRaGmu-7" target="dnU0xLpG_Vz56fmRaGmu-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-7" value="function whitelistItem( walletAddress:string, backendId: string) &lt;b&gt;&lt;font color=&quot;#ff2a00&quot;&gt;onlyAdmin&amp;nbsp;&lt;/font&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1720" y="630" width="458" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-9" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;DO&lt;/font&gt;&lt;/b&gt;&lt;br&gt;this.mapping[walletAddress] = {&lt;br&gt;idBackend:backendId,&lt;br&gt;blocked: false,&lt;br&gt;nftId: &quot;-1&quot;,&lt;br&gt;initialFees:&amp;nbsp;msg.gas&lt;br&gt;}" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1856" y="740" width="200" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dnU0xLpG_Vz56fmRaGmu-11" target="dnU0xLpG_Vz56fmRaGmu-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-11" value="function safeMintNFT( backendId: string, metadataURL: String) &lt;b&gt;&lt;font color=&quot;#ff2a00&quot;&gt;onlyWhitelisted || onlyAdmin&lt;/font&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2240" y="625" width="458" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-12" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;DO&lt;/font&gt;&lt;/b&gt;&lt;br&gt;1 address minter = msg.sender;&lt;br&gt;2 require( this.mapping[minter] &amp;amp;&amp;amp; this.mapping[minter].idBackend == idBackend)&lt;br&gt;3 pay minting initial fees&lt;br&gt;4 mint with metadata &amp;amp; transfer to minter&lt;br&gt;5 update the mapping nftId with the newly generated nft id" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2363.5" y="750" width="211" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dnU0xLpG_Vz56fmRaGmu-15" target="dnU0xLpG_Vz56fmRaGmu-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-15" value="function equipItem( nftId : String ) &lt;b&gt;&lt;font color=&quot;#ff2a00&quot;&gt;onlyOwnerOfItem&lt;/font&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1727" y="930" width="458" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-16" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;DO&lt;/font&gt;&lt;/b&gt;&lt;br&gt;this.mapping[msg.sender] = {&lt;br&gt;blocked: &lt;font color=&quot;#ff2a00&quot;&gt;&lt;b&gt;true&lt;/b&gt;&lt;/font&gt;,&lt;br&gt;}" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1856" y="1060" width="200" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dnU0xLpG_Vz56fmRaGmu-19" target="dnU0xLpG_Vz56fmRaGmu-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-19" value="function unEquipItem( nftId : String ) &lt;b&gt;&lt;font color=&quot;#ff2a00&quot;&gt;onlyOwnerOfItem&lt;/font&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2240" y="930" width="458" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-20" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;DO&lt;/font&gt;&lt;/b&gt;&lt;br&gt;this.mapping[msg.sender] = {&lt;br&gt;blocked: &lt;font color=&quot;#ff2a00&quot;&gt;&lt;b&gt;false&lt;/b&gt;&lt;/font&gt;,&lt;br&gt;}" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2369" y="1060" width="200" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dnU0xLpG_Vz56fmRaGmu-21" target="dnU0xLpG_Vz56fmRaGmu-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-21" value="function getUnequipedItems( ) pure view" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1720" y="1300" width="458" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-22" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;DO&lt;/font&gt;&lt;/b&gt;&lt;br&gt;for loop items with &lt;b&gt;&lt;font color=&quot;#ff2a00&quot;&gt;blocked false&lt;/font&gt;&lt;/b&gt; ( inventory items )" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1849" y="1440" width="200" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dnU0xLpG_Vz56fmRaGmu-25" target="dnU0xLpG_Vz56fmRaGmu-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-25" value="function getEquipedItems( ) pure view" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2248" y="1290" width="458" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-26" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;DO&lt;/font&gt;&lt;/b&gt;&lt;br&gt;for loop items with &lt;b&gt;&lt;font color=&quot;#ff2a00&quot;&gt;blocked true&lt;/font&gt;&lt;/b&gt; ( equiped items )" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2377" y="1430" width="200" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-27" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;opacity=60;" vertex="1" parent="1">
+          <mxGeometry x="2940" y="340" width="1130" height="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-28" value="Backend + Frontend flow" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2970" y="360" width="152" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="dnU0xLpG_Vz56fmRaGmu-29" target="dnU0xLpG_Vz56fmRaGmu-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-29" value="El backend recibe una petición HTTPS para mintear desde el front" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2980" y="446" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="dnU0xLpG_Vz56fmRaGmu-30" target="dnU0xLpG_Vz56fmRaGmu-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-30" value="Genera el item y su metadata si no lo hizo ya y lo guarda en la tabla &quot;Items pendientes de claimear&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3330" y="445.5" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dnU0xLpG_Vz56fmRaGmu-31" target="dnU0xLpG_Vz56fmRaGmu-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-31" value="Llama a whitelistItem (el coste lo asume el back) del SC y le pasa:&lt;br&gt;&lt;b&gt;walletAddress&lt;/b&gt;: la dirección del usuario loggeado&lt;br&gt;&lt;b&gt;backendId&lt;/b&gt;: el id del item en la bbdd de la tabla items pendientes" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3642" y="423.75" width="368" height="104.5" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="dnU0xLpG_Vz56fmRaGmu-34" target="dnU0xLpG_Vz56fmRaGmu-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-34" value="El frontend llama a safeMintNFT (el coste lo asume el usuario + debe pagar los fees iniciales) y le pasa:&lt;br&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;backendId&lt;/b&gt;: el id del item en la bbdd de la tabla items pendientes&lt;br&gt;&lt;b&gt;metadataURL&lt;/b&gt;: La URL de los metadatos a donde se suban" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3636" y="635" width="380" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="dnU0xLpG_Vz56fmRaGmu-37" target="dnU0xLpG_Vz56fmRaGmu-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-37" value="Se elimina de la tabla de items pendientes de reclamar" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3290" y="640" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-39" value="contadorNftIds: uint" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1880" y="423.75" width="320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-40" value="Usuario recibe su NFT" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2980" y="645" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-36" value="" style="shape=mxgraph.signs.animals.sloth;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="2930" y="604" width="99" height="81" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-43" value="PROCESO DE MINTEO" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=32;" vertex="1" parent="1">
+          <mxGeometry x="3280" y="370" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-44" value="Inventario" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=32;" vertex="1" parent="1">
+          <mxGeometry x="3280" y="790" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-45" value="El front llama a getUnequipedItems" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3375" y="865" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-46" value="Items equipados" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=32;" vertex="1" parent="1">
+          <mxGeometry x="3290" y="960" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-47" value="El front llama a getEquipedItems" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3375" y="1030" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-48" value="Equipar un item" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=32;" vertex="1" parent="1">
+          <mxGeometry x="3270" y="1130" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-49" value="El front llama a equipItem" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3376" y="1199" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-50" value="Desequipar un item" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=32;" vertex="1" parent="1">
+          <mxGeometry x="3270" y="1291" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dnU0xLpG_Vz56fmRaGmu-51" value="El front llama a unequipItem" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3376" y="1360" width="260" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="MIZOidW2G3aXRXBiU03-" name="Página-4">
+    <mxGraphModel dx="2074" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
