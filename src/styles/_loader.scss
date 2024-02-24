@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('/assets/wallpaper/forest.jpg');
+  background-image: url("/assets/wallpaper/arena.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,6 +25,9 @@
       position: absolute;
       z-index: 2;
       max-width: 70vw;
+      width: 120%;
+      top: -35px;
+      left: -40px;
     }
 
     .spinner {
@@ -58,7 +61,7 @@
       }
 
       &:after {
-        content: '';
+        content: "";
         position: absolute;
         top: 10px;
         left: 10px;

@@ -11,7 +11,7 @@
     align-items: center;
 
     .background-image-cover {
-      background-image: url('/assets/wallpaper/forest.jpg');
+      background-image: url("/assets/wallpaper/arena.png");
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -27,25 +27,21 @@
     .topbar {
       position: fixed;
       z-index: 100;
-      width: 1500px;
+      width: fit-content;
       display: flex;
       max-width: 95vw;
       img {
         height: 80px;
-        width: 1500px;
+        width: 100%;
         max-width: 95vw;
         position: absolute;
         z-index: -1;
       }
 
       .link {
-        &:first-of-type {
-          padding-left: 60px;
-        }
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
-        font-family: monospace;
         font-size: 18px;
         color: #fffffffc;
         width: fit-content;
@@ -54,7 +50,6 @@
         text-decoration: none;
         user-select: none;
         cursor: pointer;
-        text-shadow: 0 0 10px white;
         &:not(:first-of-type) {
           padding-top: 8px;
         }
@@ -64,6 +59,11 @@
           animation: heartBeat;
           animation-duration: 4s;
         }
+      }
+      .play-now {
+        color: #e7ad46;
+        animation: heartBeat;
+        animation-duration: 4s;
       }
       .link.active {
         color: #e7ad46 !important;

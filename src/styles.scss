@@ -1,50 +1,68 @@
-@use '@angular/material' as mat;
+@use "@angular/material" as mat;
 @include mat.core();
 
+@import "../src/styles/palettes/primary.palette.scss";
+@import "../src/styles/palettes/secondary.palette.scss";
+@import "../src/styles/palettes/ternary.palette.scss";
 
-@import '../src/styles/palettes/primary.palette.scss';
-@import '../src/styles/palettes/secondary.palette.scss';
-@import '../src/styles/palettes/ternary.palette.scss';
+@import "styles/general";
+@import "styles/loader";
+@import "swiper/css/bundle";
+@import "styles/roadmap-vendor-styles.scss";
+@import "styles/variables.scss";
+@import "ngx-toastr/toastr";
 
+$uruk-bartas-primary: mat.define-palette($md-primaryuruk);
+$uruk-bartas-accent: mat.define-palette($md-secondaryuruk);
 
-@import 'styles/general';
-@import 'styles/loader';
-@import 'swiper/css/bundle';
-@import 'styles/roadmap-vendor-styles.scss';
-@import 'styles/variables.scss';
-@import 'ngx-toastr/toastr';
+$uruk-bartas-warn: mat.define-palette($md-thirduruk);
 
-$uruk-bartas-primary: mat.define-palette($md-mcgpalette0);
-$uruk-bartas-accent: mat.define-palette($md-mcgpalette1);
-
-$uruk-bartas-warn: mat.define-palette($md-mcgpalette2);
-
-$uruk-bartas-theme: mat.define-light-theme((
-  color: (
-    primary: $uruk-bartas-primary,
-    accent: $uruk-bartas-accent,
-    warn: $uruk-bartas-warn,
+$uruk-bartas-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $uruk-bartas-primary,
+      accent: $uruk-bartas-accent,
+      warn: $uruk-bartas-warn,
+    ),
   )
-));
+);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include mat.all-component-themes($uruk-bartas-theme);
 
+.overlay-container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "UrukFont";
+}
+
 @font-face {
-  font-family: themify;
-  src: url(assets/fonts/themify9f24.eot?-fvbane);
-  src: url(assets/fonts/themifyd41d.eot?#iefix-fvbane) format('embedded-opentype'),
-    url(assets/fonts/themify9f24.woff?-fvbane) format('woff'), url(assets/fonts/themify9f24.ttf?-fvbane) format('truetype'),
-    url(assets/fonts/themify9f24.svg?-fvbane#themify) format('svg');
-  font-weight: 400;
+  font-family: "UrukFont";
+  src: url("./assets/fonts/uruk-font.ttf") format("truetype");
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: wow;
-  src: url(assets/fonts/LifeCraft_Font.ttf);
+  font-family: themify;
+  src: url(assets/fonts/themify9f24.eot?-fvbane);
+  src: url(assets/fonts/themifyd41d.eot?#iefix-fvbane)
+      format("embedded-opentype"),
+    url(assets/fonts/themify9f24.woff?-fvbane) format("woff"),
+    url(assets/fonts/themify9f24.ttf?-fvbane) format("truetype"),
+    url(assets/fonts/themify9f24.svg?-fvbane#themify) format("svg");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
@@ -61,7 +79,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.pointer{
+.pointer {
   cursor: pointer;
 }
 
@@ -96,16 +114,22 @@ body {
 html,
 body {
   height: 100%;
-  overflow-x: 'hidden' !important;
+  overflow-x: "hidden" !important;
 }
 body {
   margin: 0;
-  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 .text-container {
   position: relative;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

@@ -66,7 +66,7 @@ export class MainComponent implements OnInit {
     if (target > elementBottom) {
       background.style.backgroundImage = 'url(/assets/wallpaper/dungeon.jpg)'
     } else {
-      background.style.backgroundImage = 'url(/assets/wallpaper/forest.jpg)'
+      background.style.backgroundImage = 'url(/assets/wallpaper/field.png)'
     }
   }
 
