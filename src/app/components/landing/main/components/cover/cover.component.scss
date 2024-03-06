@@ -11,9 +11,7 @@
   .orc {
     position: absolute;
     padding-bottom: 100px;
-    z-index: 1;
-    max-width: 300px;
-    animation: shakeY 10s 1s infinite;
+    max-width: 80vw;
   }
   .text {
     position: absolute;
@@ -138,7 +136,7 @@
       display: none;
     }
     .orc {
-      width: 70vw;
+      width: 90vw;
     }
     .axe {
       width: 90vw;

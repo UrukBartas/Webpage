@@ -53,28 +53,6 @@ $uruk-bartas-theme: mat.define-light-theme(
   font-style: normal;
 }
 
-@font-face {
-  font-family: themify;
-  src: url(assets/fonts/themify9f24.eot?-fvbane);
-  src: url(assets/fonts/themifyd41d.eot?#iefix-fvbane)
-      format("embedded-opentype"),
-    url(assets/fonts/themify9f24.woff?-fvbane) format("woff"),
-    url(assets/fonts/themify9f24.ttf?-fvbane) format("truetype"),
-    url(assets/fonts/themify9f24.svg?-fvbane#themify) format("svg");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: slav;
-  src: url(assets/fonts/RobotoSlab-VariableFont_wght.ttf);
-}
-
-@font-face {
-  font-family: rubic;
-  src: url(assets/fonts/RobotoSlab-VariableFont_wght.ttf);
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -111,25 +89,7 @@ body {
   background: #5e5e5e !important;
 }
 
-html,
-body {
-  height: 100%;
-  overflow-x: "hidden" !important;
-}
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-}
 
 .text-container {
   position: relative;
-}
-
-html,
-body {
-  height: 100%;
-}
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
