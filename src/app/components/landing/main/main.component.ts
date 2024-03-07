@@ -9,10 +9,10 @@ import { Utils } from '../utils/utils';
   styleUrls: ['./main.component.scss'],
 })
 export class MainComponent implements OnInit {
+  
   @HostListener('window:scroll', ['$event'])
   onScroll(event: any) {
     this.controlIntroductionHistory();
-    this.controlMythicsScroll();
   }
 
   constructor(public router: Router) {}
@@ -67,7 +67,7 @@ export class MainComponent implements OnInit {
     coin.style.opacity = visible4 ? 1 : 0;
     item.style.opacity = visible3 ? 1 : 0;
 
-    this.controlBackground(trigger5);
+    //this.controlBackground(trigger5);
   }
 
   private controlBackground(trigger5) {

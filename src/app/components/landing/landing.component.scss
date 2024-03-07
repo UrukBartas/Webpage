@@ -11,7 +11,7 @@
     align-items: center;
 
     .background-image-cover {
-      background-image: url("/assets/wallpaper/arena.png");
+      background-image: url("/assets/wallpaper/field.png");
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -27,18 +27,16 @@
     .topbar {
       position: fixed;
       z-index: 100;
-      width: fit-content;
+      width: 100%;
       display: flex;
       max-width: 95vw;
-      img {
-        height: 80px;
-        width: 100%;
-        max-width: 95vw;
-        position: absolute;
-        z-index: -1;
-      }
+      background: #00000033;
+      border-radius: 0px 0px 5px 5px;
 
       .link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;

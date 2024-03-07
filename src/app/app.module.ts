@@ -15,10 +15,8 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './components/landing/footer/footer.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { CoverComponent } from './components/landing/main/components/cover/cover.component';
-import { FeaturesComponent } from './components/landing/main/components/features/features.component';
 import { InGameComponent } from './components/landing/main/components/in-game/in-game.component';
 import { IntroductionComponent } from './components/landing/main/components/introduction/introduction.component';
-import { MythicsComponent } from './components/landing/main/components/mythics/mythics.component';
 import { RoadmapComponent } from './components/landing/main/components/roadmap/roadmap.component';
 import { WhitepaperComponent } from './components/landing/main/components/whitepaper/whitepaper.component';
 import { MainComponent } from './components/landing/main/main.component';
@@ -32,10 +30,8 @@ import { MobileMenuComponent } from './components/landing/mobile-menu/mobile-men
     RoadmapComponent,
     FooterComponent,
     WhitepaperComponent,
-    FeaturesComponent,
     IntroductionComponent,
     MobileMenuComponent,
-    MythicsComponent,
     MainComponent,
   ],
   imports: [

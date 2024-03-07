@@ -7,33 +7,23 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow-x: hidden;
 
   .orc {
     position: absolute;
-    padding-bottom: 100px;
-    max-width: 80vw;
-  }
-  .text {
-    position: absolute;
-    padding-top: 350px;
-    filter: sepia();
+    width: 80vw;
+    max-width: 1200px;
+    animation: pulse 3s ease-in-out infinite;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
   }
 
-  .axe {
+  .text {
     position: absolute;
-    z-index: 0;
-    padding-bottom: 200px;
-    &.axe-2 {
-      transform: skewX(10deg);
-      padding-right: 150px;
-      animation: move-axe-1 1s ease-in-out, shakeY 10s 1s infinite;
-    }
-    &.axe-1 {
-      transform: skewX(10deg);
-      padding-left: 150px;
-      animation: move-axe-2 1s ease-in-out, shakeY 10s 1s infinite;
-    }
+    padding-top: 450px;
+    max-width: 65vw;
+    padding-top: 35vh;
   }
+
 
   .scroll-down {
     position: absolute;
@@ -75,15 +65,15 @@
     }
     .chevron-1::after,
     .chevron-1::before {
-      background: $primary;
+      background: rgba(255, 255, 255, 0.252);
     }
     .chevron-2::after,
     .chevron-2::before {
-      background: $primary;
+      background: rgba(255, 255, 255, 0.252);
     }
     .chevron-3::after,
     .chevron-3::before {
-      background: $primary;
+      background: rgba(255, 255, 255, 0.252);
     }
   }
 }
@@ -106,48 +96,13 @@
   }
 }
 
-@keyframes move-axe-1 {
-  0% {
-    transform: rotate(0deg) skewX(0deg);
-  }
-  50% {
-    transform: skewX(10deg);
-  }
-  100% {
-    transform: skewX(0deg) rotate(360deg);
-  }
-}
-
-@keyframes move-axe-2 {
-  0% {
-    transform: rotate(0deg) skewX(0deg);
-  }
-  50% {
-    transform: skewX(-10deg);
-  }
-  100% {
-    transform: skewX(0deg) rotate(-360deg);
-  }
-}
-
 @media only screen and (max-width: 640px) {
   #cover {
-    .text {
-      display: none;
-    }
     .orc {
-      width: 90vw;
+      width: 120vw;
     }
-    .axe {
-      width: 90vw;
-    }
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  #cover {
     .text {
-      width: 85vw;
+      max-width: 90vw;
     }
   }
 }
