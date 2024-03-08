@@ -1,49 +1,26 @@
-@import 'node_modules/bootstrap/scss/functions';
-@import 'node_modules/bootstrap/scss/variables';
-@import 'node_modules/bootstrap/scss/mixins/_breakpoints';
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints";
 
 #whitepaper {
-  height: fit-content;
-  width: 100%;
-  min-height: 650px;
+  min-height: 500px;
   margin-bottom: 0;
-  @include media-breakpoint-up(xl) {
-    margin-bottom: -325px;
-  }
-  .book-container {
-    position: relative;
-    .pedestal {
-      top: 55px;
-      max-width: 800px;
-    }
-    .book {
-      position: absolute;
-      right: 0;
-      width: 500px;
+  display: flex;
+  justify-content: center;
 
-      @include media-breakpoint-between(xl, xxl) {
-        right: -155px;
-      }
-      @include media-breakpoint-between(lg, xl) {
-        right: 220px;
-      }
-      @include media-breakpoint-between(md, lg) {
-        right: -20px;
-      }
-
-      top: -30px;
-      animation: shakeY;
-      animation-duration: 10s;
-      animation-iteration-count: infinite;
-      z-index: 1;
-    }
+  .goblin {
+    position: absolute;
+    height: 30vh;
+    width: auto;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    bottom: 0;
+    animation: shakeY 8s ease-in-out infinite;
   }
 
   .text-container {
     p {
-      font-size: 60px;
-      -webkit-text-stroke: 3px #1d1d1d96;
-      color: #ececec;
+      font-size: 5vh;
+      color: white;
       user-select: none;
       text-align: center;
       .download {
@@ -62,39 +39,12 @@
   }
 }
 
-@media only screen and (max-width: 1450px) and (min-width: 1250px) {
-  .pedestal {
-    width: 630px;
-  }
-  .book {
-    width: 400px !important;
-    right: 20px !important;
-  }
-}
-
 @media only screen and (max-width: 1180px) {
   #whitepaper {
     .text-container {
       width: 95vw;
       position: unset;
       margin: 0;
-    }
-    .book-container {
-      position: relative;
-      order: 1;
-      bottom: -100px;
-      .book {
-        width: 400px;
-        position: initial;
-      }
-      .pedestal {
-        top: 55px;
-        max-width: 800px;
-        position: absolute;
-        z-index: -1;
-        left: -65px;
-        max-width: 550px;
-      }
     }
   }
 }

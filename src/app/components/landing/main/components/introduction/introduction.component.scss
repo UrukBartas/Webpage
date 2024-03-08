@@ -26,39 +26,52 @@
       justify-content: center;
       align-items: center;
 
+      .tiger {
+        width: 40vh;
+        position: fixed;
+        bottom: 10vh;
+        right: 25vw;
+        z-index: 0;
+        -webkit-filter: drop-shadow(5px 5px 5px #222);
+        transform: rotateY(176deg);
+      }
+
       .coin {
         opacity: 0;
         width: 150px;
         position: absolute;
-        margin-top: 100px;
-        z-index: 1;
-        margin-right: 300px;
+        z-index: 2;
+        right: 5vh;
         animation: flip 2s ease-out infinite;
+        -webkit-filter: drop-shadow(5px 5px 5px #222);
       }
 
       .item {
         opacity: 0;
-        width: 450px;
+        width: 35vh;
         position: absolute;
         margin-top: 150px;
         z-index: 1;
         margin-right: 300px;
         animation: shakeY 8s 1s infinite;
+        -webkit-filter: drop-shadow(5px 5px 5px #222);
+        margin-top: 0;
       }
 
       .wizard {
-        position: absolute;
-        height: 500px;
-        margin-left: 200px;
-        margin-top: 300px;
+        position: fixed;
+        height: 80vh;
+        margin-left: 40vw;
+        margin-top: 40vh;
+        -webkit-filter: drop-shadow(5px 5px 5px #222);
       }
 
       .character-dialog {
         max-width: 90vw;
         width: 1000px;
         margin: auto;
-        position: absolute;
-        margin-bottom: 400px;
+        position: fixed;
+        top: 8vh;
       }
     }
   }
@@ -73,17 +86,15 @@
     }
     .coin {
       width: 100px !important;
-      margin-top: 300px !important;
-      margin-right: 200px !important;
     }
     .item {
       margin-right: 100px !important;
     }
     .character-dialog {
       margin-bottom: 300px;
-      &::before {
-        right: 50px !important;
-      }
+    }
+    .tiger {
+      opacity: 0;
     }
   }
 }

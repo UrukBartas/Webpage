@@ -1,10 +1,7 @@
 .title-section {
   padding-bottom: 50px;
-  font-size: 80px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 20%, rgba(0, 0, 0, 1) 80%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 3px #000000;
+  font-size: 5vh;
+  color: white;
 }
 
 .character-dialog {
@@ -23,7 +20,7 @@
     border-right: 15px solid transparent;
     border-top: 20px solid #00000096;
     border-bottom: 20px solid transparent;
-    right: 300px;
+    right: 5vw;
     bottom: -40px;
   }
 

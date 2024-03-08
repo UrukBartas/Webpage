@@ -1,6 +1,6 @@
+import { Component } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
-import { UtilsService } from './../../../../../services/utils.service';
-import { Component, OnInit } from '@angular/core';
+import { Utils } from '../../../utils/utils';
 
 @Component({
   selector: 'app-whitepaper',
@@ -8,12 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./whitepaper.component.scss'],
 })
 export class WhitepaperComponent {
-  constructor(private utils: UtilsService, private toast: ToastrService) {}
+  constructor(private toast: ToastrService) {}
 
   ngOnInit(): void {}
 
   public downloadWhitepaper(): void {
-    this.utils.downloadWhitepaper();
+    Utils.downloadWhitepaper();
   }
 
   public notAvailableYet(): void {

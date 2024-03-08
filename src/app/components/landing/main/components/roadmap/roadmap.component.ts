@@ -1,6 +1,6 @@
-import { Slide } from './../../../../../models/slide.model'
+import { Slide } from './models/slide.model'
 import { Component, OnInit, ViewEncapsulation } from '@angular/core'
-import SwiperCore, { SwiperOptions } from 'swiper'
+import { SwiperOptions } from 'swiper'
 import { environment } from '../../../../../../environments/environment'
 @Component({
   selector: 'app-roadmap',

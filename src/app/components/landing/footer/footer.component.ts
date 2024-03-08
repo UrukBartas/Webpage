@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UtilsService } from '../../../services/utils.service';
+import { Utils } from '../utils/utils';
 
 @Component({
   selector: 'app-footer',
@@ -8,13 +8,12 @@ import { UtilsService } from '../../../services/utils.service';
 })
 export class FooterComponent implements OnInit {
 
-  constructor(private utils:UtilsService) { }
 
   ngOnInit(): void {
   }
 
   public downloadWhitepaper():void{
-    this.utils.downloadWhitepaper()
+    Utils.downloadWhitepaper()
   }
 
 }
