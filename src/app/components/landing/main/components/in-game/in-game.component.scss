@@ -68,5 +68,16 @@
         order: 1;
       }
     }
+
+    .shop {
+      display: flex;
+      flex-direction: column;
+      .text-container-shop {
+        order: 2;
+      }
+      .image-container {
+        order: 1;
+      }
+    }
   }
 }
