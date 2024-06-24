@@ -21,6 +21,7 @@ import { RoadmapComponent } from './components/landing/main/components/roadmap/r
 import { WhitepaperComponent } from './components/landing/main/components/whitepaper/whitepaper.component';
 import { MainComponent } from './components/landing/main/main.component';
 import { MobileMenuComponent } from './components/landing/mobile-menu/mobile-menu.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +47,7 @@ import { MobileMenuComponent } from './components/landing/mobile-menu/mobile-men
     MatExpansionModule,
     ClipboardModule,
     MatDividerModule,
+    HttpClientModule,
     ToastrModule.forRoot(),
   ],
   providers: [],

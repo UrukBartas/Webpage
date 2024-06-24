@@ -3,6 +3,14 @@
   justify-content: center;
   position: relative;
 
+  .download-apk{
+    display: flex;
+    img{
+      max-height: 20px;
+      max-width: 20px;
+    }
+  }
+
   .body {
     width: 100%;
     max-width: 1920px;
