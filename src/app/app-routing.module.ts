@@ -1,18 +1,20 @@
-import { LandingComponent } from './components/landing/landing.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MainComponent } from './components/landing/main/main.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: LandingComponent,
-    children: [
-      {
-        path: '',
-        component: MainComponent,
-      },
-    ],
+    loadChildren: () =>
+      import('./components/landing/landing.module').then(
+        (m) => m.LandingModule
+      ),
+  },
+  {
+    path: 'presale',
+    loadChildren: () =>
+      import('./components/presale/presale.module').then(
+        (m) => m.PresaleModule
+      ),
   },
   {
     path: '**',

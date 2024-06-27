@@ -1,0 +1,209 @@
+@import "./variables.scss";
+
+.button-rainbow {
+  border: none;
+  outline: none;
+  color: $white-100 !important;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  &::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-rainbow 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+
+  &::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #30332bc4;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+  @keyframes glowing-button-rainbow {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+}
+
+.text-rainbow {
+  background: linear-gradient(
+    to right,
+    #6666ff,
+    #0099ff,
+    #00ff00,
+    #ff3399,
+    #6666ff
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 6s ease-in-out infinite;
+  background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+  0%,
+  100% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 100% 0;
+  }
+}
+
+// RARITY GLOWINGS
+
+@keyframes glowing-common {
+  0% {
+    filter: drop-shadow(0 0 1em #b0b5b35e);
+  }
+  50% {
+    filter: drop-shadow(0 0 1em #b0b5b3);
+  }
+  100% {
+    filter: drop-shadow(0 0 1em #b0b5b35e);
+  }
+}
+
+.glowing-common {
+  animation: glowing-common 2s infinite;
+  position: relative;
+  display: inline-block;
+}
+
+@keyframes glowing-uncommon {
+  0% {
+    filter: drop-shadow(0 0 1em #3d74b8a8);
+  }
+  50% {
+    filter: drop-shadow(0 0 1em #3d74b8);
+  }
+  100% {
+    filter: drop-shadow(0 0 1em #3d74b8a8);
+  }
+}
+
+.glowing-uncommon {
+  animation: glowing-uncommon 2s infinite;
+  position: relative;
+  display: inline-block;
+}
+
+@keyframes glowing-epic {
+  0% {
+    filter: drop-shadow(0 0 1em #9d44b57e);
+  }
+  50% {
+    filter: drop-shadow(0 0 1em #9d44b5);
+  }
+  100% {
+    filter: drop-shadow(0 0 1em #9d44b57e);
+  }
+}
+
+.glowing-epic {
+  animation: glowing-epic 2s infinite;
+  position: relative;
+  display: inline-block;
+}
+
+@keyframes glowing-legendary {
+  0% {
+    filter: drop-shadow(0 0 1em #ff801181);
+  }
+  50% {
+    filter: drop-shadow(0 0 1em #ff8011);
+  }
+  100% {
+    filter: drop-shadow(0 0 1em #ff801181);
+  }
+}
+
+.glowing-legendary {
+  animation: glowing-legendary 2s infinite;
+  position: relative;
+  display: inline-block;
+}
+
+@keyframes glowing-mythic {
+  0% {
+    filter: drop-shadow(0 0 1em #f34413a8);
+  }
+  50% {
+    filter: drop-shadow(0 0 1em #f34413);
+  }
+  100% {
+    filter: drop-shadow(0 0 1em #f34413a8);
+  }
+}
+
+.glowing-mythic {
+  animation: glowing-mythic 2s infinite;
+  position: relative;
+  display: inline-block;
+}
+
+.text-warning {
+  color: $orange;
+}
+
+.text-danger {
+  color: $red;
+}
+
+.w-fit {
+  width: fit-content !important;
+}
+
+@for $i from 1 through 5 {
+  .pr-#{$i} {
+    padding-right: $i * 0.25rem !important;
+  }
+  .pl-#{$i} {
+    padding-left: $i * 0.25rem !important;
+  }
+  .delay-#{$i} {
+    animation-delay: $i * 0.25s !important;
+  }
+}

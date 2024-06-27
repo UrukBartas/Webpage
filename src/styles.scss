@@ -12,6 +12,8 @@
 @import "styles/variables.scss";
 @import "ngx-toastr/toastr";
 
+@import "./styles-custom.scss";
+
 $uruk-bartas-primary: mat.define-palette($md-primaryuruk);
 $uruk-bartas-accent: mat.define-palette($md-secondaryuruk);
 
@@ -88,7 +90,6 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #5e5e5e !important;
 }
-
 
 .text-container {
   position: relative;

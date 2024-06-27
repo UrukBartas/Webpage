@@ -1,0 +1,73 @@
+#presale-container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+
+  .three-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #ffffff70;
+  }
+
+  .lootboxes {
+    .lootbox-item {
+      text-align: center;
+      cursor: grab;
+
+      .lootbox-image {
+        width: 100%;
+        max-width: 30vmax;
+        filter: drop-shadow(10px 10px 10px #000);
+      }
+
+      .lootbox-name {
+        font-size: 2vmax;
+        margin-top: 10px;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+      }
+    }
+  }
+
+  .lootbox-details {
+    background: #00000025;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .details {
+      h2 {
+        font-size: 3vmax;
+        margin-bottom: 10px;
+        color: #ffcc00;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+      }
+
+      p {
+        font-size: 1.5vmax;
+        margin: 10px 0;
+      }
+
+      .price {
+        font-size: 1.75vmax;
+        color: #00ff00;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+      }
+
+      .button-rainbow {
+        padding: 10px 20px;
+        font-size: 2vmax;
+      }
+    }
+  }
+}

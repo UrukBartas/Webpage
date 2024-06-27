@@ -1,0 +1,49 @@
+<div id="presale-container" class="row">
+  <div #threeContainer class="three-container"></div>
+  <div
+    [ngClass]="{ 'col-md-12': !openDetail, 'col-md-7': openDetail }"
+    class="col-md-7 col-12 d-flex flex-column justify-content-center"
+  >
+    <div class="lootboxes">
+      <swiper [config]="swiperConfig" (slideChange)="onSlideChange($event)">
+        <ng-template *ngFor="let lootbox of lootboxes" swiperSlide>
+          <div class="d-flex flex-column lootbox-item align-items-center">
+            <img
+              (click)="openDetail = true"
+              [ngClass]="{
+                'glowing-common': lootbox.rarity === rarityEnum.COMMON,
+                'glowing-uncommon': lootbox.rarity === rarityEnum.UNCOMMON,
+                'glowing-epic': lootbox.rarity === rarityEnum.EPIC,
+                'glowing-legendary': lootbox.rarity === rarityEnum.LEGENDARY,
+                'glowing-mythic': lootbox.rarity === rarityEnum.MYTHIC
+              }"
+              [src]="lootbox.image"
+              class="lootbox-image"
+            />
+            <span
+              [ngStyle]="{ color: getRarityColor(lootbox.rarity) }"
+              class="lootbox-name"
+              >{{ lootbox.name }}</span
+            >
+          </div>
+        </ng-template>
+      </swiper>
+    </div>
+  </div>
+  <div *ngIf="openDetail" class="col-md-5 col-12 lootbox-details">
+    <div class="details p-3 p-sm-4">
+      <h2 [ngStyle]="{ color: getRarityColor(activeLootbox.rarity) }">
+        {{ activeLootbox.name }}
+      </h2>
+      <p class="text-white">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel justo
+        vitae lorem dictum posuere.
+      </p>
+      <p class="text-white text-end">0/1000</p>
+      <p class="price text-end">$9.99</p>
+      <div class="d-flex">
+        <button class="button-rainbow">Buy Now</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
+import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 
 export enum LANDPAGE_LOCATIONS {
@@ -16,6 +17,7 @@ export class LandingComponent {
   public location = LANDPAGE_LOCATIONS.MAIN;
   public locations = LANDPAGE_LOCATIONS;
   private http = inject(HttpClient);
+  public router = inject(Router);
   constructor() {}
 
   downloadFile() {
