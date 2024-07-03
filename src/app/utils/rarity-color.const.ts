@@ -15,3 +15,19 @@ export function getRarityColor(rarity: Rarity): string {
       return '#F34213';
   }
 }
+
+export function getRarityFogColor(rarity: Rarity): number {
+  switch (rarity) {
+    default:
+    case Rarity.COMMON:
+      return parseInt('ced4d2', 16);
+    case Rarity.UNCOMMON:
+      return parseInt('4889da', 16);
+    case Rarity.EPIC:
+      return parseInt('be53db', 16);
+    case Rarity.LEGENDARY:
+      return parseInt('ff8e2c', 16);
+    case Rarity.MYTHIC:
+      return parseInt('ff5d30', 16);
+  }
+}

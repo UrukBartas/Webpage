@@ -9,7 +9,10 @@ import {
 } from '@angular/core';
 import SwiperCore, { EffectCoverflow, Navigation, SwiperOptions } from 'swiper';
 import { Rarity } from '../../../../enums/rarity.enum';
-import { getRarityColor } from '../../../../utils/rarity-color.const';
+import {
+  getRarityColor,
+  getRarityFogColor,
+} from '../../../../utils/rarity-color.const';
 import { ThreeService } from '../../services/threejs.service';
 import { lootboxes } from './data/lootbox.const';
 
@@ -51,6 +54,9 @@ export class PresaleComponent implements AfterViewInit {
 
   onSlideChange(swiper: any) {
     this.activeLootbox = lootboxes[swiper.activeIndex];
+    this.threeService.changeFogColor(
+      getRarityFogColor(this.activeLootbox.rarity)
+    );
     this.cdr.detectChanges();
   }
 }

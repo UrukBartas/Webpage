@@ -1,3 +1,5 @@
+@import "bootstrap/scss/bootstrap";
+
 #presale-container {
   position: relative;
   overflow: hidden;
@@ -23,13 +25,16 @@
       cursor: grab;
 
       .lootbox-image {
-        width: 100%;
-        max-width: 30vmax;
+        width: 30vmax;
+        max-width: 500px;
         filter: drop-shadow(10px 10px 10px #000);
       }
 
       .lootbox-name {
-        font-size: 2vmax;
+        font-size: 2em;
+        @include media-breakpoint-down(lg) {
+          font-size: 1.5em;
+        }
         margin-top: 10px;
         text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
       }
@@ -47,26 +52,38 @@
 
     .details {
       h2 {
-        font-size: 3vmax;
+        font-size: 2em;
+        @include media-breakpoint-down(lg) {
+          font-size: 1.5em;
+        }
         margin-bottom: 10px;
         color: #ffcc00;
         text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
       }
 
       p {
-        font-size: 1.5vmax;
+        font-size: 1.2em;
+        @include media-breakpoint-down(lg) {
+          font-size: 1em;
+        }
         margin: 10px 0;
       }
 
       .price {
-        font-size: 1.75vmax;
+        font-size: 1.2em;
+        @include media-breakpoint-down(lg) {
+          font-size: 1em;
+        }
         color: #00ff00;
         text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
       }
 
       .button-rainbow {
         padding: 10px 20px;
-        font-size: 2vmax;
+        font-size: 1.5em;
+        @include media-breakpoint-down(lg) {
+          font-size: 1em;
+        }
       }
     }
   }

@@ -9,7 +9,7 @@
         <ng-template *ngFor="let lootbox of lootboxes" swiperSlide>
           <div class="d-flex flex-column lootbox-item align-items-center">
             <img
-              (click)="openDetail = true"
+              (click)="openDetail = !openDetail"
               [ngClass]="{
                 'glowing-common': lootbox.rarity === rarityEnum.COMMON,
                 'glowing-uncommon': lootbox.rarity === rarityEnum.UNCOMMON,
@@ -42,7 +42,7 @@
       <p class="text-white text-end">0/1000</p>
       <p class="price text-end">$9.99</p>
       <div class="d-flex">
-        <button class="button-rainbow">Buy Now</button>
+        <button class="button-rainbow">Mint now</button>
       </div>
     </div>
   </div>

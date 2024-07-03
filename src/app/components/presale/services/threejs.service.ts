@@ -10,6 +10,7 @@ export class ThreeService {
   private renderer!: THREE.WebGLRenderer;
   private smokeParticles: THREE.Mesh[] = [];
   private resizeListener!: () => void;
+  private smokeMaterial!: THREE.MeshBasicMaterial; // Add property to store the fog material
 
   constructor(private ngZone: NgZone) {}
 
@@ -60,7 +61,7 @@ export class ThreeService {
   }
 
   private createSmoke(texture: THREE.Texture) {
-    const smokeMaterial = new THREE.MeshBasicMaterial({
+    this.smokeMaterial = new THREE.MeshBasicMaterial({
       map: texture,
       transparent: true,
       opacity: 0.2,
@@ -68,8 +69,8 @@ export class ThreeService {
       depthWrite: false,
     });
     const smokeGeometry = new THREE.PlaneGeometry(10, 10);
-    for (let i = 0; i < 40; i++) {
-      const particle = new THREE.Mesh(smokeGeometry, smokeMaterial);
+    for (let i = 0; i < 80; i++) {
+      const particle = new THREE.Mesh(smokeGeometry, this.smokeMaterial);
       particle.position.set(
         Math.random() * 20 - 10,
         Math.random() * 10 - 10,
@@ -78,6 +79,12 @@ export class ThreeService {
       particle.rotation.z = Math.random() * Math.PI * 2;
       this.scene.add(particle);
       this.smokeParticles.push(particle);
+    }
+  }
+
+  changeFogColor(color: number) {
+    if (this.smokeMaterial) {
+      this.smokeMaterial.color.set(color);
     }
   }
 
