@@ -14,7 +14,7 @@ import {
   getRarityFogColor,
 } from '../../../../utils/rarity-color.const';
 import { ThreeService } from '../../services/threejs.service';
-import { lootboxes } from './data/lootbox.const';
+import { lootboxItemDropRateByRarity, lootboxes } from './data/lootbox.const';
 
 SwiperCore.use([Navigation, EffectCoverflow]);
 
@@ -39,7 +39,12 @@ export class PresaleComponent implements AfterViewInit {
       modifier: 1,
       slideShadows: false,
     },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
   };
+  itemsByRarity;
   openDetail = false;
   lootboxes = lootboxes;
   activeLootbox = lootboxes[0];
@@ -47,6 +52,7 @@ export class PresaleComponent implements AfterViewInit {
   private threeService = inject(ThreeService);
   private cdr = inject(ChangeDetectorRef);
   getRarityColor = getRarityColor;
+  lootboxItemDropRateByRarity = lootboxItemDropRateByRarity;
 
   ngAfterViewInit(): void {
     this.threeService.initialize(this.threeContainer);
@@ -58,5 +64,14 @@ export class PresaleComponent implements AfterViewInit {
       getRarityFogColor(this.activeLootbox.rarity)
     );
     this.cdr.detectChanges();
+  }
+
+  getImageUrls(): string[] {
+    const basePath = 'assets/presale/lootbox-items/';
+    const rarity = this.activeLootbox.rarity;
+    return Array.from(
+      { length: 5 },
+      (_, index) => `${basePath}${rarity.toLowerCase()}/${index + 1}.webp`
+    );
   }
 }

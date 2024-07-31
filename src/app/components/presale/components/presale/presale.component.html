@@ -31,17 +31,29 @@
     </div>
   </div>
   <div *ngIf="openDetail" class="col-md-5 col-12 lootbox-details">
-    <div class="details p-3 p-sm-4">
-      <h2 [ngStyle]="{ color: getRarityColor(activeLootbox.rarity) }">
-        {{ activeLootbox.name }}
-      </h2>
-      <p class="text-white">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel justo
-        vitae lorem dictum posuere.
-      </p>
-      <p class="text-white text-end">0/1000</p>
-      <p class="price text-end">$9.99</p>
-      <div class="d-flex">
+    <div class="details">
+      <div
+        *ngIf="lootboxItemDropRateByRarity[activeLootbox.rarity] as dropRates"
+        class="text-white"
+      >
+        <h3>Drop Rates:</h3>
+        <ul>
+          <li *ngFor="let rarity of dropRates | keyvalue">
+            {{ rarity.key }}: {{ rarity.value * 10 }} %
+          </li>
+        </ul>
+      </div>
+      <div class="d-flex justify-content-end gap-2">
+        <p class="price text-end">$9.99</p>
+        <p class="text-white text-end">0/1000</p>
+      </div>
+
+      <div class="image-gallery py-2">
+        <div *ngFor="let imageUrl of getImageUrls()" class="image-item">
+          <img [src]="imageUrl" alt="Lootbox Image" class="lootbox-image" />
+        </div>
+      </div>
+      <div class="d-flex pt-3">
         <button class="button-rainbow">Mint now</button>
       </div>
     </div>
