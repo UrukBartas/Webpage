@@ -2,6 +2,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import Aos from 'aos';
 import { Utils } from '../utils/utils';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-main',
@@ -9,13 +10,59 @@ import { Utils } from '../utils/utils';
   styleUrls: ['./main.component.scss'],
 })
 export class MainComponent implements OnInit {
-  
   @HostListener('window:scroll', ['$event'])
   onScroll(event: any) {
     this.controlIntroductionHistory();
   }
 
-  constructor(public router: Router) {}
+  constructor(
+    public router: Router,
+    private metaService: Meta,
+    private titleService: Title
+  ) {
+    this.titleService.setTitle(
+      'Uruk Bartas - Web3 Play to Earn RPG Game - Adventure & Strategy'
+    );
+    this.metaService.addTag({
+      name: 'description',
+      content:
+        'Embark on epic adventures in Uruk Bartas, the ultimate Web3 Play to Earn RPG Game on IOTA EVM! Customize your character, battle monsters, earn rewards, and integrate with web3 wallets like Metamask. Join now for endless excitement and adventure!',
+    });
+    this.metaService.addTags([
+      {
+        property: 'og:title',
+        content: 'Uruk Bartas - Web3 Play to Earn RPG Game',
+      },
+      {
+        property: 'og:description',
+        content:
+          'Embark on epic adventures in Uruk Bartas! Play, Battle, Earn! Welcome to the ultimate #P2E blockchain game.',
+      },
+      { property: 'og:image', content: 'favicon.ico' },
+      { property: 'og:url', content: 'https://urukbartas.com/' },
+      { property: 'og:type', content: 'website' },
+    ]);
+    this.metaService.addTags([
+      { name: 'twitter:card', content: 'summary_large_image' },
+      {
+        name: 'twitter:title',
+        content: 'Uruk Bartas - Web3 Play to Earn RPG Game',
+      },
+      {
+        name: 'twitter:description',
+        content:
+          'Embark on epic adventures in Uruk Bartas! Play, Battle, Earn! Welcome to the ultimate #P2E blockchain game.',
+      },
+      { name: 'twitter:image', content: 'favicon.ico' },
+      { name: 'twitter:site', content: '@UrukBartas' },
+    ]);
+    this.metaService.addTag({
+      name: 'keywords',
+      content:
+        'Uruk Bartas, Play to Earn, Web3, RPG, IOTA EVM, Blockchain Game, Metamask, Adventure Game, Strategy Game',
+    });
+    this.metaService.addTag({ name: 'robots', content: 'index, follow' });
+  }
 
   ngOnInit(): void {
     Aos.init({
