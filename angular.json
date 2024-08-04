@@ -2,7 +2,9 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
     "analytics": "2fcc5b85-a47e-43c3-b078-485657d322ab",
-    "schematicCollections": ["@angular-eslint/schematics"]
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   },
   "version": 1,
   "newProjectRoot": "projects",
@@ -25,7 +27,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser-esbuild",
           "options": {
-            "allowedCommonJsDependencies": ["hash.js"],
+            "allowedCommonJsDependencies": [
+              "hash.js",
+              "aos",
+              "file-saver"
+            ],
             "outputPath": "dist/uruk-bartas/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -114,15 +120,23 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "scss",
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.scss"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.scss"
+            ],
             "scripts": []
           }
         },
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
-            "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
           }
         },
         "server": {
@@ -170,7 +184,9 @@
         "prerender": {
           "builder": "@angular-devkit/build-angular:prerender",
           "options": {
-            "routes": ["/"]
+            "routes": [
+              "/"
+            ]
           },
           "configurations": {
             "production": {
