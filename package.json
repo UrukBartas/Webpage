@@ -11,7 +11,7 @@
     "dev:ssr": "ng run uruk-bartas:serve-ssr",
     "serve:ssr": "node dist/uruk-bartas/server/main.js",
     "build:ssr": "ng build && ng run uruk-bartas:server",
-    "prerender": "ng run uruk-bartas:prerender"
+    "prerender": "ng run uruk-bartas:prerender --verbose"
   },
   "private": true,
   "dependencies": {
