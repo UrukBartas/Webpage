@@ -42,8 +42,6 @@
     "ngx-clipboard": "^16.0.0",
     "ngx-toastr": "^18.0.0",
     "rxjs": "~6.6.0",
-    "swiper": "7.0.6",
-    "three": "^0.165.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2"
   },

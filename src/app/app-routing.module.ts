@@ -10,13 +10,6 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'presale',
-    loadChildren: () =>
-      import('./components/presale/presale.module').then(
-        (m) => m.PresaleModule
-      ),
-  },
-  {
     path: '**',
     redirectTo: '',
     pathMatch: 'full',
