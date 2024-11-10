@@ -14,6 +14,7 @@ import { LandingComponent } from './landing.component';
 import { CoverComponent } from './main/components/cover/cover.component';
 import { InGameComponent } from './main/components/in-game/in-game.component';
 import { IntroductionComponent } from './main/components/introduction/introduction.component';
+import { PresaleRedirectComponent } from './main/components/presale-redirect/presale-redirect.component';
 import { WhitepaperComponent } from './main/components/whitepaper/whitepaper.component';
 import { MainComponent } from './main/main.component';
 import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
@@ -28,6 +29,7 @@ import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
     IntroductionComponent,
     MobileMenuComponent,
     MainComponent,
+    PresaleRedirectComponent,
   ],
   imports: [
     HttpClientModule,
